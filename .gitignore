@@ -1,0 +1,72 @@
+# --- Personal data (never committed) ---
+household.json
+company.json
+wealth.json
+*.private.json
+
+# --- Scanned documents and attachments ---
+documents/
+uploads/
+attachments/
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.tiff
+*.heic
+!configs/**/*.pdf
+!data/**/*.pdf
+
+# --- Bank exports and transaction files ---
+data/transactions/
+data/statements/
+data/history/
+*.csv
+*.ofx
+*.qfx
+*.camt053.xml
+*.tsv
+!configs/**/*.csv
+!data/sources.csv
+
+# --- Generated accounting exports (FEC, tax returns) ---
+output/
+*.fec
+*.fec.txt
+
+# --- Secrets and credentials ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+tokens.json
+
+# --- Node ---
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# --- IDE ---
+.vscode/
+.idea/
+*.sublime-*
+
+# --- Claude Code local state ---
+.claude/settings.local.json
+.claude/sessions/

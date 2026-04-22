@@ -1,0 +1,46 @@
+[
+  {
+    "item": "HCSF taux d'effort maximum (taux d'endettement)",
+    "value": 35,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "From 2022-01-01 (binding), reconfirmed 2024-01-01",
+    "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048659704",
+    "source_title": "Décision HCSF du 18 décembre 2023 relative aux conditions d'octroi de crédits immobiliers — Légifrance",
+    "status": "verified",
+    "notes": "Taux d'effort calculé assurance comprise. Règle contraignante depuis 2022. Dernière décision : 18 déc 2023, en vigueur depuis 1er janv 2024."
+  },
+  {
+    "item": "HCSF durée maximale du prêt (standard)",
+    "value": 25,
+    "unit": "years",
+    "applicable_year": 2026,
+    "applicable_period": "From 2022-01-01 (binding), reconfirmed 2024-01-01",
+    "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048659704",
+    "source_title": "Décision HCSF du 18 décembre 2023 — Légifrance",
+    "status": "verified",
+    "notes": "25 ans d'amortissement. Peut être porté à 27 ans si les travaux représentent au moins 10 % du coût total (abaissé de 25 % à 10 % en décembre 2023)."
+  },
+  {
+    "item": "HCSF durée maximale du prêt avec différé (logement neuf ou travaux ≥ 10 %)",
+    "value": 27,
+    "unit": "years",
+    "applicable_year": 2026,
+    "applicable_period": "From 2024-01-01",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/actualites/A17028",
+    "source_title": "Crédit immobilier : des prêts sur 27 ans sous certaines conditions — Service Public",
+    "status": "verified",
+    "notes": "27 ans de maturité totale (amortissement ≤ 25 ans + différé de 2 ans). Condition : travaux ≥ 10 % du coût total depuis le 1er janvier 2024."
+  },
+  {
+    "item": "HCSF taux de dérogation autorisé aux banques",
+    "value": 20,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "From 2021-09-29 (binding), updated 2023-06-29",
+    "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047772830",
+    "source_title": "Décision HCSF du 29 juin 2023 — Légifrance",
+    "status": "verified",
+    "notes": "20 % de la production nouvelle peut déroger aux normes. Dont 80 % réservé à l'acquisition de résidence principale (dont 30 % primo-accédants). Utilisation effective Q3 2025 : 16,8 % selon ACPR."
+  }
+]

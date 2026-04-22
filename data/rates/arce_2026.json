@@ -1,0 +1,35 @@
+[
+  {
+    "item": "ARCE — pourcentage des droits ARE restants",
+    "value": 60,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Current rule (2026)",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15252",
+    "source_title": "ARCE : versement anticipé des allocations chômage — Service Public",
+    "status": "verified",
+    "notes": "60 % des droits ARE restants versés en capital. Les 40 % restants peuvent être réclamés si l'activité cesse."
+  },
+  {
+    "item": "ARCE — calendrier de versement (1er versement)",
+    "value": "Au démarrage de l'activité",
+    "unit": "event",
+    "applicable_year": 2026,
+    "applicable_period": "Current rule (2026)",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15252",
+    "source_title": "ARCE : versement anticipé des allocations chômage — Service Public",
+    "status": "verified",
+    "notes": "1er versement = 50 % du capital total ARCE (soit 30 % des droits restants)."
+  },
+  {
+    "item": "ARCE — calendrier de versement (2e versement)",
+    "value": "6 mois après le 1er versement",
+    "unit": "event",
+    "applicable_year": 2026,
+    "applicable_period": "Current rule (2026)",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15252",
+    "source_title": "ARCE : versement anticipé des allocations chômage — Service Public",
+    "status": "verified",
+    "notes": "2e versement = 50 % restant du capital ARCE. Condition depuis 2025-04-01 : ne pas détenir un CDI à temps plein au moment du 2e versement (nouveau)."
+  }
+]

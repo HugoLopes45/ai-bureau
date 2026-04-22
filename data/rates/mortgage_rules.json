@@ -1,0 +1,46 @@
+[
+  {
+    "item": "Loi Lemoine — droit de résiliation à tout moment",
+    "value": "résiliation sans frais à tout moment",
+    "unit": "rule",
+    "applicable_year": 2026,
+    "applicable_period": "Depuis 2022-06-01 (nouveaux contrats), 2022-09-01 (tous contrats)",
+    "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000045268729",
+    "source_title": "Loi n° 2022-270 du 28 février 2022 — Légifrance",
+    "status": "verified",
+    "notes": "Droit de substitution sans frais et sans pénalité à tout moment après signature du crédit immobilier, sous réserve d'équivalence des garanties. Loi confirmée encore en vigueur en 2026 (page Service Public vérifiée 2025-05-20)."
+  },
+  {
+    "item": "Loi Lemoine — droit à l'oubli (cancer / hépatite C)",
+    "value": 5,
+    "unit": "years",
+    "applicable_year": 2026,
+    "applicable_period": "Depuis 2022-03-02",
+    "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000045268729",
+    "source_title": "Loi n° 2022-270 du 28 février 2022 — Légifrance",
+    "status": "verified",
+    "notes": "Délai du droit à l'oubli ramené de 10 à 5 ans pour les personnes ayant souffert d'un cancer ou d'une hépatite C après 18 ans. Applicable depuis le 2 mars 2022."
+  },
+  {
+    "item": "Loi Lemoine — suppression questionnaire médical",
+    "value": 200000,
+    "unit": "EUR_encours_max",
+    "applicable_year": 2026,
+    "applicable_period": "Depuis 2022-06-01",
+    "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000045268729",
+    "source_title": "Loi n° 2022-270 du 28 février 2022 — Légifrance",
+    "status": "verified",
+    "notes": "Questionnaire de santé supprimé si : encours total ≤ 200 000 € par assuré (quotité incluse) ET remboursement total avant les 60 ans de l'assuré."
+  },
+  {
+    "item": "IRA — plafond indemnités de remboursement anticipé (formule)",
+    "value": "min(6 mois d'intérêts au taux moyen du prêt, 3 % du capital restant dû)",
+    "unit": "rule",
+    "applicable_year": 2026,
+    "applicable_period": "Loans from July 1999 onwards",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1669",
+    "source_title": "Peut-on rembourser son crédit immobilier par anticipation ? — Service Public",
+    "status": "verified",
+    "notes": "IRA non dues en cas de vente suite à : mutation professionnelle, fin d'emploi forcée, décès (emprunteur ou conjoint). Prêts à taux variable : des intérêts compensateurs peuvent s'ajouter."
+  }
+]

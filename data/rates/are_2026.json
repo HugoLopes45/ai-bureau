@@ -1,0 +1,134 @@
+[
+  {
+    "item": "ARE — formule SJR (salaire journalier de référence)",
+    "value": "Somme des rémunérations brutes de la période de référence ÷ nombre de jours calendaires de la période",
+    "unit": "formula",
+    "applicable_year": 2026,
+    "applicable_period": "Contrats fin avant 2025-04-01 : 24 mois (< 55 ans) ou 36 mois (≥ 55 ans). Contrats fin depuis 2025-04-01 : mêmes durées.",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2064",
+    "source_title": "Allocations chômage : comment est calculé le SJR — Service Public",
+    "status": "verified",
+    "notes": "Inclus : salaire de base, primes, 13e mois pro-rata, bonus gagnés sur la période. Exclus : indemnités de rupture, indemnités congés payés, primes de fin mission, indemnités de non-concurrence. Plafond mensuel de référence : 16 020 € / mois."
+  },
+  {
+    "item": "ARE — formule de calcul (contrats fin avant 2025-04-01)",
+    "value": "max(40,4 % × SJR + 13,18 €, 57 % × SJR)",
+    "unit": "formula",
+    "applicable_year": 2026,
+    "applicable_period": "Contrats de travail terminés avant 2025-04-01",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14860",
+    "source_title": "ARE salariés secteur privé (fin contrat avant 1er avril 2025) — Service Public",
+    "status": "verified",
+    "notes": "Partie fixe en vigueur depuis le 1er juillet 2025 : 13,18 €/jour (revalorisation +0,5 %). Plafond : 75 % du SJR (pour contrats avant 2025-04-01). Plancher : 32,13 €/jour net."
+  },
+  {
+    "item": "ARE — formule de calcul (contrats fin depuis 2025-04-01)",
+    "value": "max(40,4 % × SJR + 13,18 €, 57 % × SJR)",
+    "unit": "formula",
+    "applicable_year": 2026,
+    "applicable_period": "Contrats de travail terminés depuis 2025-04-01",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
+    "source_title": "ARE salariés secteur privé (fin contrat depuis 1er avril 2025) — Service Public",
+    "status": "verified",
+    "notes": "Formule identique mais PLAFOND ramené à 70 % du SJR (au lieu de 75 %). Plancher : 32,13 €/jour net. Partie fixe : 13,18 €/jour."
+  },
+  {
+    "item": "ARE — partie fixe journalière",
+    "value": 13.18,
+    "unit": "EUR_per_day",
+    "applicable_year": 2026,
+    "applicable_period": "Since 2025-07-01",
+    "source_url": "https://www.unedic.org/publications/revalorisation-des-allocations-d-assurance-chomage-mode-d-emploi-juin-2025",
+    "source_title": "Revalorisation allocations assurance chômage juin 2025 — Unédic",
+    "status": "verified",
+    "notes": "Revalorisation +0,5 % au 1er juillet 2025 (ancienne valeur : 13,11 €). Valeur 2026 attendue après revalorisation juillet 2026 (hypothèse Unédic : +0,6 %)."
+  },
+  {
+    "item": "ARE — plancher (minimum journalier net)",
+    "value": 32.13,
+    "unit": "EUR_per_day",
+    "applicable_year": 2026,
+    "applicable_period": "Since 2025-07-01",
+    "source_url": "https://www.unedic.org/publications/revalorisation-des-allocations-d-assurance-chomage-mode-d-emploi-juin-2025",
+    "source_title": "Revalorisation allocations assurance chômage juin 2025 — Unédic",
+    "status": "verified",
+    "notes": "Non applicable en cas de travail à temps partiel. Valeur post-revalorisation juillet 2025. Juillet 2026 non encore publié (Q2 2026)."
+  },
+  {
+    "item": "ARE — plafond (contrats fin avant 2025-04-01)",
+    "value": 75,
+    "unit": "percent_of_SJR",
+    "applicable_year": 2026,
+    "applicable_period": "Contrats terminés avant 2025-04-01",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14860",
+    "source_title": "ARE salariés (fin contrat avant 1er avril 2025) — Service Public",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "item": "ARE — plafond (contrats fin depuis 2025-04-01)",
+    "value": 70,
+    "unit": "percent_of_SJR",
+    "applicable_year": 2026,
+    "applicable_period": "Contrats terminés depuis 2025-04-01",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
+    "source_title": "ARE salariés (fin contrat depuis 1er avril 2025) — Service Public",
+    "status": "verified",
+    "notes": "Changement introduit par la réforme d'assurance chômage 2025 : plafond réduit de 75 % à 70 %."
+  },
+  {
+    "item": "ARE — coefficient contra-cyclique (réduction durée)",
+    "value": 25,
+    "unit": "percent_reduction_of_duration",
+    "applicable_year": 2026,
+    "applicable_period": "Since 2023-02-01 (contrats fin depuis cette date)",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
+    "source_title": "ARE salariés (fin contrat depuis 1er avril 2025) — Service Public",
+    "status": "verified",
+    "notes": "Réduction de 25 % de la durée maximale d'indemnisation actuellement active (taux de chômage < 9 % sans hausse de 0,8 point sur un trimestre). Durées réduites en vigueur Q2 2026 : <55 ans → 548 jours, 55-56 ans → 685 jours, 57+ → 822 jours."
+  },
+  {
+    "item": "ARE — durée maximale < 55 ans (avec réduction contra-cyclique)",
+    "value": 548,
+    "unit": "calendar_days",
+    "applicable_year": 2026,
+    "applicable_period": "Contrats fin depuis 2023-02-01",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
+    "source_title": "ARE salariés (fin contrat depuis 1er avril 2025) — Service Public",
+    "status": "verified",
+    "notes": "Durée pleine sans réduction : 730 jours. Réduction 25 % active. Affiliation minimale requise : 24 mois."
+  },
+  {
+    "item": "ARE — durée maximale 55–56 ans (avec réduction contra-cyclique)",
+    "value": 685,
+    "unit": "calendar_days",
+    "applicable_year": 2026,
+    "applicable_period": "Contrats fin depuis 2023-02-01",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
+    "source_title": "ARE salariés (fin contrat depuis 1er avril 2025) — Service Public",
+    "status": "verified",
+    "notes": "Durée pleine sans réduction : 913 jours. Affiliation minimale requise : 36 mois."
+  },
+  {
+    "item": "ARE — durée maximale ≥ 57 ans (avec réduction contra-cyclique)",
+    "value": 822,
+    "unit": "calendar_days",
+    "applicable_year": 2026,
+    "applicable_period": "Contrats fin depuis 2023-02-01",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
+    "source_title": "ARE salariés (fin contrat depuis 1er avril 2025) — Service Public",
+    "status": "verified",
+    "notes": "Durée pleine sans réduction : 1 095 jours. Affiliation minimale requise : 36 mois."
+  },
+  {
+    "item": "ARE — délai d'attente",
+    "value": 7,
+    "unit": "calendar_days",
+    "applicable_year": 2026,
+    "applicable_period": "Permanent rule",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14860",
+    "source_title": "ARE salariés — Service Public",
+    "status": "verified",
+    "notes": "L'ARE ne peut être versée avant la fin d'un délai d'attente de 7 jours. Non applicable si ce délai a déjà été appliqué dans les 12 mois précédents."
+  }
+]

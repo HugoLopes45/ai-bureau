@@ -1,0 +1,24 @@
+[
+  {
+    "item": "CPF — participation financière obligatoire (reste à charge)",
+    "value": 150,
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Since 2026-04-02",
+    "source_url": "https://www.moncompteformation.gouv.fr/espace-public/une-participation-financiere-obligatoire-pour-mobiliser-vos-droits-cpf",
+    "source_title": "Participation financière obligatoire CPF — Mon Compte Formation",
+    "status": "verified",
+    "notes": "Historique : 100 € (2024-05-02, décret n°2024-394), 103,20 € (2026-01-05, revalorisation annuelle), 150 € (2026-04-02, décret n°2026-234). Montant revalorisé chaque année par arrêté."
+  },
+  {
+    "item": "CPF — exonération participation obligatoire (abondement employeur)",
+    "value": "exonéré si abondement employeur depuis 2024-05-02",
+    "unit": "rule",
+    "applicable_year": 2026,
+    "applicable_period": "From 2024-05-02",
+    "source_url": "https://www.moncompteformation.gouv.fr/espace-public/une-participation-financiere-obligatoire-pour-mobiliser-vos-droits-cpf",
+    "source_title": "Participation financière obligatoire CPF — Mon Compte Formation",
+    "status": "verified",
+    "notes": "Sont exonérés : demandeurs d'emploi, bénéficiaires d'un abondement employeur, bénéficiaires d'abondement OPCO ou branche, titulaires d'un C2P, victimes d'AT/MP. L'employeur peut rembourser les 150 € si l'abondement n'était pas en place avant la formation."
+  }
+]

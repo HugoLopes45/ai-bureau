@@ -1,0 +1,112 @@
+[
+  {
+    "item": "Taux usure crédit immobilier taux fixe < 10 ans",
+    "value": 4.00,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Q2 2026 (from 2026-04-01)",
+    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
+    "status": "verified",
+    "notes": "Publié le 27 mars 2026. Applicable à compter du 1er avril 2026."
+  },
+  {
+    "item": "Taux usure crédit immobilier taux fixe 10–20 ans",
+    "value": 4.48,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Q2 2026 (from 2026-04-01)",
+    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "item": "Taux usure crédit immobilier taux fixe ≥ 20 ans",
+    "value": 5.19,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Q2 2026 (from 2026-04-01)",
+    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "item": "Taux usure crédit immobilier taux variable",
+    "value": 5.00,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Q2 2026 (from 2026-04-01)",
+    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "item": "Taux usure crédit relais (bridge loan)",
+    "value": 6.20,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Q2 2026 (from 2026-04-01)",
+    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "item": "Taux usure crédit à la consommation ≤ 3 000 €",
+    "value": 23.52,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Q2 2026 (from 2026-04-01)",
+    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "item": "Taux usure crédit à la consommation 3 000–6 000 €",
+    "value": 15.73,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Q2 2026 (from 2026-04-01)",
+    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "item": "Taux usure crédit à la consommation > 6 000 €",
+    "value": 8.61,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Q2 2026 (from 2026-04-01)",
+    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "item": "Taux usure découvert en compte",
+    "value": 19.05,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Q2 2026 (from 2026-04-01)",
+    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "item": "Prochaine mise à jour taux d'usure",
+    "value": null,
+    "unit": "date",
+    "applicable_year": 2026,
+    "applicable_period": "Q3 2026",
+    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
+    "status": "verified",
+    "notes": "Q3 2026 attendu en septembre 2026 (fin juin pour publication)."
+  }
+]

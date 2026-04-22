@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10871",
+    "source_title": "Prêt à taux zéro (PTZ) — Service Public",
+    "applicable_year": 2026,
+    "status": "verified",
+    "notes": "Réforme loi de finances 2025 : depuis le 1er avril 2025, le PTZ neuf est étendu à toutes les zones (A, Abis, B1, B2, C). Le PTZ ancien reste limité aux zones B2 et C avec travaux ≥ 25 % du coût total. Durée max : 25 ans."
+  },
+  "eligible_zones": {
+    "logement_neuf_collectif": ["A", "Abis", "B1", "B2", "C"],
+    "logement_neuf_individuel": ["A", "Abis", "B1", "B2", "C"],
+    "logement_ancien_avec_travaux": ["B2", "C"],
+    "note": "Offres depuis le 1er avril 2025. Avant : neuf limité à A, Abis, B1."
+  },
+  "travaux_minimum_logement_ancien": {
+    "value": 25,
+    "unit": "percent_of_total_cost",
+    "notes": "Les travaux doivent représenter au moins 25 % du coût total de l'opération."
+  },
+  "plafonds_revenus_logement_neuf": {
+    "note": "Revenus = max(revenu fiscal de référence N-2, coût total / 9). 4 tranches définissent la quotité.",
+    "zone_A_Abis": [49000, 73500, 88200, 102900, 117600],
+    "zone_B1":     [34500, 51750, 62100, 72450, 82800],
+    "zone_B2":     [31500, 47250, 56700, 66150, 75600],
+    "zone_C":      [28500, 42750, 51300, 59850, 68400],
+    "persons":     [1, 2, 3, 4, 5],
+    "currency": "EUR"
+  },
+  "quotite_logement_neuf_collectif": {
+    "tranche_1_lowest_income": 50,
+    "tranche_2_3": 40,
+    "tranche_4_highest_income": 20,
+    "unit": "percent_of_eligible_cost"
+  },
+  "quotite_logement_neuf_individuel": {
+    "tranche_1_lowest_income": 30,
+    "tranche_2_3": 20,
+    "tranche_4_highest_income": 10,
+    "unit": "percent_of_eligible_cost"
+  },
+  "quotite_logement_ancien": {
+    "value": 20,
+    "unit": "percent_of_eligible_cost"
+  },
+  "plafonds_couts_logement_neuf": {
+    "zone_A_Abis": [150000, 225000, 270000, 315000, 360000],
+    "zone_B1":     [135000, 202500, 243000, 283500, 324000],
+    "zone_B2":     [110000, 165000, 198000, 231000, 264000],
+    "zone_C":      [100000, 150000, 180000, 210000, 240000],
+    "persons":     [1, 2, 3, 4, 5],
+    "currency": "EUR"
+  },
+  "duree_max_ans": 25
+}
