@@ -42,33 +42,32 @@ ai-bureau transforme [Claude Code](https://claude.ai/code) en fiscaliste, compta
 
 ---
 
-## Setup en 3 minutes
+## Démarrage en 2 étapes
 
 **Prérequis** : [Claude Code](https://claude.ai/code) installé.
 
 ```bash
-# 1. Cloner
 git clone https://github.com/HugoLopes45/ai-bureau
 cd ai-bureau
-
-# 2. Copier les templates de config
-cp configs/household.example.json household.json
-cp configs/company.example.json company.json    # si tu as une société
-cp configs/wealth.example.json wealth.json
-
-# 3. Remplir avec tes vraies données
-#    Ces 3 fichiers sont gitignorés — jamais commitables
-
-# 4. Lancer Claude Code dans ce dossier
 claude
 ```
 
-Puis pose ta question :
+C'est tout. À l'ouverture de Claude Code, configure ta situation en français — chaque thème est optionnel :
+
+| Tu veux... | Tape dans Claude Code |
+|---|---|
+| Configurer ton foyer fiscal (revenus, enfants, IR) | `utilise setup-household` |
+| Configurer ta société (SASU, SARL, micro...) | `utilise setup-company` |
+| Configurer ton patrimoine (PEA, AV, immo, crypto) | `utilise setup-wealth` |
+
+Le skill te pose des questions simples en français et remplit le fichier tout seul. Pas de JSON à toucher.
+
+Ensuite, pose tes questions directement :
 
 ```
-Utilise tax-advisor pour estimer mon IR 2026
-Utilise wealth-advisor pour allouer 20k€ avec un profil modéré
-Utilise mortgage pour analyser : 280k€, 20 ans, 3,65 %, assurance 0,2 %
+Combien d'impôt sur le revenu cette année ?
+Comment allouer 20 000 € sur mon PEA avec un profil modéré ?
+Analyse cette offre de prêt : 280 000 €, 20 ans, 3,65 %
 ```
 
 ---
