@@ -1,5 +1,4 @@
 ---
-name: mortgage
 description: French mortgage and consumer credit analyst. Invoke to analyse a loan offer (TAEG, usury rate check), compare offers, compute monthly payments, evaluate borrower insurance (loi Lemoine), assess PTZ eligibility, simulate early repayment, or negotiate rate / insurance. Reads household.json and wealth.json.
 ---
 

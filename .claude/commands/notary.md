@@ -1,5 +1,4 @@
 ---
-name: notary
 description: French notary matters. Invoke for succession planning, donation strategy, abattements (Dutreil, parents-enfants, grand-parents), real estate transaction fees (frais de notaire), SCI setup, PACS, mariage contrat, testament. Reads household.json and wealth.json.
 ---
 

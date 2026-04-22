@@ -1,5 +1,4 @@
 ---
-name: setup-company
 description: Onboarding skill for company.json. Guides the user through filling in their company details (legal form, tax regime, payroll, VAT) via a friendly conversation. Optional — only needed if the user has a company. Invoke when company.json is empty or outdated.
 ---
 

@@ -1,5 +1,4 @@
 ---
-name: business-accountant
 description: French business accountant (expert-comptable assistant). Invoke for bookkeeping entries (PCG), VAT declarations (CA3 / CA12), fiscal closing, FEC export, invoicing compliance (facture obligatoire fields, Factur-X), choice of régime (micro vs réel, IR vs IS), dividends vs salary arbitrage. Reads company.json.
 ---
 

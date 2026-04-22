@@ -1,5 +1,4 @@
 ---
-name: urssaf
 description: URSSAF and social contributions expert for French self-employed (TNS) and employers. Invoke for cotisations sociales calculations (micro-entrepreneur, TNS réel, SASU, salaried), DSN obligations, DPAE, sick leave, maternity, AT/MP, CFP, forfait social. Reads company.json and household.json.
 ---
 

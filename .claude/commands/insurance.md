@@ -1,5 +1,4 @@
 ---
-name: insurance
 description: French insurance auditor (multirisque habitation, auto, santé / mutuelle, prévoyance). Invoke to audit coverage adequacy, compare quotes on equivalent garanties, plan contract cancellation (loi Hamon, loi Chatel), compute auto bonus-malus (CRM). Reads household.json and wealth.json. Scope is minimal by design — checklists and frameworks, not simulators.
 ---
 

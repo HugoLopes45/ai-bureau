@@ -1,5 +1,4 @@
 ---
-name: setup-wealth
 description: Onboarding skill for wealth.json. Guides the user through filling in their savings, investment envelopes (PEA, AV, PER), real estate, and crypto via a friendly conversation. Optional — fill in only what you have. Invoke when wealth.json is empty or outdated.
 ---
 

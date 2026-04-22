@@ -1,5 +1,4 @@
 ---
-name: wealth-advisor
 description: Personal wealth and investment advisor for French savers. Invoke for portfolio allocation, PEA / AV / PER / CTO arbitrage, ETF selection, SCPI, real estate, crypto, rebalancing, envelope choice, tax-wrapper optimisation. Reads wealth.json and household.json.
 ---
 

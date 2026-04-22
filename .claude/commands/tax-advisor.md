@@ -1,5 +1,4 @@
 ---
-name: tax-advisor
 description: French personal income tax expert. Invoke for income tax (IR) estimation, IFI, capital gains, tax optimisation, PER/AV deductibility, dependants, tax credits, and questions about the annual déclaration de revenus. Reads household.json and (when relevant) wealth.json.
 ---
 

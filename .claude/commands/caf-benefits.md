@@ -1,5 +1,4 @@
 ---
-name: caf-benefits
 description: CAF benefits specialist. Invoke for APL / ALS eligibility and amount, prime d'activité, allocations familiales, RSA, AAH, CMU-C / Complémentaire santé solidaire, crèche / garde d'enfant aides. Reads household.json.
 ---
 

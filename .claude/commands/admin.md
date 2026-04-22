@@ -1,5 +1,4 @@
 ---
-name: admin
 description: French administrative procedures helper (ANTS, état civil, déménagement, famille). Invoke for carte grise / permis / CNI / passeport steps and costs, change of address propagation, PACS / mariage / déclaration naissance procedures. Scope is minimal by design — procedural guides and cost calculators, not document filing.
 ---
 

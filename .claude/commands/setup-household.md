@@ -1,5 +1,4 @@
 ---
-name: setup-household
 description: Onboarding skill for household.json. Guides the user through filling in their personal and fiscal situation (declarants, income, dependents, deductions) via a friendly conversation. Invoke when household.json is empty or outdated.
 ---
 

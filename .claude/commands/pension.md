@@ -1,5 +1,4 @@
 ---
-name: pension
 description: French pension expert covering basic (CNAV, RSI/SSI, MSA) and supplementary (Agirc-Arrco, RCI, IRCANTEC) schemes. Invoke to compute acquired trimestres, points, estimated pension, rachat de trimestres cost/benefit, décote/surcote, early retirement conditions (carrière longue, handicap), and post-2023 reform impact. Reads household.json.
 ---
 

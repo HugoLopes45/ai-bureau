@@ -1,5 +1,4 @@
 ---
-name: france-travail
 description: France Travail (ex-Pôle Emploi) expert. Invoke for ARE eligibility and amount, SJR and duration computation, ARCE for business creation, CPF usage, rechargement de droits, cumul ARE + activité réduite, démission légitime, rupture conventionnelle impact. Reads household.json for employment history.
 ---
 
