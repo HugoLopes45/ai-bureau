@@ -1,0 +1,112 @@
+{
+  "as_of_date": "YYYY-MM-DD",
+  "liquid_assets": {
+    "checking_accounts": [
+      { "bank": "", "iban_last4": "", "balance": 0 }
+    ],
+    "savings": [
+      {
+        "type": "livret_A|LDDS|LEP|PEL|CEL|super_livret",
+        "bank": "",
+        "balance": 0,
+        "gross_annual_rate": 0.0,
+        "opened_on": "YYYY-MM-DD"
+      }
+    ]
+  },
+  "investment_envelopes": {
+    "pea": {
+      "broker": "",
+      "opened_on": "YYYY-MM-DD",
+      "cash": 0,
+      "securities_value": 0,
+      "total_deposited": 0,
+      "total_withdrawn": 0
+    },
+    "pea_pme": null,
+    "life_insurance": [
+      {
+        "provider": "",
+        "contract_name": "",
+        "opened_on": "YYYY-MM-DD",
+        "beneficiary_clause": "",
+        "funds": {
+          "euro_fund": 0,
+          "unit_linked": 0
+        },
+        "total_deposited": 0,
+        "total_withdrawn": 0
+      }
+    ],
+    "per": {
+      "provider": "",
+      "type": "PER_individuel|PER_collectif|PER_obligatoire",
+      "balance": 0,
+      "annual_contribution": 0,
+      "deduction_cap_used_current_year": 0
+    }
+  },
+  "securities": {
+    "cto_accounts": [
+      { "broker": "", "balance_cash": 0, "balance_securities": 0 }
+    ],
+    "holdings": [
+      {
+        "ticker": "",
+        "isin": "",
+        "envelope": "pea|cto|av|per",
+        "quantity": 0,
+        "avg_cost": 0,
+        "current_price": 0,
+        "currency": "EUR"
+      }
+    ]
+  },
+  "real_estate": [
+    {
+      "type": "primary_residence|rental|secondary|SCPI",
+      "address": "",
+      "purchase_date": "YYYY-MM-DD",
+      "purchase_price": 0,
+      "acquisition_costs": 0,
+      "estimated_value": 0,
+      "annual_rental_income": 0,
+      "mortgage": {
+        "outstanding": 0,
+        "interest_rate": 0.0,
+        "monthly_payment": 0,
+        "end_date": "YYYY-MM-DD"
+      }
+    }
+  ],
+  "crypto": [
+    {
+      "platform": "",
+      "asset": "",
+      "quantity": 0,
+      "cost_basis_eur": 0,
+      "current_value_eur": 0
+    }
+  ],
+  "other_assets": [
+    { "label": "", "estimated_value": 0 }
+  ],
+  "liabilities": [
+    {
+      "type": "mortgage|consumer|auto|student|other",
+      "lender": "",
+      "outstanding": 0,
+      "interest_rate": 0.0,
+      "monthly_payment": 0,
+      "end_date": "YYYY-MM-DD"
+    }
+  ],
+  "target_allocation": {
+    "equities_pct": 60,
+    "bonds_pct": 20,
+    "real_estate_pct": 15,
+    "cash_pct": 5
+  },
+  "risk_profile": "defensive|balanced|dynamic|aggressive",
+  "investment_horizon_years": 10
+}
