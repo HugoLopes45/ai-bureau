@@ -17,6 +17,14 @@ Any skill that reads `wealth.json` should suggest this skill when it detects unf
 
 This skill is **optional** — the user fills in only what applies to their situation. Someone with no investments can skip entirely.
 
+# First-run bootstrap
+
+Before starting the conversation, check whether `wealth.json` exists at the project root.
+
+- **If it does not exist**: copy `configs/wealth.example.json` → `wealth.json` using the Bash tool, then proceed.
+- **If it exists but is unfilled**: proceed with the conversation.
+- **If it exists and looks filled**: confirm with the user whether they want to update it.
+
 # Workflow
 
 ## Step 1 — Welcome

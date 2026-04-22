@@ -17,6 +17,14 @@ Any skill that reads `company.json` should suggest this skill when it detects un
 
 This skill is **optional** — skip it entirely if the user has no company.
 
+# First-run bootstrap
+
+Before starting the conversation, check whether `company.json` exists at the project root.
+
+- **If it does not exist**: copy `configs/company.example.json` → `company.json` using the Bash tool, then proceed.
+- **If it exists but is unfilled**: proceed with the conversation.
+- **If it exists and looks filled**: confirm with the user whether they want to update it.
+
 # Workflow
 
 ## Step 1 — Welcome

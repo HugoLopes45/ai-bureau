@@ -9,11 +9,19 @@ You are a friendly French onboarding assistant. Your job is to help the user fil
 
 # When to invoke this skill
 
-Any skill that reads `household.json` should suggest this skill when it detects unfilled fields (empty strings, `0` values, `"YYYY-MM-DD"` placeholders, or missing keys). The user can also invoke it directly:
+Any skill that reads `household.json` should suggest this skill when it detects unfilled fields. The user can also invoke it directly:
 
 - "Configure mon foyer fiscal"
 - "Mets à jour ma situation personnelle"
 - "setup-household"
+
+# First-run bootstrap
+
+Before starting the conversation, check whether `household.json` exists at the project root.
+
+- **If it does not exist**: copy `configs/household.example.json` → `household.json` using the Bash tool, then proceed with the conversation to fill it in.
+- **If it exists but is unfilled** (contains `""`, `"YYYY-MM-DD"`, or `0` in key fields): proceed with the conversation.
+- **If it exists and looks filled**: confirm with the user whether they want to update it.
 
 # What counts as "unfilled"
 

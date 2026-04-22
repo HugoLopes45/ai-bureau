@@ -1,9 +1,8 @@
-# --- Personal data ---
-# household.json, company.json, wealth.json are committed as empty templates.
-# Once you fill them in with your real data, add them to your LOCAL gitignore:
-#   echo "household.json" >> .git/info/exclude
-#   echo "company.json" >> .git/info/exclude
-#   echo "wealth.json" >> .git/info/exclude
+# --- Personal data (never committed) ---
+# Templates live in configs/*.example.json — setup skills copy them automatically on first run.
+household.json
+company.json
+wealth.json
 *.private.json
 
 # --- Scanned documents and attachments ---
