@@ -1,0 +1,247 @@
+[
+  {
+    "item": "Succession / donation — abattement en ligne directe descendante (enfant)",
+    "value": 100000,
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Renouvelable tous les 15 ans — inchangé depuis 2012",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/que-puis-je-donner-mes-enfants-petits-enfants-sans-avoir-payer-de-droits",
+    "source_title": "Que puis-je donner à mes enfants sans payer de droits ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Abattement de 100 000 € applicable par parent et par enfant. Un couple peut donc transmettre 200 000 € par enfant sans droits. Applicable en succession et en donation. Renouvelable intégralement tous les 15 ans. Glissement possible : si le premier don n'a pas épuisé l'abattement, le solde est utilisable sur les donations suivantes dans la fenêtre de 15 ans."
+  },
+  {
+    "item": "Succession — exonération totale conjoint survivant ou partenaire de PACS",
+    "value": null,
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Depuis loi n°2007-1223 du 21 août 2007 (loi TEPA), inchangé",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Le conjoint survivant et le partenaire de PACS sont totalement exonérés de droits de succession depuis 2007. Cette exonération ne s'applique pas aux donations entre époux/partenaires de PACS de leur vivant (abattement de 80 724 € applicable)."
+  },
+  {
+    "item": "Donation entre époux / partenaires de PACS (donation au dernier vivant) — abattement",
+    "value": 80724,
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Abattement de 80 724 € applicable aux donations entre époux ou partenaires de PACS de leur vivant. Ne s'applique pas en cas de succession (exonération totale pour le survivant)."
+  },
+  {
+    "item": "Succession / donation — abattement petit-enfant",
+    "value": 31865,
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Renouvelable tous les 15 ans — inchangé depuis 2012",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/que-puis-je-donner-mes-enfants-petits-enfants-sans-avoir-payer-de-droits",
+    "source_title": "Que puis-je donner à mes enfants/petits-enfants sans payer de droits ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Abattement de 31 865 € par grand-parent et par petit-enfant. Un enfant peut recevoir jusqu'à 4 × 31 865 € = 127 460 € de ses 4 grands-parents sans droits (hors don de somme d'argent exonéré distinct)."
+  },
+  {
+    "item": "Succession / donation — abattement arrière-petit-enfant",
+    "value": 5310,
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Renouvelable tous les 15 ans",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/que-puis-je-donner-mes-enfants-petits-enfants-sans-avoir-payer-de-droits",
+    "source_title": "Que puis-je donner à mes enfants/petits-enfants sans payer de droits ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Abattement de 5 310 € par arrière-grand-parent et par arrière-petit-enfant."
+  },
+  {
+    "item": "Succession / donation — abattement frère ou sœur",
+    "value": 15932,
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Renouvelable tous les 15 ans — inchangé",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Abattement de 15 932 € applicable entre frères et sœurs. Les frères et sœurs peuvent être exonérés de droits de succession sous conditions strictes (célibataire/veuf/divorcé, vivant avec le défunt depuis au moins 5 ans, âgé de plus de 50 ans ou atteint d'infirmité)."
+  },
+  {
+    "item": "Succession / donation — abattement neveu ou nièce",
+    "value": 7967,
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Renouvelable tous les 15 ans — inchangé",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Abattement de 7 967 € applicable en faveur des neveux et nièces (en représentation de leurs parents prédécédés ou renonçants)."
+  },
+  {
+    "item": "Succession / donation — abattement personnes handicapées (en sus des abattements normaux)",
+    "value": 159325,
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Renouvelable tous les 15 ans — inchangé",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Abattement supplémentaire de 159 325 € cumulable avec les abattements normaux, pour les personnes atteintes d'une infirmité physique ou mentale les mettant dans l'impossibilité de travailler dans des conditions normales (CGI art. 779, II)."
+  },
+  {
+    "item": "Don manuel de somme d'argent — exonération don familial (Pacte Dutreil argent)",
+    "value": 31865,
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Renouvelable tous les 15 ans — inchangé depuis 2004 (CGI art. 790 G)",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/que-puis-je-donner-mes-enfants-petits-enfants-sans-avoir-payer-de-droits",
+    "source_title": "Que puis-je donner à mes enfants/petits-enfants sans payer de droits ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Don de somme d'argent exonéré à hauteur de 31 865 € par donateur et par bénéficiaire, cumulable avec les abattements normaux (100 000 € enfant, 31 865 € petit-enfant, etc.). Conditions : donateur < 80 ans, bénéficiaire majeur ou émancipé. Renouvelable tous les 15 ans. Déclaration en ligne obligatoire depuis le 1er janvier 2026."
+  },
+  {
+    "item": "Don pour acquisition ou rénovation énergétique du logement — exonération temporaire",
+    "value": {
+      "plafond_par_donateur": 100000,
+      "plafond_par_beneficiaire": 300000
+    },
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Du 15 février 2025 au 31 décembre 2026",
+    "source_url": "https://bofip.impots.gouv.fr/bofip/3362-PGP.html/identifiant=BOI-ENR-DMTG-20-20-20-20250904",
+    "source_title": "ENR - Successions/Donations - Exonérations — bofip.impots.gouv.fr",
+    "status": "verified",
+    "notes": "Exonération temporaire (15/02/2025–31/12/2026) pour les dons affectés à l'acquisition de la résidence principale ou à des travaux de rénovation énergétique : 100 000 € par donateur, plafond global de 300 000 € par bénéficiaire toutes sources confondues. Cumulable avec les abattements classiques."
+  },
+  {
+    "item": "Droits de succession en ligne directe — barème, tranche 5% (0 à 8 072 €)",
+    "value": { "min": 0, "max": 8072, "rate": 0.05 },
+    "unit": "table",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé depuis 2012 (CGI art. 777)",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Barème applicable après abattement. Ligne directe = parents, enfants, petits-enfants, arrière-petits-enfants."
+  },
+  {
+    "item": "Droits de succession en ligne directe — barème, tranche 10% (8 073 € à 12 109 €)",
+    "value": { "min": 8072, "max": 12109, "rate": 0.10 },
+    "unit": "table",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé depuis 2012 (CGI art. 777)",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": null
+  },
+  {
+    "item": "Droits de succession en ligne directe — barème, tranche 15% (12 110 € à 15 932 €)",
+    "value": { "min": 12109, "max": 15932, "rate": 0.15 },
+    "unit": "table",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé depuis 2012 (CGI art. 777)",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": null
+  },
+  {
+    "item": "Droits de succession en ligne directe — barème, tranche 20% (15 933 € à 552 324 €)",
+    "value": { "min": 15932, "max": 552324, "rate": 0.20 },
+    "unit": "table",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé depuis 2012 (CGI art. 777)",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Tranche la plus fréquemment applicable pour les transmissions patrimoniales courantes après abattement."
+  },
+  {
+    "item": "Droits de succession en ligne directe — barème, tranche 30% (552 325 € à 902 838 €)",
+    "value": { "min": 552324, "max": 902838, "rate": 0.30 },
+    "unit": "table",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé depuis 2012 (CGI art. 777)",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": null
+  },
+  {
+    "item": "Droits de succession en ligne directe — barème, tranche 40% (902 839 € à 1 805 677 €)",
+    "value": { "min": 902838, "max": 1805677, "rate": 0.40 },
+    "unit": "table",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé depuis 2012 (CGI art. 777)",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": null
+  },
+  {
+    "item": "Droits de succession en ligne directe — barème, tranche 45% (au-delà de 1 805 677 €)",
+    "value": { "min": 1805677, "max": null, "rate": 0.45 },
+    "unit": "table",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé depuis 2012 (CGI art. 777)",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": null
+  },
+  {
+    "item": "Droits de succession entre frères et sœurs — barème, tranche 35% (0 à 24 430 €)",
+    "value": { "min": 0, "max": 24430, "rate": 0.35 },
+    "unit": "table",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé (CGI art. 777)",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Applicable après abattement de 15 932 €."
+  },
+  {
+    "item": "Droits de succession entre frères et sœurs — barème, tranche 45% (au-delà de 24 430 €)",
+    "value": { "min": 24430, "max": null, "rate": 0.45 },
+    "unit": "table",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé (CGI art. 777)",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": null
+  },
+  {
+    "item": "Droits de succession — parents jusqu'au 4ème degré (oncles, tantes, neveux, nièces, cousins germains)",
+    "value": 0.55,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé (CGI art. 777)",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Taux forfaitaire unique de 55% applicable aux transmissions entre parents jusqu'au 4ème degré (au-delà des frères et sœurs). Abattement : 7 967 € (neveux/nièces)."
+  },
+  {
+    "item": "Droits de succession — non-parents et parents au-delà du 4ème degré",
+    "value": 0.60,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé (CGI art. 777)",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Taux forfaitaire unique de 60% pour les non-parents (concubins, amis, etc.) et les parents au-delà du 4ème degré. Abattement : 1 594 €."
+  },
+  {
+    "item": "Droits de succession — abattement autres (hors ligne directe, hors frères/sœurs)",
+    "value": 1594,
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Inchangé",
+    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-dois-je-calculer-les-droits-de-succession",
+    "source_title": "Comment calculer les droits de succession ? — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Abattement résiduel de 1 594 € applicable à tous les héritiers ou légataires ne bénéficiant pas d'un abattement spécifique plus élevé."
+  }
+]

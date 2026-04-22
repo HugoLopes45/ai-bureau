@@ -1,0 +1,112 @@
+[
+  {
+    "item": "IS — taux réduit PME (bénéfice ≤ 42 500 €)",
+    "value": 15,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Exercices ouverts depuis le 2023-01-01",
+    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Taux réduit PME : 15 % sur la fraction du bénéfice ≤ 42 500 €. Conditions cumulatives : (1) CA HT < 10 M€, (2) capital entièrement libéré, (3) capital détenu à ≥ 75 % par des personnes physiques (ou sociétés elles-mêmes éligibles au taux réduit). Seuil relevé de 38 120 € à 42 500 € par la LF 2023."
+  },
+  {
+    "item": "IS — taux normal (bénéfice > 42 500 € ou hors PME)",
+    "value": 25,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Exercices ouverts depuis le 2022-01-01",
+    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Taux normal de droit commun : 25 %. Applicable à la fraction du bénéfice > 42 500 € pour les PME, ou à la totalité du bénéfice pour les sociétés ne remplissant pas les conditions du taux réduit."
+  },
+  {
+    "item": "IS — contribution sociale sur les bénéfices (CSB)",
+    "value": 3.3,
+    "unit": "percent_of_IS_base",
+    "applicable_year": 2026,
+    "applicable_period": "Permanente",
+    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
+    "status": "verified",
+    "notes": "CSB = 3,3 % de l'IS calculé après abattement de 763 000 €. S'applique aux sociétés dont l'IS brut > 763 000 €. En pratique uniquement pour les grandes entreprises (CA > ~3 M€). Non applicable aux PME dont l'IS < 763 000 €."
+  },
+  {
+    "item": "IS — seuil de bénéfice pour taux réduit PME",
+    "value": 42500,
+    "unit": "EUR_per_year",
+    "applicable_year": 2026,
+    "applicable_period": "Exercices ouverts depuis le 2023-01-01",
+    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Seuil introduit par la Loi de Finances 2023, portant la limite de 38 120 € à 42 500 €."
+  },
+  {
+    "item": "IS — condition CA pour taux réduit PME",
+    "value": 10000000,
+    "unit": "EUR_CA_HT",
+    "applicable_year": 2026,
+    "applicable_period": "Permanente",
+    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
+    "status": "verified",
+    "notes": "CA HT strictement inférieur à 10 M€ pour l'exercice concerné. Si CA ≥ 10 M€, tout le bénéfice est taxé au taux normal 25 %, quelle que soit la taille de la société."
+  },
+  {
+    "item": "IS — délai de paiement des acomptes (régime général)",
+    "value": "15 mars, 15 juin, 15 septembre, 15 décembre",
+    "unit": "dates",
+    "applicable_year": 2026,
+    "applicable_period": "Permanente",
+    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
+    "status": "verified",
+    "notes": "4 acomptes trimestriels. Chaque acompte = 25 % de l'IS de référence (IS N-1 ou estimation N). Dispense d'acomptes si IS de l'exercice précédent < 3 000 €. Solde à payer 3 mois et 15 jours après clôture."
+  },
+  {
+    "item": "IS — dispense d'acomptes (IS de référence)",
+    "value": 3000,
+    "unit": "EUR",
+    "applicable_year": 2026,
+    "applicable_period": "Permanente",
+    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Dispense totale d'acomptes si l'IS dû au titre de l'exercice précédent est inférieur à 3 000 €. Très fréquent pour les premières années ou les petites SASU/EURL."
+  },
+  {
+    "item": "IS — liasse fiscale (formulaire 2065)",
+    "value": "2065",
+    "unit": "formulaire_impots",
+    "applicable_year": 2026,
+    "applicable_period": "Permanente",
+    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
+    "status": "verified",
+    "notes": "Télédéclaration obligatoire via EDI (partenaire agréé) ou EFI (espace professionnel impots.gouv.fr). Délai : 3e mois et 15e jour après la clôture de l'exercice. Pour une clôture au 31/12/N → dépôt au 15/04/N+1 (ou date DGFiP si différente)."
+  },
+  {
+    "item": "Dividendes SASU/EURL IS — PFU (prélèvement forfaitaire unique)",
+    "value": 30,
+    "unit": "percent",
+    "applicable_year": 2026,
+    "applicable_period": "Permanente",
+    "source_url": "https://www.impots.gouv.fr/particulier/le-prelevement-forfaitaire-unique-pfu",
+    "source_title": "Prélèvement forfaitaire unique (PFU) — impots.gouv.fr",
+    "status": "verified",
+    "notes": "PFU = 12,8 % IR + 17,2 % prélèvements sociaux. S'applique aux dividendes versés par SASU/EURL IS à l'associé personne physique. Taux réduit possible si option pour le barème (rentable si TMI < 12,8 %). Pas de cotisations sociales TNS sur les dividendes d'une SASU."
+  },
+  {
+    "item": "Dividendes EURL IS gérant majoritaire — cotisations TNS (part > 10 % capital)",
+    "value": "Oui — art. L131-6 CSS",
+    "unit": "flag",
+    "applicable_year": 2026,
+    "applicable_period": "Permanente",
+    "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038610191",
+    "source_title": "Article L131-6 Code de la Sécurité Sociale — Legifrance",
+    "status": "verified",
+    "notes": "Pour un gérant majoritaire d'EURL/SARL à l'IS, la fraction des dividendes excédant 10 % du capital social + primes d'émission + sommes versées en compte courant associé est réintégrée dans l'assiette des cotisations TNS. Ne s'applique pas à la SASU (associé unique, président assimilé salarié)."
+  }
+]

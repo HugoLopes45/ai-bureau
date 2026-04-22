@@ -4,11 +4,11 @@
     "value": 150,
     "unit": "EUR",
     "applicable_year": 2026,
-    "applicable_period": "Since 2026-04-02",
-    "source_url": "https://www.moncompteformation.gouv.fr/espace-public/une-participation-financiere-obligatoire-pour-mobiliser-vos-droits-cpf",
-    "source_title": "Participation financière obligatoire CPF — Mon Compte Formation",
+    "applicable_period": "Since 2026-04-01",
+    "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053742996",
+    "source_title": "Décret n°2026-234 du 30 mars 2026 — Légifrance",
     "status": "verified",
-    "notes": "Historique : 100 € (2024-05-02, décret n°2024-394), 103,20 € (2026-01-05, revalorisation annuelle), 150 € (2026-04-02, décret n°2026-234). Montant revalorisé chaque année par arrêté."
+    "notes": "Historique : 100 € (2024-05-02, décret n°2024-394), 102,23 € (2025-01-01, arrêté revalorisation 2025), 103,20 € (2026-01-01, arrêté du 30 déc 2025, JORF JORFTEXT000053275994), 150 € (2026-04-01, décret n°2026-234 du 30 mars 2026). Montant revalorisé chaque année par arrêté au 1er janvier ; la hausse à 150 € est une augmentation légale exceptionnelle (loi de finances 2026)."
   },
   {
     "item": "CPF — exonération participation obligatoire (abondement employeur)",
@@ -16,8 +16,8 @@
     "unit": "rule",
     "applicable_year": 2026,
     "applicable_period": "From 2024-05-02",
-    "source_url": "https://www.moncompteformation.gouv.fr/espace-public/une-participation-financiere-obligatoire-pour-mobiliser-vos-droits-cpf",
-    "source_title": "Participation financière obligatoire CPF — Mon Compte Formation",
+    "source_url": "https://www.service-public.fr/particuliers/vosdroits/F38480",
+    "source_title": "Compte personnel de formation (CPF) — Service Public",
     "status": "verified",
     "notes": "Sont exonérés : demandeurs d'emploi, bénéficiaires d'un abondement employeur, bénéficiaires d'abondement OPCO ou branche, titulaires d'un C2P, victimes d'AT/MP. L'employeur peut rembourser les 150 € si l'abondement n'était pas en place avant la formation."
   }

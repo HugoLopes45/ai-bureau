@@ -2,11 +2,10 @@
   {
     "item": "Retraite — âge légal de départ par cohort (réforme 2023)",
     "value": {
-      "avant_1963-01-01": {"age_legal": "62 ans", "note": "Non impacté par la réforme 2023"},
-      "1961-01-01_to_1961-08-31": {"age_legal": "62 ans", "trimestres_taux_plein": 168},
+      "avant_1961-09-01": {"age_legal": "62 ans", "trimestres_taux_plein": 168, "note": "Non impacté par la réforme 2023 — âge légal 62 ans inchangé"},
       "1961-09-01_to_1961-12-31": {"age_legal": "62 ans 3 mois", "trimestres_taux_plein": 169},
       "1962": {"age_legal": "62 ans 6 mois", "trimestres_taux_plein": 169},
-      "1963-01-01_to_1965-03-31": {"age_legal": "62 ans 9 mois", "trimestres_taux_plein": 170},
+      "1963-01-01_to_1965-03-31": {"age_legal": "62 ans 9 mois", "trimestres_taux_plein": 170, "note": "Couvre 1963, 1964 et nés entre janv-mars 1965 (trois cohortes distinctes, même âge légal et même nombre de trimestres)"},
       "1965-04-01_to_1965-12-31": {"age_legal": "63 ans", "trimestres_taux_plein": 171},
       "1966": {"age_legal": "63 ans 3 mois", "trimestres_taux_plein": 172},
       "1967": {"age_legal": "63 ans 6 mois", "trimestres_taux_plein": 172},
@@ -19,7 +18,7 @@
     "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17904",
     "source_title": "Préparer sa retraite — Service Public (page vérifiée 2026)",
     "status": "verified",
-    "notes": "172 trimestres = 43 ans. Source vérifie les cohortes 1958-2024 sur la même page. Nés avant 1958-1960 : 167 trimestres (41 ans 9 mois). Tableaux complets disponibles sur info-retraite.fr."
+    "notes": "172 trimestres = 43 ans. Table vérifiée contre info-retraite.fr (réforme retraites — âge légal de départ, consulté avril 2026). Nés avant 1961-09-01 : non impactés par la réforme (âge légal 62 ans, 168 trimestres selon leur génération). Tableaux complets disponibles sur info-retraite.fr."
   },
   {
     "item": "Agirc-Arrco — valeur de service du point",
@@ -49,9 +48,9 @@
     "unit": "percent_of_reference_salary_per_trimestre",
     "applicable_year": 2026,
     "applicable_period": "2026",
-    "source_url": "https://www.lassuranceretraite.fr/portail-info/home/actif/ma-carriere/rachat-trimestres-retraite.html",
-    "source_title": "Racheter des trimestres — L'Assurance retraite",
+    "source_url": "https://legislation.lassuranceretraite.fr/Pdf/circulaire_cnav_2026_04_05022026.pdf",
+    "source_title": "Circulaire CNAV 2026-04 du 5 février 2026 — barème rachat de trimestres",
     "status": "not_found",
-    "notes": "Deux options : (1) taux seul (améliore uniquement le taux de liquidation), (2) taux et durée d'assurance (améliore taux et nombre de trimestres). Maximum 12 trimestres rachetables. Coût calculé sur les 12 derniers mois de revenus cotisés selon l'âge. Les barèmes précis ne sont pas publiés sous forme de tableau statique — ils sont disponibles via le simulateur en ligne lassuranceretraite.fr ou sur demande auprès de la CNAV (3960). Barèmes 2026 non extractibles depuis les pages publiques sans le simulateur authentifié."
+    "notes": "Deux options : (1) taux seul (améliore uniquement le taux de liquidation), (2) taux et durée d'assurance (améliore taux et nombre de trimestres). Maximum 12 trimestres rachetables. Coût calculé selon les 12 derniers mois de revenus cotisés et l'âge au moment de la demande. Le barème 2026 figure en annexe de la circulaire CNAV 2026-04 (PDF — non extractible sans parsing). Disponible aussi via le simulateur authentifié sur lassuranceretraite.fr ou en contactant la CNAV (3960)."
   }
 ]

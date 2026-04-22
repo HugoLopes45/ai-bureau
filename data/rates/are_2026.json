@@ -38,10 +38,10 @@
     "unit": "EUR_per_day",
     "applicable_year": 2026,
     "applicable_period": "Since 2025-07-01",
-    "source_url": "https://www.unedic.org/publications/revalorisation-des-allocations-d-assurance-chomage-mode-d-emploi-juin-2025",
-    "source_title": "Revalorisation allocations assurance chômage juin 2025 — Unédic",
+    "source_url": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocations/a-chaque-situation-son-allocation/allocations-chomage-are/a-combien-puis-je-pretendre.html",
+    "source_title": "ARE — montant de l'allocation — France Travail",
     "status": "verified",
-    "notes": "Revalorisation +0,5 % au 1er juillet 2025 (ancienne valeur : 13,11 €). Valeur 2026 attendue après revalorisation juillet 2026 (hypothèse Unédic : +0,6 %)."
+    "notes": "Revalorisation +0,5 % au 1er juillet 2025 (ancienne valeur : 13,11 €). Valeur 2026 attendue après revalorisation juillet 2026. Source primaire Unédic (non gouvernementale) remplacée par source officielle France Travail."
   },
   {
     "item": "ARE — plancher (minimum journalier net)",
@@ -49,10 +49,10 @@
     "unit": "EUR_per_day",
     "applicable_year": 2026,
     "applicable_period": "Since 2025-07-01",
-    "source_url": "https://www.unedic.org/publications/revalorisation-des-allocations-d-assurance-chomage-mode-d-emploi-juin-2025",
-    "source_title": "Revalorisation allocations assurance chômage juin 2025 — Unédic",
+    "source_url": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocations/a-chaque-situation-son-allocation/allocations-chomage-are/a-combien-puis-je-pretendre.html",
+    "source_title": "ARE — montant de l'allocation — France Travail",
     "status": "verified",
-    "notes": "Non applicable en cas de travail à temps partiel. Valeur post-revalorisation juillet 2025. Juillet 2026 non encore publié (Q2 2026)."
+    "notes": "Non applicable en cas de travail à temps partiel. Valeur post-revalorisation juillet 2025. Juillet 2026 non encore publié (Q2 2026). Source primaire Unédic (non gouvernementale) remplacée par source officielle France Travail."
   },
   {
     "item": "ARE — plafond (contrats fin avant 2025-04-01)",
