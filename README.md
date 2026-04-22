@@ -14,9 +14,11 @@ ai-bureau transforme [Claude Code](https://claude.ai/code) en fiscaliste, compta
 
 ---
 
-## 11 skills, 11 problèmes résolus
+## 15 commandes
 
-| Problème | Skill | Domaine |
+### Conseils
+
+| Problème | Commande | Domaine |
 |---|---|---|
 | "Combien d'impôt sur le revenu cette année ?" | `tax-advisor` | IR 2026, niches, PFU, IFI |
 | "Comment allouer 30 000 € sur mon PEA ?" | `wealth-advisor` | PEA, AV, PER, ETF, SCPI, crypto |
@@ -29,6 +31,20 @@ ai-bureau transforme [Claude Code](https://claude.ai/code) en fiscaliste, compta
 | "Succession : abattements et frais de notaire ?" | `notary` | Donation, SCI, droits de mutation |
 | "Mon contrat habitation me couvre-t-il vraiment ?" | `insurance` | Résiliation Hamon/Châtel, prévoyance |
 | "Refaire ma carte grise — coût exact ?" | `admin` | ANTS, CNI, PACS, changement d'adresse |
+
+### Configuration (optionnelle)
+
+| Commande | Ce qu'elle fait |
+|---|---|
+| `setup-household` | Configure ton foyer fiscal (revenus, enfants, situation maritale) |
+| `setup-company` | Configure ta société (forme juridique, rémunération, TVA) |
+| `setup-wealth` | Configure ton patrimoine (PEA, AV, immo, crypto, PER) |
+
+### Maintenance
+
+| Commande | Ce qu'elle fait |
+|---|---|
+| `refresh-rates` | Met à jour tous les barèmes `data/rates/` depuis les sources officielles — à lancer une fois par an en janvier/février |
 
 ---
 
