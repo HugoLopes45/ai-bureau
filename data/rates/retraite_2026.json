@@ -1,11 +1,22 @@
-[
+{
+  "_meta": {
+    "titre": "Retraite — âges légaux, valeur du point Agirc-Arrco et rachat de trimestres 2026",
+    "description": "Contient les âges légaux de départ à la retraite par génération (réforme 2023), la valeur du point Agirc-Arrco pour la retraite complémentaire des salariés, et les informations sur le rachat de trimestres.",
+    "a_qui_ca_sert": "Utilisé par le skill retraite pour calculer l'âge de départ d'un salarié ou indépendant, estimer sa retraite complémentaire, ou informer sur le coût d'un rachat de trimestres.",
+    "frequence_revision": "La valeur du point Agirc-Arrco est révisée chaque novembre. Les âges légaux évoluent progressivement selon la réforme de 2023. À vérifier en novembre (revalorisation Agirc-Arrco) et après toute réforme des retraites.",
+    "derniere_verification": "2026-04-22",
+    "prochaine_revision": "Novembre 2026 (revalorisation éventuelle du point Agirc-Arrco)",
+    "source_principale": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17904",
+    "note_utilisateur": "Ce fichier est mis à jour chaque novembre pour la valeur du point Agirc-Arrco. Les âges légaux suivent un calendrier connu jusqu'en 2030."
+  },
+  "donnees": [
   {
     "item": "Retraite — âge légal de départ par cohort (réforme 2023)",
     "value": {
       "avant_1961-09-01": {"age_legal": "62 ans", "trimestres_taux_plein": 168, "note": "Non impacté par la réforme 2023 — âge légal 62 ans inchangé"},
       "1961-09-01_to_1961-12-31": {"age_legal": "62 ans 3 mois", "trimestres_taux_plein": 169},
       "1962": {"age_legal": "62 ans 6 mois", "trimestres_taux_plein": 169},
-      "1963-01-01_to_1965-03-31": {"age_legal": "62 ans 9 mois", "trimestres_taux_plein": 170, "note": "Couvre 1963, 1964 et nés entre janv-mars 1965 (trois cohortes distinctes, même âge légal et même nombre de trimestres)"},
+      "1963-01-01_to_1965-03-31": {"age_legal": "62 ans 9 mois", "trimestres_taux_plein": 170, "note": "Couvre 1963, 1964 et nés entre janvier-mars 1965 : même âge légal et même nombre de trimestres pour ces trois cohortes"},
       "1965-04-01_to_1965-12-31": {"age_legal": "63 ans", "trimestres_taux_plein": 171},
       "1966": {"age_legal": "63 ans 3 mois", "trimestres_taux_plein": 172},
       "1967": {"age_legal": "63 ans 6 mois", "trimestres_taux_plein": 172},
@@ -14,33 +25,33 @@
     },
     "unit": "cohort_table",
     "applicable_year": 2026,
-    "applicable_period": "Loi n°2023-270 du 14 avril 2023, en vigueur progressivement",
+    "applicable_period": "Loi n°2023-270 du 14 avril 2023, applicable progressivement selon la génération",
     "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17904",
     "source_title": "Préparer sa retraite — Service Public (page vérifiée 2026)",
     "status": "verified",
-    "notes": "172 trimestres = 43 ans. Table vérifiée contre info-retraite.fr (réforme retraites — âge légal de départ, consulté avril 2026). Nés avant 1961-09-01 : non impactés par la réforme (âge légal 62 ans, 168 trimestres selon leur génération). Tableaux complets disponibles sur info-retraite.fr."
+    "notes": "La réforme des retraites de 2023 a progressivement relevé l'âge légal vers 64 ans selon votre année de naissance. 172 trimestres représentent 43 ans de cotisation. Pour les personnes nées avant septembre 1961, l'âge légal de 62 ans reste inchangé. Pour connaître précisément votre situation, consultez info-retraite.fr avec votre compte personnel."
   },
   {
     "item": "Agirc-Arrco — valeur de service du point",
     "value": 1.4386,
     "unit": "EUR_per_point",
     "applicable_year": 2026,
-    "applicable_period": "Since 2024-11-01 (inchangé au 2025-11-01)",
+    "applicable_period": "Depuis le 1er novembre 2024 (inchangé au 1er novembre 2025)",
     "source_url": "https://www.agirc-arrco.fr/particuliers/ma-retraite/comprendre-ma-retraite/points-de-retraite-comment-sont-ils-obtenus/",
     "source_title": "Points de retraite Agirc-Arrco — agirc-arrco.fr",
     "status": "verified",
-    "notes": "Pas de revalorisation au 1er novembre 2025 (décision annoncée en octobre 2025 par communiqué de presse Agirc-Arrco). Valeur stable depuis novembre 2024. Prochaine revalorisation éventuelle : novembre 2026."
+    "notes": "Chaque point Agirc-Arrco que vous avez accumulé pendant votre carrière de salarié vous rapporte 1,4386 € de retraite complémentaire par an (soit environ 0,12 € par mois). Pour estimer votre retraite complémentaire, multipliez votre nombre de points par cette valeur. La valeur du point n'a pas été revalorisée en novembre 2025 — la prochaine revalorisation éventuelle est attendue en novembre 2026."
   },
   {
     "item": "Agirc-Arrco — prix d'achat du point (salaire de référence) 2026",
     "value": 20.1877,
     "unit": "EUR_per_point",
     "applicable_year": 2026,
-    "applicable_period": "Since 2025-01-01 (same as 2025, no increase)",
+    "applicable_period": "Depuis le 1er janvier 2025 (identique à 2025, pas de hausse en 2026)",
     "source_url": "https://www.agirc-arrco.fr/particuliers/ma-retraite/comprendre-ma-retraite/points-de-retraite-comment-sont-ils-obtenus/",
     "source_title": "Points de retraite Agirc-Arrco — agirc-arrco.fr",
     "status": "verified",
-    "notes": "Valeur identique en 2025 et 2026 (20,1877 €). En 2024 : 19,6321 €. Le prix d'achat évolue chaque 1er janvier 2024-2026 selon le salaire annuel moyen des actifs cotisants (ANI 5 oct 2023)."
+    "notes": "Pour acquérir 1 point Agirc-Arrco, il faut cotiser sur 20,1877 € de salaire brut. Ce « salaire de référence » est identique en 2025 et 2026 (il était de 19,6321 € en 2024). Le rapport entre la valeur de service (1,4386 €) et le prix d'achat (20,1877 €) donne le rendement du système — environ 7,1 % brut."
   },
   {
     "item": "Rachat de trimestres — barème par âge et option",
@@ -51,6 +62,7 @@
     "source_url": "https://legislation.lassuranceretraite.fr/Pdf/circulaire_cnav_2026_04_05022026.pdf",
     "source_title": "Circulaire CNAV 2026-04 du 5 février 2026 — barème rachat de trimestres",
     "status": "not_found",
-    "notes": "Deux options : (1) taux seul (améliore uniquement le taux de liquidation), (2) taux et durée d'assurance (améliore taux et nombre de trimestres). Maximum 12 trimestres rachetables. Coût calculé selon les 12 derniers mois de revenus cotisés et l'âge au moment de la demande. Le barème 2026 figure en annexe de la circulaire CNAV 2026-04 (PDF — non extractible sans parsing). Disponible aussi via le simulateur authentifié sur lassuranceretraite.fr ou en contactant la CNAV (3960)."
+    "notes": "Le rachat de trimestres vous permet d'acheter des trimestres manquants pour partir plus tôt à la retraite ou améliorer votre taux. Il existe deux options : (1) améliorer uniquement votre taux de liquidation, (2) améliorer à la fois votre taux et votre durée d'assurance. Vous pouvez racheter au maximum 12 trimestres. Le coût dépend de votre âge et de vos revenus au moment de la demande. Le barème 2026 figure dans la circulaire CNAV 2026-04 de février 2026, mais il n'a pas pu être extrait automatiquement. Pour connaître votre coût exact, utilisez le simulateur de rachat sur lassuranceretraite.fr (connexion requise) ou appelez la CNAV au 3960."
   }
-]
+  ]
+}

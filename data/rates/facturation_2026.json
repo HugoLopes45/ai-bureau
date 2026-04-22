@@ -1,4 +1,15 @@
-[
+{
+  "_meta": {
+    "titre": "Règles de facturation et facturation électronique 2026",
+    "description": "Contient les mentions obligatoires sur les factures, les délais de paiement légaux, les pénalités de retard et le calendrier de la réforme de la facturation électronique.",
+    "a_qui_ca_sert": "Utilisé par le skill facturation pour vérifier qu'une facture est conforme, calculer des pénalités de retard, ou informer sur les obligations de facturation électronique selon la taille de l'entreprise.",
+    "frequence_revision": "Les mentions obligatoires et délais de paiement sont stables. Le calendrier de la facturation électronique doit être vérifié en cas de nouveau décret. Les pénalités de retard changent chaque semestre (taux BCE).",
+    "derniere_verification": "2026-04-22",
+    "prochaine_revision": "Septembre 2026 (entrée en vigueur de la facturation électronique pour les grandes entreprises)",
+    "source_principale": "https://www.impots.gouv.fr/professionnel/tva",
+    "note_utilisateur": "La section sur la facturation électronique est particulièrement importante en 2026 : des obligations nouvelles entrent en vigueur à partir du 1er septembre 2026 pour les grandes entreprises et ETI."
+  },
+  "donnees": [
   {
     "item": "Mentions obligatoires facture — date d'émission",
     "value": "Obligatoire",
@@ -8,7 +19,7 @@
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "Facturation — mentions obligatoires — impots.gouv.fr",
     "status": "verified",
-    "notes": "Date d'émission de la facture. Base légale : art. L441-9 C. com. + art. 242 nonies A Ann. II CGI."
+    "notes": "La date d'émission de la facture doit obligatoirement figurer sur le document. Cette règle est définie par l'article L441-9 du Code de commerce et l'article 242 nonies A de l'Annexe II du CGI."
   },
   {
     "item": "Mentions obligatoires facture — numéro séquentiel unique",
@@ -19,7 +30,7 @@
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "Facturation — mentions obligatoires — impots.gouv.fr",
     "status": "verified",
-    "notes": "Numéro basé sur une séquence chronologique continue sans rupture. Possible de commencer par l'année (ex : 2026-001). Toute rupture de numérotation est une irrégularité."
+    "notes": "Chaque facture doit porter un numéro unique basé sur une séquence chronologique continue, sans aucun trou ni rupture. Vous pouvez commencer la numérotation par l'année (exemple : 2026-001, 2026-002…). Toute rupture dans la numérotation est une irrégularité comptable."
   },
   {
     "item": "Mentions obligatoires facture — identité du vendeur/prestataire",
@@ -30,7 +41,7 @@
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "Facturation — mentions obligatoires — impots.gouv.fr",
     "status": "verified",
-    "notes": "Dénomination sociale (ou nom/prénom pour EI), adresse, numéro SIREN/SIRET, forme juridique, capital social (pour sociétés). Numéro TVA intracommunautaire si assujetti."
+    "notes": "La facture doit indiquer votre identité complète : pour une société, la raison sociale, l'adresse, le numéro SIREN/SIRET, la forme juridique et le capital social. Pour un entrepreneur individuel, votre nom, prénom et adresse. Si vous êtes assujetti à la TVA, votre numéro de TVA intracommunautaire est également obligatoire."
   },
   {
     "item": "Mentions obligatoires facture — identité du client",
@@ -41,7 +52,7 @@
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "Facturation — mentions obligatoires — impots.gouv.fr",
     "status": "verified",
-    "notes": "Nom ou dénomination sociale, adresse de facturation du client. Pour les professionnels assujettis à la TVA : numéro TVA intracommunautaire du client."
+    "notes": "Le nom ou la raison sociale du client et son adresse de facturation doivent figurer sur la facture. Pour les clients professionnels assujettis à la TVA (entreprises françaises et européennes), leur numéro de TVA intracommunautaire doit également être indiqué."
   },
   {
     "item": "Mentions obligatoires facture — désignation des produits/services",
@@ -52,7 +63,7 @@
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "Facturation — mentions obligatoires — impots.gouv.fr",
     "status": "verified",
-    "notes": "Désignation précise, quantité, prix unitaire HT, taux de TVA applicable, montant TVA, total TTC."
+    "notes": "La description de ce que vous vendez ou du service que vous fournissez doit être précise. Pour chaque ligne, indiquez la désignation, la quantité, le prix unitaire hors taxes, le taux de TVA applicable, le montant de TVA et le total toutes taxes comprises."
   },
   {
     "item": "Mentions obligatoires facture — conditions de paiement et pénalités",
@@ -63,7 +74,7 @@
     "source_url": "https://www.economie.gouv.fr/entreprises/delais-paiement",
     "source_title": "Délais de paiement — economie.gouv.fr",
     "status": "verified",
-    "notes": "Délai de paiement, date d'échéance, taux de pénalité de retard (≥ 3× taux BCE + 10 pts, soit taux minimum légal 2026 à vérifier), indemnité forfaitaire de recouvrement : 40 €. Base légale : art. L441-10 à L441-16 C. com."
+    "notes": "Pour les factures entre professionnels (B2B), vous devez obligatoirement mentionner : le délai de paiement, la date d'échéance, le taux des pénalités de retard (minimum 3 fois le taux de la Banque centrale européenne, soit environ 17,95 % en 2026 H1), et l'indemnité forfaitaire de recouvrement de 40 €. Cette règle est définie par l'article L441-10 du Code de commerce."
   },
   {
     "item": "Délai de paiement B2B — délai légal",
@@ -74,7 +85,7 @@
     "source_url": "https://www.economie.gouv.fr/entreprises/delais-paiement",
     "source_title": "Délais de paiement interentreprises — economie.gouv.fr",
     "status": "verified",
-    "notes": "Délai légal de droit commun : 30 jours à compter de la réception de la facture (art. L441-10 C. com.). Peut être négocié jusqu'à 60 jours. Certains secteurs : 45 jours fin de mois. Dépassement → pénalités de retard dues de plein droit."
+    "notes": "Entre professionnels, le délai de paiement légal est de 30 jours à compter de la réception de la facture. Ce délai peut être prolongé par accord écrit entre les deux parties, jusqu'à 60 jours maximum. Si votre client dépasse ce délai, des pénalités de retard sont dues automatiquement, sans avoir à envoyer de mise en demeure."
   },
   {
     "item": "Délai de paiement B2B — délai maximal contractuel",
@@ -85,7 +96,7 @@
     "source_url": "https://www.economie.gouv.fr/entreprises/delais-paiement",
     "source_title": "Délais de paiement interentreprises — economie.gouv.fr",
     "status": "verified",
-    "notes": "60 jours calendaires à compter de la date d'émission de la facture (ou 45 jours fin de mois). Au-delà : clause réputée non écrite et pénalités."
+    "notes": "Même avec accord, vous ne pouvez pas convenir d'un délai de paiement supérieur à 60 jours calendaires à compter de la date d'émission de la facture (ou 45 jours fin de mois). Une clause prévoyant un délai plus long est juridiquement nulle et inapplicable."
   },
   {
     "item": "Pénalité de retard B2B — taux minimum légal (H1 2026)",
@@ -96,7 +107,7 @@
     "source_url": "https://www.economie.gouv.fr/entreprises/delais-paiement",
     "source_title": "Délais de paiement — economie.gouv.fr",
     "status": "verified",
-    "notes": "Le taux BCE de base change régulièrement — vérifier sur economie.gouv.fr. Pour 2026 H1 avec BCE à 2,65 % : pénalité = 3 × 2,65 % + 10 % = 17,95 %. Applicable dès le 1er jour de retard, sans mise en demeure préalable."
+    "notes": "Le taux minimum légal des pénalités de retard est égal à 3 fois le taux directeur de la Banque centrale européenne, augmenté de 10 points. Avec un taux BCE à 2,65 % au premier semestre 2026, la pénalité minimale est donc de 17,95 % par an. Ces pénalités s'appliquent dès le premier jour de retard, sans qu'il soit nécessaire d'envoyer une mise en demeure. Vérifiez le taux BCE en vigueur sur economie.gouv.fr car il peut changer."
   },
   {
     "item": "Indemnité forfaitaire de recouvrement",
@@ -107,51 +118,51 @@
     "source_url": "https://www.economie.gouv.fr/entreprises/delais-paiement",
     "source_title": "Délais de paiement — economie.gouv.fr",
     "status": "verified",
-    "notes": "Indemnité forfaitaire de 40 € due de plein droit en cas de retard de paiement B2B (art. L441-10 C. com.). S'ajoute aux pénalités de retard. Pas de justificatif requis."
+    "notes": "En plus des pénalités de retard, vous avez le droit de réclamer automatiquement 40 € d'indemnité forfaitaire de recouvrement dès le premier jour de retard de paiement. Cette somme est due de plein droit, sans justificatif, et s'ajoute aux pénalités."
   },
   {
     "item": "Facturation électronique — calendrier : réception obligatoire (toutes entreprises)",
     "value": "2026-09-01",
     "unit": "date",
     "applicable_year": 2026,
-    "applicable_period": "Depuis 2026-09-01",
+    "applicable_period": "Depuis le 1er septembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation",
     "source_title": "À partir de quand suis-je concerné par la réforme de la facturation électronique ? — impots.gouv.fr",
     "status": "verified",
-    "notes": "À compter du 1er septembre 2026, TOUTES les entreprises assujetties à la TVA (quelle que soit leur taille) doivent être en mesure de recevoir des factures électroniques. La capacité de réception est donc universelle dès cette date."
+    "notes": "Depuis le 1er septembre 2026, toutes les entreprises assujetties à la TVA (quelle que soit leur taille) doivent être techniquement capables de recevoir des factures au format électronique. Si vous recevez des factures de grandes entreprises, vous devez pouvoir les accepter numériquement."
   },
   {
     "item": "Facturation électronique — calendrier : émission obligatoire grandes entreprises et ETI",
     "value": "2026-09-01",
     "unit": "date",
     "applicable_year": 2026,
-    "applicable_period": "Depuis 2026-09-01",
+    "applicable_period": "Depuis le 1er septembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation",
     "source_title": "À partir de quand suis-je concerné par la réforme de la facturation électronique ? — impots.gouv.fr",
     "status": "verified",
-    "notes": "Grandes entreprises : effectif > 5 000 OU (CA > 1,5 Mds € ET total bilan > 2 Mds €). ETI (Entreprises de Taille Intermédiaire) : 250 < effectif < 5 000 ET (CA < 1,5 Mds € OU total bilan < 2 Mds €). Ces deux catégories doivent émettre en électronique B2B dès le 1er septembre 2026. Le décret n° 2024-266 du 25 mars 2024 confirme ce calendrier."
+    "notes": "Depuis le 1er septembre 2026, les grandes entreprises (plus de 5 000 salariés, ou CA supérieur à 1,5 milliard d'euros) et les ETI (entre 250 et 5 000 salariés) doivent émettre leurs factures vers d'autres professionnels uniquement en format électronique. Un simple PDF envoyé par e-mail ne suffit plus pour ces entreprises."
   },
   {
     "item": "Facturation électronique — calendrier : émission obligatoire PME, TPE et micro-entreprises",
     "value": "2027-09-01",
     "unit": "date",
     "applicable_year": 2027,
-    "applicable_period": "Depuis 2027-09-01",
+    "applicable_period": "Depuis le 1er septembre 2027",
     "source_url": "https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation",
     "source_title": "À partir de quand suis-je concerné par la réforme de la facturation électronique ? — impots.gouv.fr",
     "status": "verified",
-    "notes": "PME : 10 < effectif < 250 ET (CA < 50 M€ OU total bilan < 43 M€). TPE/micro : effectif < 10 ET (CA < 2 M€ OU total bilan < 2 M€). Obligation d'émission à compter du 1er septembre 2027. Calendrier issu du décret n° 2024-266 du 25 mars 2024, après report de la date initiale de 2024. À vérifier sur impots.gouv.fr en cas de nouvelle modification législative."
+    "notes": "Pour les PME (10 à 250 salariés), TPE et micro-entrepreneurs, l'obligation d'émettre des factures électroniques ne commence que le 1er septembre 2027. Vous avez donc encore le temps de vous préparer. Il est recommandé de vérifier cette date sur impots.gouv.fr en cas de nouveau report réglementaire."
   },
   {
     "item": "Facturation électronique — formats acceptés par la DGFiP",
     "value": ["UBL 2.1", "CII (Cross Industry Invoice)", "Factur-X (hybride PDF/A-3 + XML CII)"],
     "unit": "table",
     "applicable_year": 2026,
-    "applicable_period": "Depuis 2026-09-01",
+    "applicable_period": "Depuis le 1er septembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/la-facturation-electronique-quest-ce-que-cest",
     "source_title": "Je découvre la facturation électronique — impots.gouv.fr",
     "status": "verified",
-    "notes": "Trois formats structurés acceptés : UBL 2.1 (Universal Business Language), CII (Cross Industry Invoice, norme UNECE), et Factur-X (format hybride franco-allemand = PDF lisible par l'humain + XML CII pour traitement automatisé). Un PDF scanné, un PDF ordinaire ou un e-mail ne sont plus conformes. Transmission obligatoire via une PDP immatriculée ou le PPF."
+    "notes": "Trois formats sont acceptés par l'administration fiscale pour la facturation électronique : UBL 2.1, CII, et Factur-X. Le format Factur-X est le plus utilisé en France : c'est un PDF lisible par un humain, auquel est attaché un fichier XML lisible par les logiciels de comptabilité. Un simple PDF, un PDF scanné ou un e-mail ne sont plus conformes pour les entreprises soumises à l'obligation. Les factures doivent transiter par une plateforme agréée (PDP) ou par le portail public Chorus Pro."
   },
   {
     "item": "Factur-X — profil MINIMUM",
@@ -162,7 +173,7 @@
     "source_url": "https://fnfe-mpe.org/factur-x/factur-x_en/",
     "source_title": "Factur-X — FNFE-MPE",
     "status": "verified",
-    "notes": "Profil le plus léger : contient uniquement les 18 données essentielles requises par Chorus Pro (portail public B2G). Usage : factures vers administrations publiques sans traitement automatisé côté émetteur. Pas de données de lignes. PDF obligatoire (hybride)."
+    "notes": "Le profil MINIMUM est le plus simple : il contient uniquement les 18 données essentielles requises pour les factures adressées aux administrations publiques (via Chorus Pro). Il ne contient pas les détails par ligne de facture et ne convient qu'aux factures simples vers les entités publiques."
   },
   {
     "item": "Factur-X — profil BASIC WL (Without Lines)",
@@ -173,7 +184,7 @@
     "source_url": "https://fnfe-mpe.org/factur-x/factur-x_en/",
     "source_title": "Factur-X — FNFE-MPE",
     "status": "verified",
-    "notes": "Données d'en-tête et de pied de facture les plus utiles pour l'acheteur (totaux, conditions de paiement, références). Pas de données par ligne de facture. Convient aux PME traitant leurs lignes manuellement."
+    "notes": "Le profil BASIC WL inclut les données d'en-tête et de pied de facture (totaux, conditions de paiement, références) mais sans le détail ligne par ligne. Adapté aux PME qui traitent les lignes manuellement dans leur comptabilité."
   },
   {
     "item": "Factur-X — profil BASIC",
@@ -184,7 +195,7 @@
     "source_url": "https://fnfe-mpe.org/factur-x/factur-x_en/",
     "source_title": "Factur-X — FNFE-MPE",
     "status": "verified",
-    "notes": "Profil BASIC WL enrichi des données essentielles par ligne de facture (désignation, quantité, prix unitaire, taux TVA). Traitement automatisé partiel possible. Profil recommandé pour la majorité des PME/TPE."
+    "notes": "Le profil BASIC est recommandé pour la majorité des PME et TPE. Il contient toutes les informations d'en-tête plus le détail de chaque ligne de facture (désignation, quantité, prix unitaire, taux de TVA). Il permet un traitement partiellement automatisé par les logiciels comptables."
   },
   {
     "item": "Factur-X — profil EN 16931",
@@ -195,7 +206,7 @@
     "source_url": "https://fnfe-mpe.org/factur-x/factur-x_en/",
     "source_title": "Factur-X — FNFE-MPE",
     "status": "verified",
-    "notes": "Implémentation complète et stricte de la norme sémantique européenne EN 16931 publiée par la Commission européenne le 16 octobre 2017. Contient toutes les données prévues par la norme, sans extension. Profil de référence pour l'interopérabilité pan-européenne (même périmètre que le standard UBL européen)."
+    "notes": "Ce profil correspond exactement à la norme européenne EN 16931, adoptée par la Commission européenne. Il permet une interopérabilité complète avec tous les pays européens. À utiliser si vous facturez des clients dans d'autres pays de l'Union européenne."
   },
   {
     "item": "Factur-X — profil EXTENDED",
@@ -206,7 +217,7 @@
     "source_url": "https://fnfe-mpe.org/factur-x/factur-x_en/",
     "source_title": "Factur-X — FNFE-MPE",
     "status": "verified",
-    "notes": "Profil EN 16931 étendu avec des données supplémentaires franco-allemandes (spécifiques aux usages métier avancés : escomptes, remises complexes, données sectorielles). Périmètre identique au profil ZUGFeRD 2.x (Allemagne). Usage : grandes entreprises ayant des besoins de traitement avancé et de réconciliation automatisée."
+    "notes": "Le profil EXTENDED est la version la plus complète de Factur-X. Il ajoute des champs supplémentaires franco-allemands pour des besoins métiers avancés (remises complexes, données sectorielles). Réservé aux grandes entreprises ayant des besoins spécifiques de traitement automatisé. Compatible avec le format ZUGFeRD 2.x utilisé en Allemagne."
   },
   {
     "item": "Factur-X — version courante (au 1er avril 2026)",
@@ -217,7 +228,7 @@
     "source_url": "https://fnfe-mpe.org/wp-content/uploads/2025/05/Press-Release_Factur-X-1.07.3_Zugferd-2.3.3-EN-VF.pdf",
     "source_title": "Press Release Factur-X 1.07.3 / ZUGFeRD 2.3.3 — FNFE-MPE",
     "status": "verified",
-    "notes": "Version Factur-X 1.07.3 publiée en mai 2025, alignée sur ZUGFeRD 2.3.3 (Allemagne). Factur-X est le standard franco-allemand, première implémentation de l'EN 16931. À ne pas confondre avec les numéros de version antérieurs (1.0, 1.07). La DGFiP accepte Factur-X comme format d'échange dans le cadre de la réforme."
+    "notes": "La version officielle de Factur-X en vigueur est la 1.07.3, publiée en mai 2025. Elle est alignée sur la version allemande ZUGFeRD 2.3.3. Si votre logiciel de facturation génère du Factur-X, vérifiez qu'il utilise bien cette version ou une version compatible."
   },
   {
     "item": "Factur-X — format standard européen EN 16931",
@@ -228,18 +239,18 @@
     "source_url": "https://fnfe-mpe.org/factur-x/factur-x_en/",
     "source_title": "Factur-X — FNFE-MPE (forum officiel)",
     "status": "verified",
-    "notes": "Factur-X = PDF/A-3 avec fichier XML CII attaché, conforme à la norme européenne EN 16931. 5 profils : MINIMUM (18 champs obligatoires Chorus Pro), BASIC WL (en-têtes et pieds), BASIC (+ données lignes), EN 16931 (norme complète), EXTENDED (extensions franco-allemandes). Factur-X est l'un des 3 formats acceptés par la DGFiP pour la réforme e-invoicing."
+    "notes": "En résumé, Factur-X est un PDF enrichi d'un fichier XML. Il existe en 5 niveaux de détail (MINIMUM, BASIC WL, BASIC, EN 16931, EXTENDED). C'est l'un des trois formats officiellement acceptés par la DGFiP. Pour la plupart des PME, le profil BASIC est la meilleure option."
   },
   {
     "item": "Factur-X — plateforme de dématérialisation partenaire (PDP)",
     "value": "Obligatoire via PDP ou PPF (Portail Public de Facturation)",
     "unit": "rule",
     "applicable_year": 2026,
-    "applicable_period": "Depuis 2026-09-01",
+    "applicable_period": "Depuis le 1er septembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/questions/la-facturation-electronique-entre-assujettis-la-tva",
     "source_title": "Facturation électronique — plateforme — impots.gouv.fr",
     "status": "verified",
-    "notes": "Les factures électroniques doivent transiter via une PDP immatriculée par la DGFiP ou via le PPF (Chorus Pro pour les prestataires de l'État). La liste des PDP immatriculées est publiée par la DGFiP."
+    "notes": "Vous ne pouvez pas envoyer une facture électronique directement à votre client par e-mail. La facture doit obligatoirement passer par une plateforme agréée par la DGFiP : soit une PDP (Plateforme de Dématérialisation Partenaire privée, dont la liste est publiée sur impots.gouv.fr), soit le PPF (le portail public Chorus Pro, gratuit mais surtout utilisé pour les factures aux administrations publiques)."
   },
   {
     "item": "Mention 'TVA non applicable — art. 293 B du CGI'",
@@ -250,7 +261,7 @@
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "Franchise en base de TVA — impots.gouv.fr",
     "status": "verified",
-    "notes": "Les micro-entrepreneurs et TPE en franchise en base de TVA doivent obligatoirement mentionner sur chaque facture : 'TVA non applicable, art. 293 B du CGI'. Absence de cette mention = irrégularité susceptible de remise en cause."
+    "notes": "Si vous êtes micro-entrepreneur ou petite entreprise sous le seuil de franchise en base de TVA (pas de TVA à facturer), vous devez obligatoirement écrire sur chaque facture : « TVA non applicable, art. 293 B du CGI ». Ne pas mettre cette mention est une irrégularité qui peut être contestée par vos clients."
   },
   {
     "item": "Conservation des factures — durée légale",
@@ -261,6 +272,7 @@
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "Facturation — conservation — impots.gouv.fr",
     "status": "verified",
-    "notes": "Les factures (et documents comptables en général) doivent être conservés pendant 10 ans à compter de la date de clôture de l'exercice. Base légale : art. L123-22 C. com. Pour les factures dématérialisées : obligation de garantir l'authenticité, l'intégrité et la lisibilité pendant 10 ans."
+    "notes": "Vous devez conserver toutes vos factures (émises et reçues) pendant 10 ans à compter de la fin de l'exercice comptable concerné. Pour les factures numériques, vous êtes tenu de garantir leur authenticité, intégrité et lisibilité pendant toute cette durée. Un simple dossier de fichiers non sécurisé ne suffit pas."
   }
-]
+  ]
+}

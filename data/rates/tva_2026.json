@@ -1,25 +1,36 @@
-[
+{
+  "_meta": {
+    "titre": "TVA — taux, seuils de franchise et régimes 2026",
+    "description": "Contient les 4 taux de TVA (normal 20 %, intermédiaire 10 %, réduit 5,5 %, super-réduit 2,1 %), les seuils de franchise en base (pas de TVA à facturer), les seuils des régimes réel simplifié et réel normal, et les règles d'exigibilité.",
+    "a_qui_ca_sert": "Utilisé par les skills fiscalité-entreprise et facturation pour vérifier le taux de TVA applicable selon l'activité, déterminer si une entreprise est en franchise, ou identifier le régime de déclaration TVA applicable.",
+    "frequence_revision": "Les taux TVA sont stables depuis 2014. Les seuils de franchise TVA ont changé en 2025 (abaissement de 91 900 € à 85 000 € pour la vente). À vérifier annuellement en loi de finances.",
+    "derniere_verification": "2026-04-22",
+    "prochaine_revision": "Janvier 2027 (vérification annuelle des seuils)",
+    "source_principale": "https://www.impots.gouv.fr/professionnel/tva",
+    "note_utilisateur": "Les seuils de franchise TVA ont baissé en 2025 : si votre CA vente dépasse 85 000 € (au lieu de 91 900 €), vous devez facturer la TVA. Vérifiez votre situation si vous êtes proche de ce seuil."
+  },
+  "donnees": [
   {
     "item": "TVA — taux normal",
     "value": 20,
     "unit": "percent",
     "applicable_year": 2026,
-    "applicable_period": "Permanente (depuis 2014-01-01)",
+    "applicable_period": "Permanente (depuis le 1er janvier 2014)",
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "TVA — impots.gouv.fr",
     "status": "verified",
-    "notes": "Taux de droit commun. S'applique à toutes les opérations sauf celles expressément soumises à un taux réduit ou nul. Base légale : art. 278 CGI."
+    "notes": "Le taux de TVA standard en France est de 20 %. Il s'applique à la grande majorité des biens et services, sauf ceux qui bénéficient expressément d'un taux réduit. Si vous n'êtes pas sûr du taux applicable à votre activité, le taux normal de 20 % est celui par défaut."
   },
   {
     "item": "TVA — taux intermédiaire",
     "value": 10,
     "unit": "percent",
     "applicable_year": 2026,
-    "applicable_period": "Permanente (depuis 2014-01-01)",
+    "applicable_period": "Permanente (depuis le 1er janvier 2014)",
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "TVA — impots.gouv.fr",
     "status": "verified",
-    "notes": "Taux intermédiaire applicable aux : travaux d'amélioration, de transformation, d'aménagement et d'entretien des logements > 2 ans ; restauration (sauf boissons alcooliques) ; médicaments non remboursables ; transport de voyageurs. Base légale : art. 278 bis, 278 quater CGI."
+    "notes": "Le taux de 10 % s'applique notamment aux travaux de rénovation des logements de plus de 2 ans (amélioration, entretien), à la restauration (repas pris sur place ou à emporter, hors boissons alcooliques), aux médicaments non remboursables par la Sécurité sociale, et aux transports de voyageurs."
   },
   {
     "item": "TVA — taux réduit",
@@ -30,7 +41,7 @@
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "TVA — impots.gouv.fr",
     "status": "verified",
-    "notes": "Produits alimentaires de base (sauf boissons alcooliques), livres, abonnements gaz/électricité, travaux de rénovation énergétique, équipements adaptés aux handicapés. Base légale : art. 278-0 bis CGI."
+    "notes": "Le taux réduit de 5,5 % s'applique aux produits alimentaires de base (épicerie, fruits, légumes — hors alcool), aux livres (imprimés ou numériques), aux abonnements gaz et électricité, aux travaux de rénovation énergétique (isolation, pompe à chaleur, etc.), et aux équipements adaptés aux personnes handicapées."
   },
   {
     "item": "TVA — taux super-réduit (Corse uniquement, certains produits)",
@@ -41,95 +52,95 @@
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "TVA — impots.gouv.fr",
     "status": "verified",
-    "notes": "Presse, médicaments remboursables par la Sécurité sociale. Base légale : art. 281 octies CGI."
+    "notes": "Ce taux de 2,1 % est le plus bas existant en France. Il s'applique aux médicaments remboursables par la Sécurité sociale et à la presse (journaux et magazines reconnus d'information)."
   },
   {
     "item": "TVA — franchise en base vente (seuil principal)",
     "value": 85000,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-puis-je-etre-redevable-de-la-tva",
     "source_title": "En tant que micro-entrepreneur, puis-je être redevable de la TVA ? — impots.gouv.fr",
     "status": "verified",
-    "notes": "Seuil de franchise en base de TVA pour les activités de vente de marchandises, restauration, fourniture de logement. Abaissé de 91 900 € à 85 000 € par la LF 2025 (art. 32). La réforme à 25 000 € (unification tous secteurs) a été définitivement abandonnée par la loi du 3 novembre 2025. CGI art. 293 B. Si CA N-1 ≤ 85 000 €, l'entreprise est en franchise l'année suivante. Mention obligatoire : « TVA non applicable, art. 293 B du CGI »."
+    "notes": "Si votre chiffre d'affaires de l'année précédente ne dépasse pas 85 000 € (activités de vente, restauration, hébergement), vous pouvez ne pas facturer la TVA à vos clients. Vous devez alors mentionner sur vos factures : « TVA non applicable, art. 293 B du CGI ». Ce seuil a été abaissé de 91 900 € à 85 000 € par la loi de finances 2025."
   },
   {
     "item": "TVA — franchise en base vente (seuil majoré de tolérance)",
     "value": 93500,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-puis-je-etre-redevable-de-la-tva",
     "source_title": "En tant que micro-entrepreneur, puis-je être redevable de la TVA ? — impots.gouv.fr",
     "status": "verified",
-    "notes": "Seuil majoré vente : si CA N-1 est compris entre 85 000 € et 93 500 €, la franchise se maintient l'année suivante. Si CA N dépasse 93 500 € en cours d'année, la TVA est due à compter du 1er jour du mois de dépassement."
+    "notes": "Si votre CA de l'année précédente est compris entre 85 000 € et 93 500 €, vous restez en franchise l'année suivante. Mais si votre CA en cours d'année dépasse 93 500 €, vous devez facturer la TVA immédiatement, à compter du 1er jour du mois de dépassement."
   },
   {
     "item": "TVA — franchise en base prestation (seuil principal)",
     "value": 37500,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-puis-je-etre-redevable-de-la-tva",
     "source_title": "En tant que micro-entrepreneur, puis-je être redevable de la TVA ? — impots.gouv.fr",
     "status": "verified",
-    "notes": "Seuil normal de franchise TVA pour les prestations de services (BIC et BNC) et professions libérales. Abaissé depuis 36 800 €."
+    "notes": "Pour les prestataires de services et les professions libérales, le seuil de franchise TVA est de 37 500 € — bien inférieur au seuil du régime micro (83 600 €). Beaucoup d'indépendants en prestations doivent donc facturer la TVA bien avant d'atteindre le plafond du régime micro."
   },
   {
     "item": "TVA — franchise en base prestation (seuil majoré de tolérance)",
     "value": 41250,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-puis-je-etre-redevable-de-la-tva",
     "source_title": "En tant que micro-entrepreneur, puis-je être redevable de la TVA ? — impots.gouv.fr",
     "status": "verified",
-    "notes": "Seuil majoré services : si CA N dépasse 41 250 € en cours d'année, TVA due à compter du 1er jour du mois de dépassement."
+    "notes": "Si votre CA de prestations dépasse 41 250 € en cours d'année, vous devez facturer la TVA dès le 1er jour du mois de dépassement, sans attendre l'année suivante."
   },
   {
     "item": "TVA — régime réel simplifié (RSI) — seuil CA vente d'entrée",
     "value": 85000,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "TVA — régimes — impots.gouv.fr",
     "status": "verified",
-    "notes": "Le RSI s'applique entre le seuil de franchise en base (85 000 €) et 840 000 € (vente). Au-delà : régime réel normal obligatoire. 2 acomptes provisionnels (juillet et décembre) + déclaration annuelle CA12."
+    "notes": "Si votre CA vente dépasse 85 000 €, vous entrez dans le régime réel simplifié de TVA (RSI) : 2 acomptes provisionnels par an (en juillet et décembre) plus une déclaration annuelle (formulaire CA12). Ce régime s'applique jusqu'à 840 000 € de CA vente."
   },
   {
     "item": "TVA — régime réel simplifié (RSI) — seuil CA prestation d'entrée",
     "value": 37500,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "TVA — régimes — impots.gouv.fr",
     "status": "verified",
-    "notes": "RSI applicable entre 37 500 € et 287 000 € de CA prestation. Au-delà : régime réel normal."
+    "notes": "Pour les prestations de services, le régime réel simplifié s'applique entre 37 500 € et 287 000 € de CA. Au-delà, le régime réel normal est obligatoire avec des déclarations mensuelles."
   },
   {
     "item": "TVA — régime réel normal (RN) — seuil CA vente",
     "value": 840000,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "TVA — régimes — impots.gouv.fr",
     "status": "verified",
-    "notes": "Au-delà de 840 000 € de CA vente → régime réel normal obligatoire. Déclaration mensuelle CA3."
+    "notes": "Si votre CA vente dépasse 840 000 €, vous basculez obligatoirement en régime réel normal avec des déclarations TVA mensuelles (formulaire CA3)."
   },
   {
     "item": "TVA — régime réel normal (RN) — seuil CA prestation",
     "value": 287000,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "TVA — régimes — impots.gouv.fr",
     "status": "verified",
-    "notes": "Au-delà de 287 000 € de CA prestation → régime réel normal obligatoire. Déclaration mensuelle CA3."
+    "notes": "Si votre CA de prestations dépasse 287 000 €, le régime réel normal avec déclarations mensuelles s'impose."
   },
   {
     "item": "TVA — exigibilité sur les débits (livraisons de biens)",
@@ -140,7 +151,7 @@
     "source_url": "https://bofip.impots.gouv.fr/bofip/1430-PGP.html",
     "source_title": "TVA — Fait générateur et exigibilité — BOFiP",
     "status": "verified",
-    "notes": "Pour les livraisons de biens : TVA exigible à la livraison (transfert de propriété). Option possible sur les débits (date de facturation). Base légale : art. 269 CGI."
+    "notes": "Pour la vente de biens, la TVA est due au moment de la livraison (transfert de propriété). Vous pouvez opter pour la déclaration à la date de facturation si vous le préférez. Cette option doit être signalée à votre centre des impôts."
   },
   {
     "item": "TVA — exigibilité sur les encaissements (prestations de services)",
@@ -151,7 +162,7 @@
     "source_url": "https://bofip.impots.gouv.fr/bofip/1430-PGP.html",
     "source_title": "TVA — Fait générateur et exigibilité — BOFiP",
     "status": "verified",
-    "notes": "Pour les prestations de services : TVA exigible à l'encaissement. Option sur les débits possible (TVA exigible à la facturation). Important pour la gestion de trésorerie."
+    "notes": "Pour les prestations de services, la TVA n'est due qu'au moment où vous encaissez le paiement de votre client — pas quand vous émettez la facture. Cela peut alléger votre trésorerie. Vous pouvez toutefois opter pour la TVA sur les débits (due à la facturation), ce qui simplifie la comptabilité mais peut peser sur la trésorerie."
   },
   {
     "item": "TVA intracommunautaire — autoliquidation (achat UE)",
@@ -162,6 +173,7 @@
     "source_url": "https://www.impots.gouv.fr/professionnel/tva",
     "source_title": "TVA intracommunautaire — impots.gouv.fr",
     "status": "verified",
-    "notes": "Pour les acquisitions intracommunautaires de biens et services B2B : le prestataire facture HT, l'acheteur français autoliquide la TVA (déclare TVA collectée + TVA déductible sur la même déclaration CA3). Nécessite numéro de TVA intracommunautaire valide. Base : art. 283 CGI."
+    "notes": "Si vous achetez des biens ou des services auprès d'une entreprise dans un autre pays de l'Union européenne (B2B), la TVA ne vous est pas facturée par le prestataire étranger. C'est vous qui la déclarez et la déduisez simultanément sur votre déclaration TVA française (mécanisme d'autoliquidation). Pour cela, vous devez avoir un numéro de TVA intracommunautaire valide. Si vous ne l'avez pas, vous pouvez ne pas pouvoir récupérer la TVA."
   }
-]
+  ]
+}

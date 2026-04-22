@@ -1,4 +1,15 @@
-[
+{
+  "_meta": {
+    "titre": "Impôt sur la Fortune Immobilière (IFI) — barème et règles 2026",
+    "description": "Contient le seuil d'imposition, le barème progressif, l'abattement pour résidence principale, le plafonnement (bouclier fiscal) et la réduction pour dons de l'IFI.",
+    "a_qui_ca_sert": "Utilisé par le skill IFI pour calculer l'IFI estimatif d'un foyer ayant un patrimoine immobilier significatif, vérifier s'il est assujetti et lui expliquer les mécanismes de réduction.",
+    "frequence_revision": "Le barème IFI n'a pas été modifié depuis la création de l'IFI en 2018. À vérifier uniquement en cas de loi de finances modifiant ces seuils.",
+    "derniere_verification": "2026-04-22",
+    "prochaine_revision": "Janvier 2027 (vérification annuelle en loi de finances)",
+    "source_principale": "https://www.impots.gouv.fr/particulier/calcul-de-lifi",
+    "note_utilisateur": "Le barème IFI est stable depuis 2018. Ce fichier ne nécessite pas de mise à jour fréquente, sauf modification législative."
+  },
+  "donnees": [
   {
     "item": "IFI 2026 — seuil d'imposition (patrimoine net taxable minimum)",
     "value": 1300000,
@@ -8,7 +19,7 @@
     "source_url": "https://www.impots.gouv.fr/particulier/calcul-de-lifi",
     "source_title": "Calcul de l'IFI — impots.gouv.fr",
     "status": "verified",
-    "notes": "L'IFI est dû uniquement si le patrimoine immobilier net taxable est supérieur ou égal à 1 300 000 €. En dessous de ce seuil, aucune déclaration IFI n'est requise."
+    "notes": "Vous n'êtes concerné par l'IFI que si votre patrimoine immobilier net (valeur de vos biens immobiliers moins vos dettes liées à ces biens) dépasse 1 300 000 €. En dessous de ce seuil, aucune déclaration ni paiement n'est requis."
   },
   {
     "item": "IFI 2026 — barème, tranche 0% (0 à 800 000 €)",
@@ -19,7 +30,7 @@
     "source_url": "https://www.impots.gouv.fr/particulier/calcul-de-lifi",
     "source_title": "Calcul de l'IFI — impots.gouv.fr",
     "status": "verified",
-    "notes": "La fraction de patrimoine jusqu'à 800 000 € est exonérée même si le seuil de 1,3 M€ est franchi. Le barème s'applique à l'ensemble du patrimoine net taxable dès lors que celui-ci dépasse 1 300 000 €."
+    "notes": "La première tranche jusqu'à 800 000 € n'est pas taxée, même si votre patrimoine dépasse le seuil de 1,3 M€. Le barème s'applique à l'ensemble du patrimoine net taxable dès lors que ce seuil est franchi, mais la première partie est toujours exonérée."
   },
   {
     "item": "IFI 2026 — barème, tranche 0,50% (800 001 € à 1 300 000 €)",
@@ -30,7 +41,7 @@
     "source_url": "https://www.impots.gouv.fr/particulier/calcul-de-lifi",
     "source_title": "Calcul de l'IFI — impots.gouv.fr",
     "status": "verified",
-    "notes": "Tranche applicable uniquement si patrimoine net taxable ≥ 1 300 000 €."
+    "notes": "Sur la fraction de patrimoine entre 800 001 € et 1 300 000 €, le taux est de 0,5 %. Cette tranche ne s'applique que si votre patrimoine net dépasse 1 300 000 €."
   },
   {
     "item": "IFI 2026 — barème, tranche 0,70% (1 300 001 € à 2 570 000 €)",
@@ -41,7 +52,7 @@
     "source_url": "https://www.impots.gouv.fr/particulier/calcul-de-lifi",
     "source_title": "Calcul de l'IFI — impots.gouv.fr",
     "status": "verified",
-    "notes": null
+    "notes": "Sur la fraction de patrimoine entre 1 300 001 € et 2 570 000 €, le taux est de 0,7 %."
   },
   {
     "item": "IFI 2026 — barème, tranche 1,00% (2 570 001 € à 5 000 000 €)",
@@ -52,7 +63,7 @@
     "source_url": "https://www.impots.gouv.fr/particulier/calcul-de-lifi",
     "source_title": "Calcul de l'IFI — impots.gouv.fr",
     "status": "verified",
-    "notes": null
+    "notes": "Sur la fraction de patrimoine entre 2 570 001 € et 5 000 000 €, le taux est de 1 %."
   },
   {
     "item": "IFI 2026 — barème, tranche 1,25% (5 000 001 € à 10 000 000 €)",
@@ -63,7 +74,7 @@
     "source_url": "https://www.impots.gouv.fr/particulier/calcul-de-lifi",
     "source_title": "Calcul de l'IFI — impots.gouv.fr",
     "status": "verified",
-    "notes": null
+    "notes": "Sur la fraction de patrimoine entre 5 000 001 € et 10 000 000 €, le taux est de 1,25 %."
   },
   {
     "item": "IFI 2026 — barème, tranche 1,50% (au-delà de 10 000 000 €)",
@@ -74,7 +85,7 @@
     "source_url": "https://www.impots.gouv.fr/particulier/calcul-de-lifi",
     "source_title": "Calcul de l'IFI — impots.gouv.fr",
     "status": "verified",
-    "notes": null
+    "notes": "Sur la fraction de patrimoine supérieure à 10 000 000 €, le taux marginal maximum est de 1,5 %."
   },
   {
     "item": "IFI 2026 — abattement résidence principale",
@@ -85,7 +96,7 @@
     "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-determiner-la-valeur-des-biens-que-je-declare-pour-le-calcul-de-limpot",
     "source_title": "Comment déterminer la valeur des biens pour le calcul de l'IFI ? — impots.gouv.fr",
     "status": "verified",
-    "notes": "Abattement de 30% sur la valeur vénale de la résidence principale du redevable. S'applique sur la valeur retenue pour l'assiette IFI, pas sur l'impôt calculé."
+    "notes": "Votre résidence principale bénéficie d'un abattement de 30 % sur sa valeur vénale (sa valeur de marché). Cela signifie que si votre résidence principale vaut 800 000 €, vous ne déclarez que 560 000 € dans votre assiette IFI. Cet abattement s'applique uniquement à la valeur du bien, pas sur l'impôt calculé."
   },
   {
     "item": "IFI 2026 — plafonnement IFI (bouclier fiscal)",
@@ -99,7 +110,7 @@
     "source_url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/18-IFI_337a340.pdf",
     "source_title": "Brochure Pratique IR 2026 — Chapitre IFI — impots.gouv.fr",
     "status": "verified",
-    "notes": "Le plafonnement limite la somme (IR + IFI + prélèvements sociaux) à 75% des revenus nets perçus l'année précédente. Si le total dépasse ce seuil, l'excédent est déduit de l'IFI. CGI art. 979."
+    "notes": "La somme de votre impôt sur le revenu, de votre IFI et de vos prélèvements sociaux ne peut pas dépasser 75 % de vos revenus nets perçus l'année précédente. Si cette somme dépasse ce plafond, l'excédent est déduit de votre IFI. C'est ce qu'on appelle le bouclier fiscal (article 979 du CGI)."
   },
   {
     "item": "IFI 2026 — réduction IFI pour dons (IFI-dons)",
@@ -110,6 +121,7 @@
     "source_url": "https://www.impots.gouv.fr/particulier/calcul-de-lifi",
     "source_title": "Calcul de l'IFI — impots.gouv.fr",
     "status": "verified",
-    "notes": "75% des dons versés à des organismes d'intérêt général éligibles sont déductibles de l'IFI, dans la limite de 50 000 € de réduction par an."
+    "notes": "Si vous faites des dons à des organismes d'intérêt général éligibles avant de payer votre IFI, vous pouvez déduire 75 % du montant donné directement de votre IFI. Cette réduction est plafonnée à 50 000 € de réduction par an. Exemple : un don de 66 667 € permet de réduire votre IFI de 50 000 €."
   }
-]
+  ]
+}

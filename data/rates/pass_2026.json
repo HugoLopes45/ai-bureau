@@ -1,57 +1,69 @@
-[
+{
+  "_meta": {
+    "titre": "Plafond Annuel de la Sécurité Sociale (PASS) 2026",
+    "description": "Contient les valeurs annuelle, mensuelle, journalière et horaire du PASS 2026, ainsi que la valeur 2025 utilisée pour les régularisations.",
+    "a_qui_ca_sert": "Valeur de référence utilisée dans presque tous les calculs de cotisations sociales TNS, plafonds PER, indemnités journalières, et calculs de charges URSSAF. Indispensable pour les skills TNS, retraite, et épargne.",
+    "frequence_revision": "Le PASS est fixé par arrêté chaque fin décembre pour l'année suivante. À mettre à jour dès la publication de l'arrêté (généralement autour du 20-25 décembre).",
+    "derniere_verification": "2026-04-22",
+    "prochaine_revision": "Décembre 2026 (arrêté fixant le PASS 2027)",
+    "source_principale": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053143451",
+    "note_utilisateur": "Ce fichier est mis à jour automatiquement chaque année en décembre. Le PASS 2026 a augmenté de 2 % par rapport à 2025 (de 47 100 € à 48 060 €)."
+  },
+  "donnees": [
   {
     "item": "PASS — Plafond Annuel de la Sécurité Sociale 2026",
     "value": 48060,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053143451",
     "source_title": "Arrêté du 22 décembre 2025 portant fixation du plafond de la sécurité sociale pour 2026 — Légifrance",
     "status": "verified",
-    "notes": "Arrêté du 22 décembre 2025. Hausse de 2 % par rapport à 2025 (47 100 €), indexée sur l'évolution du salaire moyen par tête (SMPT) du secteur marchand non agricole. Valeur de référence pour le calcul des cotisations TNS, des plafonds de déduction épargne retraite (loi Madelin, PER), des cotisations minimales, etc."
+    "notes": "Le PASS 2026 est de 48 060 €, en hausse de 2 % par rapport à 2025 (47 100 €). Cette valeur sert de référence pour calculer vos cotisations sociales, les plafonds de déduction de votre PER, et de nombreuses autres prestations sociales. Elle est fixée par arrêté du 22 décembre 2025, indexée sur l'évolution du salaire moyen dans le secteur privé."
   },
   {
     "item": "PASS — Plafond Mensuel de la Sécurité Sociale (PMSS) 2026",
     "value": 4005,
     "unit": "EUR_per_month",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053143451",
     "source_title": "Arrêté du 22 décembre 2025 portant fixation du plafond de la sécurité sociale pour 2026 — Légifrance",
     "status": "verified",
-    "notes": "PMSS = PASS / 12 = 48 060 / 12 = 4 005 €. Valeur 2025 : 3 925 €. Utilisé notamment pour le calcul des cotisations salariales plafonnées (retraite, prévoyance cadres)."
+    "notes": "Le PMSS est simplement le PASS divisé par 12 : 48 060 / 12 = 4 005 € par mois. En 2025, il était de 3 925 €. Il sert notamment au calcul des cotisations salariales plafonnées (retraite complémentaire, prévoyance cadres)."
   },
   {
     "item": "PASS — Plafond Journalier de la Sécurité Sociale (PJSS) 2026",
     "value": 220,
     "unit": "EUR_per_day",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053143451",
     "source_title": "Arrêté du 22 décembre 2025 portant fixation du plafond de la sécurité sociale pour 2026 — Légifrance",
     "status": "verified",
-    "notes": "PJSS = PASS / 365 arrondi. Valeur officielle fixée à 220 € pour 2026. Valeur 2025 : 216 €. Utilisé pour le calcul des indemnités journalières maladie plafonnées."
+    "notes": "Le PJSS est de 220 € par jour en 2026 (216 € en 2025). Il est utilisé principalement pour calculer le plafond des indemnités journalières maladie de la Sécurité sociale."
   },
   {
     "item": "PASS — Plafond Horaire de la Sécurité Sociale (PHSS) 2026",
     "value": "PJSS / 8 h",
     "unit": "formula",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/portail/home/taux-et-baremes/plafonds.html",
     "source_title": "Plafonds — URSSAF",
     "status": "not_found",
-    "notes": "Le PHSS n'est pas publié en tant que valeur directe dans l'arrêté officiel. Il se dérive par convention URSSAF : PHSS = PJSS ÷ 8 h = 220 ÷ 8 = 27,50 €. Source officielle URSSAF confirme la convention mais ne publie pas le PHSS numériquement en ligne. Valeur à vérifier sur urssaf.fr/portail/home/taux-et-baremes/plafonds.html."
+    "notes": "Le PHSS n'est pas publié en tant que valeur directe par l'URSSAF. Par convention, il est calculé comme PJSS ÷ 8 heures = 220 ÷ 8 = 27,50 €. Cette valeur est à vérifier directement sur urssaf.fr si vous avez besoin de l'utiliser pour un calcul précis."
   },
   {
     "item": "PASS 2025 — référence (utilisé pour régularisation TNS 2025 versée en 2026)",
     "value": 47100,
     "unit": "EUR_per_year",
     "applicable_year": 2025,
-    "applicable_period": "2025-01-01 to 2025-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2025",
     "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050854392",
     "source_title": "Arrêté du 19 décembre 2024 portant fixation du plafond de la sécurité sociale pour 2025 — Légifrance",
     "status": "verified",
-    "notes": "Arrêté du 19 décembre 2024. PMSS 2025 : 3 925 €. Nécessaire pour calculer la régularisation N+1 des TNS dont l'assiette 2025 est définitive lors de la déclaration fiscale 2025 effectuée en 2026."
+    "notes": "Le PASS 2025 (47 100 €) est conservé ici car il sert à calculer la régularisation des cotisations TNS de l'année 2025, effectuée en 2026 après la déclaration fiscale. Le PMSS 2025 était de 3 925 €."
   }
-]
+  ]
+}

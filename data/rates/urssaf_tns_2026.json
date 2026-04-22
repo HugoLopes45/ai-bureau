@@ -1,4 +1,15 @@
-[
+{
+  "_meta": {
+    "titre": "Cotisations sociales TNS (travailleurs indépendants) — taux et cotisations minimales 2026",
+    "description": "Contient les taux de cotisations sociales pour les artisans, commerçants et professions libérales non réglementées relevant du régime TNS (SSI) : maladie-maternité, retraite de base, retraite complémentaire, invalidité-décès, allocations familiales, CSG-CRDS, formation professionnelle, cotisations minimales et l'ACRE.",
+    "a_qui_ca_sert": "Utilisé par le skill TNS/indépendant pour calculer les charges sociales d'un travailleur non salarié, comparer différents niveaux de revenus, ou estimer les cotisations minimales en cas de démarrage d'activité.",
+    "frequence_revision": "Les taux ont été réformés en profondeur en 2026 (nouvelle assiette brute avec abattement de 26 %). À vérifier chaque janvier en cas de nouvelle réforme ou de revalorisation des cotisations minimales.",
+    "derniere_verification": "2026-04-22",
+    "prochaine_revision": "Janvier 2027 (vérification annuelle des taux URSSAF)",
+    "source_principale": "https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html",
+    "note_utilisateur": "Attention : les taux 2026 utilisent une nouvelle assiette de calcul (revenu brut × 74 %). Si vous avez l'habitude de calculer vos charges sur votre revenu net après déduction des cotisations, la méthode a changé — les montants peuvent sembler différents mais le résultat net est conçu pour être équivalent pour la majorité des indépendants."
+  },
+  "donnees": [
   {
     "item": "TNS réel — assiette de calcul (revenu brut social après réforme 2026)",
     "value": "revenu_professionnel_brut × 74 %",
@@ -8,292 +19,293 @@
     "source_url": "https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html",
     "source_title": "Réforme de l'assiette sociale et du barème des cotisations sociales — URSSAF",
     "status": "verified",
-    "notes": "Réforme applicable à la régularisation des cotisations 2025 (effectuée en avril 2026). Assiette unique pour toutes les cotisations : revenu professionnel brut avant déduction des cotisations sociales, abattu de 26 % forfaitairement. Plancher : 1,76 % du PASS = 845,86 €. Plafond assiette pour certaines cotisations : 130 % PASS = 62 478 €. L'abattement de 26 % remplace le mécanisme d'intégration des cotisations dans la base CSG-CRDS."
+    "notes": "Depuis la réforme 2026, toutes vos cotisations sociales sont calculées sur la même base : votre revenu professionnel brut (avant déduction des cotisations) diminué d'un abattement forfaitaire de 26 %. En pratique : si vous avez gagné 50 000 € bruts, l'assiette de calcul est 50 000 × 74 % = 37 000 €. Plancher : 1,76 % du PASS = environ 846 €. Plafond pour certaines cotisations : 130 % du PASS = 62 478 €."
   },
   {
     "item": "TNS réel — cotisation maladie-maternité (tranche 1 : assiette < 20 % PASS = 9 612 €)",
     "value": 0,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Taux 0 % pour assiette inférieure à 20 % du PASS 2026 (= 9 612 €). Seuil calculé sur l'assiette nette après abattement de 26 %."
+    "notes": "Si votre assiette nette (après abattement de 26 %) est inférieure à 9 612 €, vous ne payez aucune cotisation maladie-maternité. Ce seuil correspond à environ 20 % du PASS 2026."
   },
   {
     "item": "TNS réel — cotisation maladie-maternité (tranche 2 : de 20 % à 40 % PASS, de 9 612 € à 19 224 €)",
     "value": 1.5,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Taux fixe de 1,5 % entre 20 % et 40 % du PASS. Correspond à la fourchette 9 612 € – 19 224 € d'assiette nette 2026."
+    "notes": "Pour la fraction d'assiette nette entre 9 612 € et 19 224 €, le taux de cotisation maladie est de 1,5 %."
   },
   {
     "item": "TNS réel — cotisation maladie-maternité (tranche 3 : de 40 % à 60 % PASS, progressif 1,5 % → 4 %)",
     "value": "1.5 à 4 (progressif)",
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Taux progressif de 1,5 % à 4 % entre 40 % et 60 % du PASS (19 224 € à 28 836 €). Interpolation linéaire sur la tranche."
+    "notes": "Entre 40 % et 60 % du PASS (19 224 € à 28 836 € d'assiette nette), le taux maladie augmente progressivement de 1,5 % à 4 %, par interpolation linéaire."
   },
   {
     "item": "TNS réel — cotisation maladie-maternité (tranche 4 : de 60 % à 110 % PASS, progressif 4 % → 6,5 %)",
     "value": "4 à 6.5 (progressif)",
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Taux progressif de 4 % à 6,5 % entre 60 % et 110 % du PASS (28 836 € à 52 866 €). Interpolation linéaire."
+    "notes": "Entre 60 % et 110 % du PASS (28 836 € à 52 866 € d'assiette nette), le taux maladie progresse de 4 % à 6,5 %, par interpolation linéaire."
   },
   {
     "item": "TNS réel — cotisation maladie-maternité (tranche 5 : de 110 % à 300 % PASS, progressif 6,5 % → 8,5 %)",
     "value": "6.5 à 8.5 (progressif)",
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Taux progressif de 6,5 % à 8,5 % entre 110 % et 300 % du PASS (52 866 € à 144 180 €). Taux plein atteint à 300 % PASS."
+    "notes": "Entre 110 % et 300 % du PASS (52 866 € à 144 180 €), le taux maladie progresse de 6,5 % à 8,5 %. Le taux plein de 8,5 % est atteint à 300 % du PASS."
   },
   {
     "item": "TNS réel — cotisation maladie-maternité (tranche 6 : assiette > 300 % PASS = 144 180 €)",
     "value": 6.5,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Au-delà de 300 % PASS (144 180 €), le taux redescend à 6,5 %. Mécanisme de plafonnement de la contribution maladie pour les très hauts revenus."
+    "notes": "Pour les revenus très élevés (au-delà de 144 180 € d'assiette nette, soit 300 % du PASS), le taux de cotisation maladie redescend à 6,5 %. C'est un mécanisme de plafonnement de la contribution pour les très hauts revenus d'indépendants."
   },
   {
     "item": "TNS réel — cotisation indemnités journalières maladie",
     "value": 0.5,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Assiette plafonnée à 5 × PASS = 240 300 € en 2026. Ouvre droit aux indemnités journalières de sécurité sociale (IJSS) en cas d'arrêt maladie de plus de 3 jours. Ne concerne pas les professions libérales relevant de la CIPAV."
+    "notes": "Cette cotisation de 0,5 % vous permet de recevoir des indemnités journalières de la Sécurité sociale en cas d'arrêt maladie de plus de 3 jours. Elle est plafonnée à une assiette de 5 fois le PASS (240 300 €). Les professions libérales relevant de la CIPAV ne sont pas concernées par cette cotisation."
   },
   {
     "item": "TNS réel — retraite de base (tranche 1 : assiette ≤ 1 PASS = 48 060 €)",
     "value": 17.15,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Taux retraite de base dans la limite du PASS 2026 (48 060 €). Permet de valider jusqu'à 4 trimestres par an. Taux légèrement réduit par rapport à l'ancien barème (17,75 %) du fait de la nouvelle assiette brute."
+    "notes": "Sur la fraction d'assiette nette jusqu'à 48 060 € (1 PASS), vous cotisez 17,15 % pour la retraite de base. Ces cotisations vous permettent de valider jusqu'à 4 trimestres de retraite par an. Le taux a été légèrement ajusté par rapport à l'ancien barème (17,75 %) pour tenir compte de la nouvelle méthode de calcul."
   },
   {
     "item": "TNS réel — retraite de base (tranche 2 : assiette > 1 PASS)",
     "value": 0.72,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Sur la fraction au-delà du PASS (48 060 €), taux réduit de 0,72 % sans plafond supérieur. Ne génère pas de droits retraite supplémentaires (solidarité). Taux relevé de 0,60 % à 0,72 % par la réforme 2026."
+    "notes": "Sur la fraction d'assiette nette dépassant 48 060 € (au-delà du PASS), un taux réduit de 0,72 % s'applique sans plafond. Cette fraction ne génère pas de droits retraite supplémentaires — c'est une cotisation de solidarité. Le taux a été relevé de 0,60 % à 0,72 % par la réforme 2026."
   },
   {
     "item": "TNS réel — retraite complémentaire (tranche 1 : assiette ≤ 1 PASS = 48 060 €)",
     "value": 8.1,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Tranche 1 retraite complémentaire artisans/commerçants (SSI) : 8,1 % jusqu'à 1 PASS (48 060 €). Taux relevé de 7 % à 8,1 % par la réforme pour améliorer les droits retraite des indépendants. Ne concerne pas la CIPAV."
+    "notes": "Pour la retraite complémentaire des artisans et commerçants (SSI), le taux est de 8,1 % jusqu'à 1 PASS. Ce taux a été relevé de 7 % à 8,1 % par la réforme 2026 pour améliorer les droits retraite des indépendants. Il ne concerne pas les professions libérales relevant de la CIPAV."
   },
   {
     "item": "TNS réel — retraite complémentaire (tranche 2 : entre 1 PASS et 4 PASS, de 48 060 € à 192 240 €)",
     "value": 9.1,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Tranche 2 retraite complémentaire : 9,1 % entre 1 PASS et 4 PASS. Plafond de 4 PASS = 192 240 €. Taux relevé de 8 % à 9,1 % par la réforme."
+    "notes": "Pour la fraction d'assiette nette entre 1 PASS (48 060 €) et 4 PASS (192 240 €), le taux de retraite complémentaire est de 9,1 %. Ce taux a été relevé de 8 % à 9,1 % par la réforme 2026."
   },
   {
     "item": "TNS réel — invalidité-décès",
     "value": 1.3,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Assiette plafonnée à 1 PASS = 48 060 € en 2026. Cotisation minimale : assiette plancher de 11,5 % à 19 % du PASS selon la situation. Montant minimum 2026 : entre 72 € et 119 € (selon profil)."
+    "notes": "La cotisation invalidité-décès de 1,3 % vous couvre en cas d'invalidité ou de décès. Elle est plafonnée à une assiette de 1 PASS (48 060 €). Même si vous avez peu de revenus, une cotisation minimale entre 72 € et 119 € est due."
   },
   {
     "item": "TNS réel — allocations familiales (tranche 1 : assiette < 110 % PASS = 52 866 €)",
     "value": 0,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Taux 0 % jusqu'à 110 % PASS = 52 866 €. Aucune cotisation allocations familiales sous ce seuil."
+    "notes": "Si votre assiette nette est inférieure à 52 866 € (110 % du PASS), vous ne payez aucune cotisation d'allocations familiales. La majorité des indépendants avec des revenus modestes à moyens bénéficient de cette exonération."
   },
   {
     "item": "TNS réel — allocations familiales (tranche 2 : progressif de 110 % à 140 % PASS, de 52 866 € à 67 284 €)",
     "value": "0 à 3.1 (progressif)",
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Taux progressif de 0 à 3,1 % entre 110 % PASS (52 866 €) et 140 % PASS (67 284 €). Interpolation linéaire."
+    "notes": "Entre 110 % et 140 % du PASS (52 866 € à 67 284 € d'assiette nette), le taux d'allocations familiales monte progressivement de 0 à 3,1 %, par interpolation linéaire."
   },
   {
     "item": "TNS réel — allocations familiales (tranche 3 : assiette ≥ 140 % PASS = 67 284 €)",
     "value": 3.1,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
-    "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
+    "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementées — URSSAF",
     "status": "verified",
-    "notes": "Taux plein allocations familiales : 3,1 % au-delà de 140 % PASS (67 284 €). Pas de plafond supérieur."
+    "notes": "Au-delà de 67 284 € d'assiette nette (140 % du PASS), le taux plein d'allocations familiales de 3,1 % s'applique sur toute la fraction excédentaire, sans plafond."
   },
   {
     "item": "TNS réel — CSG-CRDS total (taux global sur nouvelle assiette)",
     "value": 9.7,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "Taux global CSG-CRDS = 9,7 % appliqué sur l'assiette après abattement de 26 % (revenu brut × 74 %). Décomposition : CSG déductible 6,8 % + CSG non déductible 2,4 % + CRDS 0,5 % = 9,7 %. La part non déductible (2,9 % = 2,4 % + 0,5 %) ne réduit pas le revenu imposable IR. Taux en légère baisse par rapport à l'ancien calcul car la réforme réalloue une partie de la charge vers les cotisations contributives (retraite)."
+    "notes": "Le taux global de CSG-CRDS est de 9,7 % sur votre assiette nette (revenu brut × 74 %). Ce taux se décompose en : CSG déductible 6,8 % + CSG non déductible 2,4 % + CRDS 0,5 % = 9,7 %. Seule la CSG déductible (6,8 %) réduit votre revenu imposable à l'IR. Les 2,9 % restants (CSG non déductible + CRDS) n'ouvrent pas droit à déduction fiscale."
   },
   {
     "item": "TNS réel — CSG déductible (fraction déductible de l'IR)",
     "value": 6.8,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "6,8 % de la nouvelle assiette (revenu brut × 74 %) est déductible du revenu imposable IR. Assiette identique à celle des autres cotisations sociales depuis la réforme."
+    "notes": "Les 6,8 % de CSG déductible peuvent être retranchés de votre revenu professionnel imposable lors de votre déclaration d'impôt sur le revenu. Cela réduit votre base IR et donc votre impôt."
   },
   {
     "item": "TNS réel — CSG non déductible + CRDS (fraction non déductible de l'IR)",
     "value": 2.9,
     "unit": "percent_of_assiette",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "2,9 % non déductibles : CSG non déductible 2,4 % + CRDS 0,5 %. À ajouter au résultat imposable pour le calcul de l'IR. Ne réduit pas la base imposable."
+    "notes": "Les 2,9 % de CSG non déductible et CRDS ne peuvent pas être déduits de votre revenu imposable. Vous payez bien ces cotisations, mais elles ne réduisent pas votre impôt sur le revenu."
   },
   {
     "item": "TNS réel — formation professionnelle (CFP) artisan",
     "value": 0.29,
     "unit": "percent_of_PASS",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "CFP artisans inscrits au RM : 0,29 % × PASS 2026 = 139,37 €. Assiette = PASS (montant forfaitaire). Donne accès au CPF et financement formation via OPCO."
+    "notes": "La contribution à la formation professionnelle (CFP) pour les artisans inscrits au registre des métiers est de 0,29 % du PASS 2026, soit environ 139 € par an. Ce montant forfaitaire (pas proportionnel à vos revenus) vous ouvre droit au financement de formations via votre OPCO."
   },
   {
     "item": "TNS réel — formation professionnelle (CFP) commerçant",
     "value": 0.25,
     "unit": "percent_of_PASS",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "CFP commerçants : 0,25 % × PASS 2026 = 120,15 €. Montant forfaitaire sur la base du PASS."
+    "notes": "La CFP pour les commerçants est de 0,25 % du PASS 2026, soit environ 120 € par an. Montant forfaitaire, indépendant de vos revenus."
   },
   {
     "item": "TNS réel — formation professionnelle (CFP) profession libérale non réglementée (SSI)",
     "value": 0.25,
     "unit": "percent_of_PASS",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
     "source_title": "Taux de cotisations — Artisan, commerçant et profession libérale non réglementée — URSSAF",
     "status": "verified",
-    "notes": "CFP professions libérales non réglementées relevant du SSI : 0,25 % × PASS 2026 = 120,15 €."
+    "notes": "Les professions libérales non réglementées relevant du SSI (consultants, formateurs, développeurs, etc.) paient également 0,25 % du PASS, soit environ 120 € par an au titre de la formation professionnelle."
   },
   {
     "item": "TNS réel — cotisation minimale retraite de base (artisan / commerçant)",
     "value": 967,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.compta-online.com/cotisations-minimales-des-travailleurs-independants-ao2375",
     "source_title": "Cotisations minimales travailleurs indépendants TNS 2026 — Compta Online",
     "status": "verified",
-    "notes": "Cotisation minimale retraite de base = 17,15 % × 19 % PASS = 967 € environ. Assiette plancher : 19 % du PASS = 9 131 €. Doit être versée même si le revenu est nul ou déficitaire. Permet de valider 3 trimestres de retraite."
+    "notes": "Même si vous n'avez pas de revenus (ou très peu), vous devez payer au minimum environ 967 € de cotisations retraite de base par an. Cette cotisation minimale correspond à 17,15 % appliqué sur 19 % du PASS (soit une assiette plancher de 9 131 €). Elle vous permet de valider 3 trimestres de retraite par an."
   },
   {
     "item": "TNS réel — cotisation minimale retraite complémentaire (artisan / commerçant)",
     "value": 740,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.compta-online.com/cotisations-minimales-des-travailleurs-independants-ao2375",
     "source_title": "Cotisations minimales travailleurs indépendants TNS 2026 — Compta Online",
     "status": "verified",
-    "notes": "Cotisation minimale retraite complémentaire = 8,1 % × 19 % PASS ≈ 740 €. Assiette plancher : 19 % du PASS. Pas de cotisation minimale pour les professions libérales non réglementées au titre de la retraite complémentaire."
+    "notes": "La cotisation minimale de retraite complémentaire pour les artisans et commerçants est d'environ 740 € par an (8,1 % × 19 % du PASS). Les professions libérales non réglementées ne sont pas soumises à cette cotisation minimale de retraite complémentaire."
   },
   {
     "item": "TNS réel — cotisation minimale maladie-maternité",
     "value": 288,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.compta-online.com/cotisations-minimales-des-travailleurs-independants-ao2375",
     "source_title": "Cotisations minimales travailleurs indépendants TNS 2026 — Compta Online",
     "status": "verified",
-    "notes": "Assiette minimale maladie : 40 % PASS = 19 224 €. Montant minimal ≈ 288 €. Cotisation indemnités journalières maladie minimale : 96 € (assiette : 40 % PASS)."
+    "notes": "La cotisation minimale maladie-maternité est d'environ 288 € par an, calculée sur une assiette plancher de 40 % du PASS (19 224 €). La cotisation minimale d'indemnités journalières maladie est distincte : environ 96 € par an."
   },
   {
     "item": "TNS réel — cotisation minimale invalidité-décès",
     "value": 72,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.compta-online.com/cotisations-minimales-des-travailleurs-independants-ao2375",
     "source_title": "Cotisations minimales travailleurs indépendants TNS 2026 — Compta Online",
     "status": "verified",
-    "notes": "Cotisation minimale invalidité-décès : entre 72 € (assiette 11,5 % PASS) et 119 € (assiette 19 % PASS avec complément). Assiette plancher minimale = 11,5 % × 48 060 € = 5 527 €."
+    "notes": "La cotisation minimale invalidité-décès est d'environ 72 € par an au minimum (calculée sur 11,5 % du PASS). Elle peut atteindre 119 € selon le profil. Même en l'absence de revenus, cette cotisation est due."
   },
   {
     "item": "ACRE — exonération partielle 1re année (artisan / commerçant / libéral SSI)",
     "value": 50,
     "unit": "percent_reduction",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/portail/home/independant/je-cree-mon-entreprise/aide-aux-createurs/laide-a-la-creation-ou-a-la-rep.html",
     "source_title": "ACRE : aide à la création ou reprise d'entreprise — URSSAF",
     "status": "verified",
-    "notes": "Réduction de 50 % sur les cotisations sociales obligatoires (hors CSG-CRDS) pendant les 12 premiers mois. Conditions d'éligibilité : demandeur d'emploi indemnisé ARE, bénéficiaire RSA/ASS, jeune < 26 ans (30 ans si handicapé), salarié ou licencié d'une entreprise en sauvegarde/RJ/LJ, etc. Demande à formuler dans les 45 jours suivant la création. Ne s'applique pas aux auto-entrepreneurs au-delà du premier seuil de CA."
+    "notes": "Si vous créez ou reprenez une entreprise et que vous remplissez certaines conditions (demandeur d'emploi indemnisé, bénéficiaire du RSA, moins de 26 ans, etc.), vous bénéficiez d'une réduction de 50 % sur vos cotisations sociales obligatoires (hors CSG-CRDS) pendant les 12 premiers mois. Vous devez en faire la demande dans les 45 jours suivant la création. À noter : cette réduction ne s'applique pas aux auto-entrepreneurs dont le CA dépasse un premier seuil."
   }
-]
+  ]
+}

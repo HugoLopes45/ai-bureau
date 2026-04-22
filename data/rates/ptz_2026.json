@@ -1,24 +1,34 @@
 {
+  "_meta": {
+    "titre": "Prêt à Taux Zéro (PTZ) — zones, quotités et plafonds 2026",
+    "description": "Contient les zones éligibles au PTZ, les plafonds de revenus, les quotités (pourcentage finançable), les plafonds de coût du logement et la durée maximale du prêt.",
+    "a_qui_ca_sert": "Utilisé par le skill crédit-immobilier pour calculer le montant maximum du PTZ, vérifier l'éligibilité d'un acheteur selon sa zone et ses revenus, et estimer l'apport PTZ dans un plan de financement.",
+    "frequence_revision": "Les règles PTZ ont été réformées au 1er avril 2025 (extension à toutes les zones pour le neuf). À vérifier en cas de loi de finances modifiant les zones ou les quotités.",
+    "derniere_verification": "2026-04-22",
+    "prochaine_revision": "Janvier 2027 (vérification annuelle)",
+    "source_principale": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10871",
+    "note_utilisateur": "Depuis avril 2025, le PTZ neuf est accessible partout en France (toutes zones A, B, C). Ce fichier reflète ces nouvelles règles."
+  },
   "meta": {
     "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10871",
     "source_title": "Prêt à taux zéro (PTZ) — Service Public",
     "applicable_year": 2026,
     "status": "verified",
-    "notes": "Réforme loi de finances 2025 : depuis le 1er avril 2025, le PTZ neuf est étendu à toutes les zones (A, Abis, B1, B2, C). Le PTZ ancien reste limité aux zones B2 et C avec travaux ≥ 25 % du coût total. Durée max : 25 ans."
+    "notes": "Depuis le 1er avril 2025, le PTZ neuf est étendu à toutes les zones géographiques (A, Abis, B1, B2 et C). Avant cette date, le PTZ neuf était limité aux zones tendues (A, Abis, B1). Le PTZ pour l'ancien avec travaux reste limité aux zones B2 et C, avec une exigence de travaux représentant au moins 25 % du coût total. La durée maximale du PTZ est de 25 ans."
   },
   "eligible_zones": {
     "logement_neuf_collectif": ["A", "Abis", "B1", "B2", "C"],
     "logement_neuf_individuel": ["A", "Abis", "B1", "B2", "C"],
     "logement_ancien_avec_travaux": ["B2", "C"],
-    "note": "Offres depuis le 1er avril 2025. Avant : neuf limité à A, Abis, B1."
+    "note": "Toutes zones accessibles pour le neuf depuis le 1er avril 2025. Avant : le neuf en zones B2 et C n'était pas éligible."
   },
   "travaux_minimum_logement_ancien": {
     "value": 25,
     "unit": "percent_of_total_cost",
-    "notes": "Les travaux doivent représenter au moins 25 % du coût total de l'opération."
+    "notes": "Pour bénéficier du PTZ dans l'ancien, les travaux de rénovation doivent représenter au moins 25 % du coût total de l'opération (prix d'achat + travaux). En dessous de ce seuil, le PTZ n'est pas accordé pour un logement ancien."
   },
   "plafonds_revenus_logement_neuf": {
-    "note": "Revenus = max(revenu fiscal de référence N-2, coût total / 9). 4 tranches définissent la quotité.",
+    "note": "Les revenus pris en compte sont le plus élevé des deux montants : votre revenu fiscal de référence (N-2) ou le coût total de l'opération divisé par 9. Quatre tranches de revenus déterminent le pourcentage du coût finançable (la quotité).",
     "zone_A_Abis": [49000, 73500, 88200, 102900, 117600],
     "zone_B1":     [34500, 51750, 62100, 72450, 82800],
     "zone_B2":     [31500, 47250, 56700, 66150, 75600],

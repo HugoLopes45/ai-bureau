@@ -1,200 +1,212 @@
-[
+{
+  "_meta": {
+    "titre": "Micro-entreprise (auto-entrepreneur) — seuils, taux et franchise TVA 2026",
+    "description": "Contient les seuils de CA pour le régime micro-fiscal, les abattements forfaitaires pour frais, les taux de cotisations sociales, les taux du versement libératoire, et les seuils de franchise TVA.",
+    "a_qui_ca_sert": "Utilisé par le skill micro-entreprise pour calculer les charges d'un auto-entrepreneur, vérifier si son CA lui permet de rester au régime micro, estimer ses cotisations URSSAF ou sa TVA éventuelle.",
+    "frequence_revision": "Les seuils de CA sont révisés tous les 3 ans (prochaine révision en 2029). Les taux de cotisations peuvent changer chaque 1er janvier. Les seuils TVA ont été modifiés en 2025 et restent stables pour 2026.",
+    "derniere_verification": "2026-04-22",
+    "prochaine_revision": "Janvier 2027 (vérification des taux de cotisations) — 2029 (révision triennale des seuils CA)",
+    "source_principale": "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/toutes-les-actualites/2026--modification-des-seuils-de.html",
+    "note_utilisateur": "Les seuils de CA ont été relevés au 1er janvier 2026. Si votre activité a démarré sous les anciens seuils, vérifiez que vous bénéficiez bien des nouvelles limites. Ce fichier est mis à jour chaque année après la publication des taux URSSAF."
+  },
+  "donnees": [
   {
     "item": "Micro-BIC vente — seuil de chiffre d'affaires (régime micro-fiscal 2026-2028)",
     "value": 203100,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2028-12-31",
+    "applicable_period": "Du 1er janvier 2026 au 31 décembre 2028",
     "source_url": "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/toutes-les-actualites/2026--modification-des-seuils-de.html",
     "source_title": "2026 : modification des seuils de chiffre d'affaires ou de recettes — Autoentrepreneur URSSAF",
     "status": "verified",
-    "notes": "Seuil relevé de 188 700 € à 203 100 € au 1er janvier 2026. Révisé tous les 3 ans par arrêté (trilogie 2026-2028). Activités concernées : vente de marchandises, fourniture de denrées à emporter ou consommer sur place, fourniture de logement (hôtels, chambres d'hôtes, meublés de tourisme). Dépassement 2 années consécutives → sortie du régime micro."
+    "notes": "Si vous vendez des marchandises, des denrées à emporter ou à consommer sur place, ou si vous proposez de l'hébergement (hôtel, chambre d'hôtes, meublé de tourisme), vous pouvez rester au régime micro-entrepreneur tant que votre chiffre d'affaires annuel ne dépasse pas 203 100 €. Ce seuil a été relevé de 188 700 € à 203 100 € au 1er janvier 2026. Attention : si vous dépassez ce seuil deux années de suite, vous sortez automatiquement du régime micro."
   },
   {
     "item": "Micro-BIC prestation de services — seuil de chiffre d'affaires (régime micro-fiscal 2026-2028)",
     "value": 83600,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2028-12-31",
+    "applicable_period": "Du 1er janvier 2026 au 31 décembre 2028",
     "source_url": "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/toutes-les-actualites/2026--modification-des-seuils-de.html",
     "source_title": "2026 : modification des seuils de chiffre d'affaires ou de recettes — Autoentrepreneur URSSAF",
     "status": "verified",
-    "notes": "Seuil relevé de 77 700 € à 83 600 € au 1er janvier 2026. Prestations de services commerciales ou artisanales (BIC). Seuil de franchise en base TVA distinct (85 000 €)."
+    "notes": "Pour les prestations de services commerciales ou artisanales (artisans, commerçants prestataires), le seuil du régime micro est de 83 600 €. Ce seuil a été relevé de 77 700 € au 1er janvier 2026. Attention : le seuil de franchise TVA pour les prestations (37 500 €) est différent et plus bas — dépasser 37 500 € de CA signifie que vous devez facturer la TVA, même si vous restez au régime micro fiscal."
   },
   {
     "item": "Micro-BNC — seuil de chiffre d'affaires (régime micro-fiscal 2026-2028)",
     "value": 83600,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2028-12-31",
+    "applicable_period": "Du 1er janvier 2026 au 31 décembre 2028",
     "source_url": "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/toutes-les-actualites/2026--modification-des-seuils-de.html",
     "source_title": "2026 : modification des seuils de chiffre d'affaires ou de recettes — Autoentrepreneur URSSAF",
     "status": "verified",
-    "notes": "Seuil relevé de 77 700 € à 83 600 € au 1er janvier 2026. Professions libérales (BNC) : même seuil que BIC prestations. Concerne professions libérales réglementées et non réglementées."
+    "notes": "Les professions libérales (BNC) — consultants, coachs, formateurs, développeurs, graphistes, etc. — peuvent rester au régime micro-entrepreneur jusqu'à 83 600 € de recettes annuelles. Même seuil que pour les BIC prestations."
   },
   {
     "item": "Micro-BIC vente — abattement forfaitaire pour frais",
     "value": 71,
     "unit": "percent_of_CA",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/le-regime-unique-des-tpe",
     "source_title": "Le régime unique des micro-entreprises — impots.gouv.fr",
     "status": "verified",
-    "notes": "Abattement forfaitaire de 71 % sur le CA brut pour obtenir le revenu imposable IR. Minimum d'abattement : 305 €. Ne peut pas être inférieur au minimum."
+    "notes": "Pour les activités de vente, l'administration fiscale considère que 71 % de votre CA correspond à des frais (achats, transport, etc.). Vous n'êtes donc imposé à l'IR que sur 29 % de votre CA. Exemple : 100 000 € de CA → 29 000 € imposables. Minimum d'abattement garanti : 305 €."
   },
   {
     "item": "Micro-BIC prestation — abattement forfaitaire pour frais",
     "value": 50,
     "unit": "percent_of_CA",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/le-regime-unique-des-tpe",
     "source_title": "Le régime unique des micro-entreprises — impots.gouv.fr",
     "status": "verified",
-    "notes": "Abattement forfaitaire de 50 % pour les prestations de services BIC. Minimum d'abattement : 305 €."
+    "notes": "Pour les prestations de services BIC, 50 % de votre CA est considéré comme des frais. Vous êtes donc imposé sur 50 % de vos recettes. Minimum d'abattement garanti : 305 €."
   },
   {
     "item": "Micro-BNC — abattement forfaitaire pour frais",
     "value": 34,
     "unit": "percent_of_CA",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/le-regime-unique-des-tpe",
     "source_title": "Le régime unique des micro-entreprises — impots.gouv.fr",
     "status": "verified",
-    "notes": "Abattement forfaitaire de 34 % pour les BNC. Minimum d'abattement : 305 €. 66 % du CA est imposable à l'IR."
+    "notes": "Pour les professions libérales (BNC), seuls 34 % de vos recettes sont considérés comme des frais. Vous êtes imposé sur 66 % de vos recettes. Minimum d'abattement garanti : 305 €."
   },
   {
     "item": "Cotisations sociales auto-entrepreneur — BIC vente (achat-revente, hébergement)",
     "value": 12.3,
     "unit": "percent_of_CA",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/actualites/taux-cotisations-autoentrepeneur.html",
     "source_title": "Évolution des taux de cotisations sociales des auto-entrepreneurs — URSSAF",
     "status": "verified",
-    "notes": "Taux forfaitaire global 2026 pour activités BIC vente : vente de marchandises, restauration, hébergement (meublés de tourisme classés). Inclut : maladie, maternité, retraite de base, retraite complémentaire, invalidité-décès, allocations familiales, CSG-CRDS, CFP. Taux inchangé par rapport à 2025. La réforme 2026 modifie la répartition interne (moins de CSG-CRDS, plus de cotisations contributives retraite) mais pas le taux global."
+    "notes": "Pour les activités de vente de marchandises, restauration et hébergement, vous versez 12,3 % de votre chiffre d'affaires en cotisations sociales (maladie, retraite, famille, etc.). Ce taux global est inchangé par rapport à 2025. La réforme 2026 modifie la répartition interne entre les différentes caisses mais pas le taux total que vous payez."
   },
   {
     "item": "Cotisations sociales auto-entrepreneur — BIC services (artisans, commerçants)",
     "value": 21.2,
     "unit": "percent_of_CA",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/actualites/taux-cotisations-autoentrepeneur.html",
     "source_title": "Évolution des taux de cotisations sociales des auto-entrepreneurs — URSSAF",
     "status": "verified",
-    "notes": "Prestations de services commerciales ou artisanales (BIC services) : artisans du bâtiment, coiffeurs, informaticiens BIC, etc. Taux inchangé par rapport à 2025."
+    "notes": "Pour les artisans et commerçants prestataires de services (BIC services : artisans du bâtiment, coiffeurs, informaticiens en activité commerciale, etc.), le taux de cotisations est de 21,2 % du CA. Taux inchangé par rapport à 2025."
   },
   {
     "item": "Cotisations sociales auto-entrepreneur — BNC professions libérales (régime général SSI)",
     "value": 25.6,
     "unit": "percent_of_CA",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/actualites/taux-cotisations-autoentrepeneur.html",
     "source_title": "Évolution des taux de cotisations sociales des auto-entrepreneurs — URSSAF",
     "status": "verified",
-    "notes": "BNC professions libérales non réglementées relevant du régime général (SSI) : consultants, formateurs, développeurs, graphistes, etc. Taux relevé de 24,6 % à 25,6 % au 1er janvier 2026 (+ 1 point). Changement 2026 : réallocation vers cotisations contributives (retraite)."
+    "notes": "Si vous exercez une profession libérale non réglementée rattachée à la Sécurité sociale des indépendants (SSI) — consultant, formateur, développeur, graphiste, coach — vous versez 25,6 % de vos recettes en cotisations. Ce taux a augmenté de 1 point par rapport à 2025 (24,6 %), car la réforme 2026 améliore les droits retraite des indépendants."
   },
   {
     "item": "Cotisations sociales auto-entrepreneur — BNC professions libérales CIPAV",
     "value": 23.2,
     "unit": "percent_of_CA",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.urssaf.fr/accueil/actualites/taux-cotisations-autoentrepeneur.html",
     "source_title": "Évolution des taux de cotisations sociales des auto-entrepreneurs — URSSAF",
     "status": "not_found",
-    "notes": "BNC professions libérales relevant de la CIPAV (architectes, ostéopathes, psychologues, guides touristiques, certains consultants). Taux 2026 : 23,2 % (inchangé par rapport à 2025 selon legisocial.fr — source tierce). La valeur n'a pas pu être vérifiée directement sur urssaf.fr (connexion échouée lors de la vérification du 2026-04-22). À confirmer sur urssaf.fr/accueil/actualites/taux-cotisations-autoentrepeneur.html."
+    "notes": "Certaines professions libérales réglementées (architectes, ostéopathes, psychologues, guides touristiques) relèvent de la CIPAV plutôt que du régime général. Leur taux serait de 23,2 % selon des sources tierces, mais cette valeur n'a pas pu être confirmée directement sur urssaf.fr à la date de vérification (22 avril 2026). Vérifiez sur urssaf.fr/accueil/actualites avant d'utiliser ce chiffre."
   },
   {
     "item": "Versement libératoire de l'IR — taux BIC vente",
     "value": 1.0,
     "unit": "percent_of_CA",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/le-regime-unique-des-tpe",
     "source_title": "Le régime unique des micro-entreprises — impots.gouv.fr",
     "status": "verified",
-    "notes": "Option versement libératoire : IR = 1 % du CA, versé simultanément aux cotisations sociales. Condition : RFR de l'avant-dernière année (N-2) ≤ 1re tranche IR × nombre de parts fiscales. Doit être formulé avant le 30 septembre de l'année N-1 pour application en N."
+    "notes": "Si vous avez opté pour le versement libératoire, vous payez votre impôt sur le revenu en même temps que vos cotisations sociales, à un taux forfaitaire de 1 % du CA pour les activités de vente. Pour en bénéficier, votre revenu fiscal de référence (N-2) doit être inférieur au plafond de la 1re tranche d'imposition multiplié par le nombre de parts de votre foyer. Cette option doit être demandée avant le 30 septembre pour s'appliquer l'année suivante."
   },
   {
     "item": "Versement libératoire de l'IR — taux BIC prestation",
     "value": 1.7,
     "unit": "percent_of_CA",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/le-regime-unique-des-tpe",
     "source_title": "Le régime unique des micro-entreprises — impots.gouv.fr",
     "status": "verified",
-    "notes": "Option versement libératoire BIC prestation de services : 1,7 % du CA. Mêmes conditions d'accès que BIC vente."
+    "notes": "Pour les prestations de services BIC, le taux du versement libératoire est de 1,7 % du CA. Mêmes conditions d'éligibilité que pour le BIC vente."
   },
   {
     "item": "Versement libératoire de l'IR — taux BNC",
     "value": 2.2,
     "unit": "percent_of_CA",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/le-regime-unique-des-tpe",
     "source_title": "Le régime unique des micro-entreprises — impots.gouv.fr",
     "status": "verified",
-    "notes": "Option versement libératoire BNC : 2,2 % du CA. Mêmes conditions d'accès que BIC."
+    "notes": "Pour les professions libérales (BNC), le taux du versement libératoire est de 2,2 % du CA. Mêmes conditions d'éligibilité que pour les BIC."
   },
   {
     "item": "Franchise en base TVA — seuil vente de marchandises (seuil normal)",
     "value": 85000,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-puis-je-etre-redevable-de-la-tva",
     "source_title": "En tant que micro-entrepreneur, puis-je être redevable de la TVA ? — impots.gouv.fr",
     "status": "verified",
-    "notes": "Seuil normal de franchise en base TVA pour les activités de vente, restauration, hébergement. Seuil abaissé de 91 900 € à 85 000 € par la LF 2025 (art. 32), définitivement maintenu suite à la suppression de la réforme de l'abaissement à 25 000 € par la loi du 3 novembre 2025. Si CA N-1 ≤ 85 000 € : franchise applicable. Dépassement en cours d'année → TVA due à compter du 1er jour du mois de dépassement du seuil majoré (93 500 €)."
+    "notes": "Si votre CA de l'année précédente ne dépasse pas 85 000 €, vous n'avez pas à facturer la TVA à vos clients. Ce seuil a été abaissé de 91 900 € à 85 000 € par la loi de finances 2025. Important : ce seuil de TVA est indépendant du seuil du régime micro (203 100 €) — vous pouvez rester auto-entrepreneur tout en devenant assujetti à la TVA."
   },
   {
     "item": "Franchise en base TVA — seuil vente de marchandises (seuil majoré de tolérance)",
     "value": 93500,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-puis-je-etre-redevable-de-la-tva",
     "source_title": "En tant que micro-entrepreneur, puis-je être redevable de la TVA ? — impots.gouv.fr",
     "status": "verified",
-    "notes": "Seuil majoré de tolérance vente : 93 500 €. Si CA N (en cours) dépasse 93 500 €, la TVA est due à compter du 1er jour du mois de dépassement, même si CA N-1 ≤ 85 000 €."
+    "notes": "Si votre CA dépasse 93 500 € en cours d'année (même si votre CA de l'année précédente était sous 85 000 €), vous devez facturer la TVA à compter du 1er jour du mois de dépassement. C'est un dépassement en temps réel, pas en fin d'année."
   },
   {
     "item": "Franchise en base TVA — seuil prestation de services (seuil normal)",
     "value": 37500,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-puis-je-etre-redevable-de-la-tva",
     "source_title": "En tant que micro-entrepreneur, puis-je être redevable de la TVA ? — impots.gouv.fr",
     "status": "verified",
-    "notes": "Seuil normal franchise TVA pour prestations de services et BNC. Abaissé de 36 800 € à 37 500 €. Attention : les seuils de franchise TVA sont désormais décorrélés des seuils de CA micro-entrepreneur. Dépasser 37 500 € de CA en TVA n'implique pas la sortie du régime micro si le CA reste < 83 600 €."
+    "notes": "Pour les prestataires de services et professions libérales, le seuil de franchise TVA est seulement de 37 500 €, bien inférieur au seuil du régime micro (83 600 €). Cela signifie que beaucoup d'auto-entrepreneurs en prestation de services deviennent assujettis à la TVA avant d'atteindre le plafond du régime micro."
   },
   {
     "item": "Franchise en base TVA — seuil prestation de services (seuil majoré de tolérance)",
     "value": 41250,
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-puis-je-etre-redevable-de-la-tva",
     "source_title": "En tant que micro-entrepreneur, puis-je être redevable de la TVA ? — impots.gouv.fr",
     "status": "verified",
-    "notes": "Seuil majoré de tolérance services : 41 250 €. Si CA N dépasse 41 250 €, la TVA est due à compter du 1er jour du mois de dépassement."
+    "notes": "Si votre CA de prestations dépasse 41 250 € en cours d'année, vous devez facturer la TVA à compter du 1er jour du mois de dépassement. Au-delà de ce seuil, l'obligation s'applique immédiatement, sans attendre l'année suivante."
   },
   {
     "item": "CFE — cotisation foncière des entreprises (micro-entrepreneur)",
     "value": "variable selon commune",
     "unit": "EUR_per_year",
     "applicable_year": 2026,
-    "applicable_period": "2026-01-01 to 2026-12-31",
+    "applicable_period": "Du 1er janvier au 31 décembre 2026",
     "source_url": "https://www.impots.gouv.fr/professionnel/la-cotisation-fonciere-des-entreprises-cfe",
     "source_title": "La cotisation foncière des entreprises (CFE) — impots.gouv.fr",
     "status": "verified",
-    "notes": "La CFE est due par tous les micro-entrepreneurs, sauf exonération la 1re année. Assiette : valeur locative des biens utilisés pour l'activité. En l'absence de local professionnel, une cotisation minimale fixée par la commune s'applique (varie de 221 € à 2 308 € selon le CA). Exonération si CA < 5 000 €."
+    "notes": "Tous les auto-entrepreneurs doivent payer la CFE (une taxe locale), sauf pendant leur première année d'activité (exonération automatique). Si votre CA annuel est inférieur à 5 000 €, vous êtes également exonéré. Pour les auto-entrepreneurs sans local professionnel (travail à domicile), une cotisation minimale fixée par votre commune s'applique : elle varie généralement de 221 € à 2 308 € selon votre niveau de CA. Consultez votre espace impots.gouv.fr pour connaître votre montant."
   }
-]
+  ]
+}
