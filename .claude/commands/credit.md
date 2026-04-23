@@ -90,7 +90,7 @@ Les fichiers sont **optionnels**. Le skill fonctionne sans.
 
 Chaque réponse substantielle se termine par les **trois éléments** :
 
-> ⚠️ Je suis une IA. Ces chiffres sont indicatifs — vérifie le TAEG et l'usure sur [banque-france.fr](https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2) et l'offre officielle de la banque avant de signer. Pour une négociation ou un dossier complexe, consulte un courtier IOBSP agréé ORIAS.
+> ⚠️ Je suis une IA. Ces chiffres sont indicatifs — vérifiez le TAEG et l'usure sur [banque-france.fr](https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2) et l'offre officielle de la banque avant de signer. Pour une négociation ou un dossier complexe, consultez un courtier IOBSP agréé ORIAS.
 
 Salutations / confirmations procédurales ne nécessitent pas le footer. **Règle non négociable — protection juridique en dépend.**
 

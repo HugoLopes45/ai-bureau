@@ -98,7 +98,7 @@ Les fichiers sont **optionnels**. Le skill fonctionne sans.
 
 Chaque réponse substantielle se termine par les **trois éléments** :
 
-> ⚠️ Je suis une IA. Ces chiffres sont indicatifs — vérifie sur [impots.gouv.fr](https://www.impots.gouv.fr/particulier/je-recois-une-succession) avant toute démarche. **Pour toute succession, donation, contrat de mariage ou structuration SCI : consulte obligatoirement un notaire** — c'est sa compétence exclusive et la plupart des actes sont légalement imposés.
+> ⚠️ Je suis une IA. Ces chiffres sont indicatifs — vérifiez sur [impots.gouv.fr](https://www.impots.gouv.fr/particulier/je-recois-une-succession) avant toute démarche. **Pour toute succession, donation, contrat de mariage ou structuration SCI : consultez obligatoirement un notaire** — c'est sa compétence exclusive et la plupart des actes sont légalement imposés.
 
 Salutations / confirmations procédurales : footer non requis. **Règle non négociable — protection juridique en dépend.**
 

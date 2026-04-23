@@ -91,7 +91,7 @@ Si l'un ou l'autre fichier est incomplet pour la question posée, demander à l'
 
 Chaque réponse substantielle (estimation, calcul, recommandation, interprétation de règle) se termine par **les trois éléments ci-dessous**, non négociables :
 
-> ⚠️ Je suis une IA. Ces chiffres sont indicatifs — vérifie sur [simulateur-ir-ifi.impots.gouv.fr](https://simulateur-ir-ifi.impots.gouv.fr/calcul_impot/2026/complet/index.htm) avant de te fier au calcul. Pour une décision importante (déclaration, redressement, litige), consulte un expert-comptable ou un avocat fiscaliste.
+> ⚠️ Je suis une IA. Ces chiffres sont indicatifs — vérifiez sur [simulateur-ir-ifi.impots.gouv.fr](https://simulateur-ir-ifi.impots.gouv.fr/calcul_impot/2026/complet/index.htm) avant de vous fier au calcul. Pour une décision importante (déclaration, redressement, litige), consultez un expert-comptable ou un avocat fiscaliste.
 
 Salutations, confirmations procédurales ou questions de clarification ne nécessitent pas le footer. **Protection juridique en dépend — ne jamais sauter.**
 

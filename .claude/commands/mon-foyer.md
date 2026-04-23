@@ -27,7 +27,7 @@ Avant **toute** écriture :
 
 `AskUserQuestion` :
 - header : "Situation"
-- question : "Quelle est ta situation familiale ?"
+- question : "Quelle est votre situation familiale ?"
 - multiSelect : false
 - options :
   - "Célibataire" — 1 déclarant, 1 part fiscale
@@ -39,7 +39,7 @@ Avant **toute** écriture :
 
 `AskUserQuestion` :
 - header : "Enfants"
-- question : "Combien d'enfants à charge dans ton foyer fiscal ?"
+- question : "Combien d'enfants à charge dans votre foyer fiscal ?"
 - multiSelect : false
 - options :
   - "Aucun"
@@ -126,12 +126,12 @@ Si confirmé :
 2. **Lecture** de `foyer.json` existant (pour préserver les champs non touchés).
 3. **Patch** : fusion non-destructive des nouveaux champs sur l'existant (ne jamais effacer un champ qu'on n'a pas demandé).
 4. **Écriture** de `foyer.json` avec le résultat.
-5. **Confirmation** en français : "✅ foyer.json mis à jour. Backup dans foyer.json.bak. Tape `/impots` ou `/bonjour` pour continuer."
+5. **Confirmation** en français : "✅ foyer.json mis à jour. Backup dans foyer.json.bak. Tapez `/impots` ou `/bonjour` pour continuer."
 
 # Règles strictes
 
 - **Montants arrondis acceptés** — ne jamais bloquer sur la précision au centime.
 - **Jamais de JSON brut** affiché à l'utilisateur.
 - **Ne pas effacer** un champ non demandé. Lecture → patch → écriture, jamais écrasement complet.
-- **Footer IA obligatoire** sur toute réponse substantielle : "⚠️ Je suis une IA. Ces informations sont à double-vérifier avec les sources officielles. Pour toute décision importante, consulte un conseiller fiscal ou un expert-comptable."
+- **Footer IA obligatoire** sur toute réponse substantielle : "⚠️ Je suis une IA. Ces informations sont à double-vérifier avec les sources officielles. Pour toute décision importante, consultez un conseiller fiscal ou un expert-comptable."
 - **Ne demander que ce qui est nécessaire** pour la question en cours. Le but n'est pas de remplir tout le fichier d'un coup mais de compléter au fil des usages.

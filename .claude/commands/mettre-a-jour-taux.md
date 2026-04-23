@@ -127,7 +127,7 @@ Toute source hors de cette liste est **interdite** comme source primaire. Elle p
 
 Chaque session de rafraîchissement se termine par :
 
-> ⚠️ Ces taux sont fournis à titre informatif et proviennent de sources officielles françaises. Pour toute décision fiscale ou sociale importante, consulte un professionnel agréé (expert-comptable, CIF, notaire).
+> ⚠️ Ces taux sont fournis à titre informatif et proviennent de sources officielles françaises. Pour toute décision fiscale ou sociale importante, consultez un professionnel agréé (expert-comptable, CIF, notaire).
 
 # Dernière mise à jour
 

@@ -73,7 +73,7 @@ Les fichiers sont **optionnels**. Le skill fonctionne sans.
 
 Chaque réponse substantielle se termine par les **trois éléments** :
 
-> ⚠️ Je suis une IA. Les procédures et coûts indicatifs — vérifie sur [service-public.gouv.fr](https://www.service-public.gouv.fr/) et [ants.gouv.fr](https://ants.gouv.fr/). En cas de blocage, rends-toi à une **maison France Services** (gratuit) ou à ta mairie.
+> ⚠️ Je suis une IA. Les procédures et coûts indicatifs — vérifiez sur [service-public.gouv.fr](https://www.service-public.gouv.fr/) et [ants.gouv.fr](https://ants.gouv.fr/). En cas de blocage, rendez-vous dans une **maison France Services** (gratuit) ou à votre mairie.
 
 Salutations / confirmations : footer non requis. **Règle non négociable.**
 

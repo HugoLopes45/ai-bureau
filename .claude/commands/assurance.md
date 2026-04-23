@@ -81,7 +81,7 @@ Les fichiers sont **optionnels**. Le skill fonctionne sans.
 
 Chaque réponse substantielle se termine par les **trois éléments** :
 
-> ⚠️ Je suis une IA. Ces informations sont indicatives — vérifie sur [service-public.gouv.fr](https://www.service-public.gouv.fr/) et les conditions générales de ton contrat. Pour un litige ou un changement complexe, consulte un courtier agréé ORIAS ou un médiateur de l'assurance.
+> ⚠️ Je suis une IA. Ces informations sont indicatives — vérifiez sur [service-public.gouv.fr](https://www.service-public.gouv.fr/) et les conditions générales de votre contrat. Pour un litige ou un changement complexe, consultez un courtier agréé ORIAS ou un médiateur de l'assurance.
 
 Salutations / confirmations : footer non requis. **Règle non négociable.**
 

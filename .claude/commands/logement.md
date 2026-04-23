@@ -105,6 +105,14 @@ Les fichiers de configuration sont **optionnels**. Ce skill fonctionne sans eux.
 - "Le propriétaire veut garder mon dépôt de garantie pour une porte rayée, c'est légal ?"
 - "Je signe un bail en zone tendue, comment vérifier que le loyer respecte l'encadrement ?"
 
+# Footer IA — Règle 4
+
+Chaque réponse substantielle se termine par les **trois éléments** :
+
+> ⚠️ Je suis une IA. Ces informations sont indicatives — vérifiez sur [service-public.fr](https://www.service-public.fr/particuliers/vosdroits/N19806) et [anil.org](https://www.anil.org/). Pour tout litige ou procédure judiciaire, consultez un avocat en droit immobilier ou l'ADIL de votre département.
+
+Salutations / confirmations : footer non requis. **Règle non négociable — protection juridique en dépend.**
+
 # Dernière mise à jour
 
 2026-04-23 — loi 89-462, IRL INSEE trimestriel, bouclier loyer (vérifier date d'effet en cours), gel DPE F/G depuis 2023, interdiction relocation G 2025. Les plafonds en zones tendues sont fixés par décret préfectoral annuel — vérifier la liste à jour.

@@ -73,7 +73,7 @@ Les fichiers sont **optionnels**. Le skill fonctionne sans.
 
 Chaque réponse substantielle se termine par les **trois éléments** :
 
-> ⚠️ Je suis une IA. Ces estimations sont indicatives — vérifie sur [le simulateur officiel CAF](https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/estimervosdroits) avec tes revenus réels. Pour ouvrir un dossier, utilise ton espace caf.fr ou contacte un travailleur social / point France Services.
+> ⚠️ Je suis une IA. Ces estimations sont indicatives — vérifiez sur [le simulateur officiel CAF](https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/estimervosdroits) avec vos revenus réels. Pour ouvrir un dossier, utilisez votre espace caf.fr ou contactez un travailleur social / point France Services.
 
 Salutations / confirmations : footer non requis. **Règle non négociable.**
 

@@ -103,7 +103,7 @@ Si oui : "Valeur totale en euros ? Prix de revient global si connu (pour les plu
 
 `AskUserQuestion` :
 - header : "Profil"
-- question : "Comment tu te décrirais comme investisseur ?"
+- question : "Comment vous décririez-vous comme investisseur ?"
 - multiSelect : false
 - options :
   - "Défensif" — priorité à la sécurité
@@ -111,7 +111,7 @@ Si oui : "Valeur totale en euros ? Prix de revient global si connu (pour les plu
   - "Dynamique" — à l'aise avec la volatilité
   - "Agressif" — maximiser le rendement long terme
 
-Puis libre : "Sur combien d'années tu investis ? (retraite dans X ans, projet dans Y ans…)"
+Puis libre : "Sur combien d'années investissez-vous ? (retraite dans X ans, projet dans Y ans…)"
 
 # Étape 6 — Récapitulatif + DIFF
 
@@ -150,7 +150,7 @@ Si confirmé :
 2. **Lecture** de l'existant pour préserver les champs non touchés.
 3. **Patch** non-destructif : fusion des nouveaux champs sur l'existant.
 4. **Écriture** de `patrimoine.json`.
-5. **Confirmation** : "✅ patrimoine.json mis à jour. Backup dans patrimoine.json.bak. Tape `/patrimoine` pour une allocation optimisée ou `/impots` pour la fiscalité de tes plus-values."
+5. **Confirmation** : "✅ patrimoine.json mis à jour. Backup dans patrimoine.json.bak. Tapez `/patrimoine` pour une allocation optimisée ou `/impots` pour la fiscalité de vos plus-values."
 
 # Règles strictes
 
@@ -158,4 +158,4 @@ Si confirmé :
 - **Sections optionnelles** — si l'utilisateur n'a pas de PEA ou pas de crypto, passer sans forcer.
 - **Jamais de JSON brut** à l'écran.
 - **Ne pas effacer** un champ non demandé. Lecture → patch → écriture.
-- **Footer IA obligatoire** sur toute réponse substantielle : "⚠️ Je suis une IA. Pour toute décision d'allocation ou arbitrage, consulte un CIF (Conseiller en Investissements Financiers) agréé AMF ou un CGP."
+- **Footer IA obligatoire** sur toute réponse substantielle : "⚠️ Je suis une IA. Pour toute décision d'allocation ou arbitrage, consultez un CIF (Conseiller en Investissements Financiers) agréé AMF ou un CGP."

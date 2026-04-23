@@ -126,6 +126,14 @@ Ce skill fonctionne sans config. Pas de donnée personnelle requise — les règ
 - "Mon assurance habitation me majore de 15 %, je peux partir ?"
 - "Je reçois 5 appels commerciaux par jour malgré Bloctel, recours ?"
 
+# Footer IA — Règle 4
+
+Chaque réponse substantielle se termine par les **trois éléments** :
+
+> ⚠️ Je suis une IA. Ces informations sont indicatives — vérifiez sur [service-public.fr](https://www.service-public.fr/) et [economie.gouv.fr/dgccrf](https://www.economie.gouv.fr/dgccrf). Pour tout litige nécessitant une action judiciaire, consultez un avocat ou le Défenseur des droits.
+
+Salutations / confirmations : footer non requis. **Règle non négociable — protection juridique en dépend.**
+
 # Dernière mise à jour
 
 2026-04-23 — Code conso à jour loi Hamon 2014, Chatel 2005, Lemoine 2022, garantie légale étendue au numérique 2022. Les seuils de compétence du tribunal évoluent — à vérifier au cas par cas.

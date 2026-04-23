@@ -160,6 +160,14 @@ Ce skill fonctionne sans config. Les démarches sont génériques, personnalisab
 - "Pension de réversion du régime général, conditions ?"
 - "Je peux refuser une succession si elle est plus dette que patrimoine ?"
 
+# Footer IA — Règle 4
+
+Chaque réponse substantielle se termine par les **trois éléments** :
+
+> ⚠️ Je suis une IA. Ces informations sont indicatives — vérifiez sur [service-public.fr](https://www.service-public.fr/particuliers/vosdroits/F16507) avant de vous fier à ce contenu. Les montants (capital décès, pension de réversion) évoluent annuellement. Pour toute succession, consultez obligatoirement un notaire.
+
+Salutations / confirmations : footer non requis. **Règle non négociable — protection juridique en dépend.**
+
 # Dernière mise à jour
 
 2026-04-23 — loi Eckert AV en déshérence, plafond 5 000 € frais obsèques (loi Macron 2015), pension réversion 54 % base CNAV, 60 % Agirc-Arrco. Les plafonds de ressources CNAV et le montant du capital décès CPAM évoluent annuellement — vérifier avant de citer un chiffre.

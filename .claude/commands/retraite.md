@@ -91,7 +91,7 @@ Les fichiers sont **optionnels**. Le skill fonctionne sans.
 
 Chaque réponse substantielle se termine par les **trois éléments** :
 
-> ⚠️ Je suis une IA. Ces chiffres sont indicatifs — vérifie sur [info-retraite.fr](https://www.info-retraite.fr/) avec ton compte personnel avant toute décision. Pour liquider ta retraite ou contester un calcul, contacte ta caisse ou consulte un conseiller CNAV au 3960.
+> ⚠️ Je suis une IA. Ces chiffres sont indicatifs — vérifiez sur [info-retraite.fr](https://www.info-retraite.fr/) avec votre compte personnel avant toute décision. Pour liquider votre retraite ou contester un calcul, contactez votre caisse ou consultez un conseiller CNAV au 3960.
 
 Salutations / confirmations procédurales : footer non requis. **Règle non négociable — protection juridique en dépend.**
 

@@ -102,7 +102,7 @@ Les fichiers sont **optionnels**. Le skill fonctionne sans.
 
 Chaque réponse substantielle se termine par les **trois éléments** :
 
-> ⚠️ Je suis une IA. Ces estimations sont indicatives — vérifie les prix sur [dvf.etalab.gouv.fr](https://dvf.etalab.gouv.fr/) et les règles fiscales sur [impots.gouv.fr](https://www.impots.gouv.fr/). Pour toute transaction, consulte un notaire (acte obligatoire) et un expert-comptable pour LMNP/LMP réel.
+> ⚠️ Je suis une IA. Ces estimations sont indicatives — vérifiez les prix sur [dvf.etalab.gouv.fr](https://dvf.etalab.gouv.fr/) et les règles fiscales sur [impots.gouv.fr](https://www.impots.gouv.fr/). Pour toute transaction, consultez un notaire (acte obligatoire) et un expert-comptable pour LMNP/LMP réel.
 
 Salutations / confirmations : footer non requis. **Règle non négociable.**
 

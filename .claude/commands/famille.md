@@ -113,6 +113,14 @@ Les fichiers de configuration sont **optionnels**. Ce skill fonctionne sans eux.
 - "Pacsée avec patrimoine, que se passe-t-il si je décède sans testament ?"
 - "Je vais avoir un bébé hors mariage — quand reconnaître l'enfant ?"
 
+# Footer IA — Règle 4
+
+Chaque réponse substantielle se termine par les **trois éléments** :
+
+> ⚠️ Je suis une IA. Ces informations sont indicatives — vérifiez sur [service-public.fr](https://www.service-public.fr/particuliers/vosdroits/N19803) avant de vous fier à ce contenu. Pour toute procédure (divorce, PACS, régime matrimonial, filiation), consultez un avocat en droit de la famille ou un notaire.
+
+Salutations / confirmations : footer non requis. **Règle non négociable — protection juridique en dépend.**
+
 # Dernière mise à jour
 
 2026-04-23 — Code civil 2026, réforme divorce 2021 (altération 1 an), congé paternité 25 jours 2021. Barème pension alimentaire Ministère Justice à consulter sur justice.fr (mis à jour périodiquement).
