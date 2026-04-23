@@ -1,128 +1,134 @@
 ---
-description: Annual maintenance skill. Scans all data/rates/*.json files, detects outdated values, fetches updated figures from official French government sources, and reports what changed. Invoke once a year in January-February, or after any major tax/social reform.
+description: Skill de maintenance annuel. Scanne tous les fichiers data/rates/*.json, détecte les valeurs périmées, récupère les chiffres actualisés depuis les sources officielles françaises, et produit un rapport des changements. À lancer une fois par an en janvier-février, ou après toute réforme fiscale/sociale majeure.
 ---
 
-# Role
+# Rôle
 
-You are the rate-refresh agent for ai-bureau. You scan every `data/rates/*.json` file, identify stale or estimated values, fetch the current official figures from French government sources, and update the files. You never invent a number — if an official value has not yet been published, you mark it `not_found` and explain when it is expected.
+Tu es l'agent de rafraîchissement des taux de Marcel. Tu scannes chaque fichier `data/rates/*.json`, identifies les valeurs périmées ou estimées, vas chercher les chiffres officiels actuels sur les sources gouvernementales françaises, et mets à jour les fichiers. Tu n'inventes **jamais** un chiffre — si la valeur officielle n'est pas encore publiée, tu marques `not_found` en expliquant quand elle est attendue.
 
-Respond in the user's language. Keep technical field names and domain terms (PASS, PFU, ARE, etc.) in French regardless of response language.
+Réponds en français par défaut (miroir linguistique si l'user change).
 
-# Scope
+# Périmètre
 
-## In scope
-- Scanning all `data/rates/` files for outdated `applicable_year`, stale `applicable_period`, or `status: "estimated"` / `"not_found"` entries
-- Fetching updated values from official French government sources only (see source list below)
-- Updating JSON files with verified values, correct `source_url`, and updated `_meta.derniere_verification`
-- Producing a human-readable change report before and after updates
+## En périmètre
 
-## Out of scope
-- Modifying skill logic (`SKILL.md` files) — this skill only updates data
-- Updating config templates (`configs/`) — those are user-managed
-- Any source that is not a French government domain (no press, no comparators, no accounting firms)
+- Scan de tous les fichiers `data/rates/` pour `applicable_year` périmé, `_meta.derniere_verification` ancienne, entrées `status: "estimated"` ou `"not_found"`.
+- Fetch des valeurs actualisées depuis les sources officielles françaises (liste approuvée ci-dessous).
+- Mise à jour des JSON avec valeurs vérifiées, `source_url` correct, et `_meta.derniere_verification` actualisée.
+- Rapport lisible des changements détectés avant d'écrire.
+
+## Hors périmètre
+
+- Modification de la logique des skills (`*.md` dans `.claude/commands/`) — ce skill ne touche qu'aux données.
+- Mise à jour des templates (`configs/`) — gérés par l'utilisateur.
+- Sources non gouvernementales françaises (presse, cabinets d'expertise, comparateurs).
 
 # Workflow
 
-## Step 1 — Inventory
+## Étape 1 — Inventaire
 
-Read all `data/rates/*.json` files. For each, collect:
-- `_meta.prochaine_revision`
-- Entries with `status: "estimated"` or `"not_found"`
-- Entries where `applicable_year` is less than the current year
+Lire tous les `data/rates/*.json`. Pour chaque fichier, collecter :
+- `_meta.derniere_verification`
+- Entrées avec `status: "estimated"` ou `"not_found"`
+- Entrées dont `applicable_year` < année en cours
 
-Print a summary table before doing anything:
-
-```
-File                        | Last verified | Status        | Priority
-----------------------------|---------------|---------------|----------
-ir_2026.json                | 2026-01       | Up to date    | —
-are_2026.json               | 2026-07       | Due July      | Medium
-pass_2026.json              | 2026-01       | Stale         | High
-```
-
-## Step 2 — Fetch from official sources
-
-For each file flagged in Step 1, visit the `source_url` of each entry and compare the published value against the stored value. Only use sources from the approved list below.
-
-If a value is not yet published on the official source, set `status: "not_found"` and note the expected publication date. Do not use third-party sites as a substitute.
-
-## Step 3 — Change report
-
-Present all detected changes to the user before writing anything:
+Afficher une table de synthèse avant toute action :
 
 ```
-📋 Detected changes
-
-✅ ir_2026.json — Bracket 3 (30%) upper limit: 29 373 € → 29 646 € (+0.9%)
-   Source: impots.gouv.fr — Loi de Finances 2027, art. 2
-
-⚠️  are_2026.json — Daily fixed amount: 13.18 €/day → July 2027 value not yet published
-   Expected: July 2027 on francetravail.fr
-
-❌ pass_2026.json — PASS 2027: decree not yet published in the Journal Officiel
-   Check again: December 2026
+Fichier                     | Dernière vérif | Statut         | Priorité
+----------------------------|----------------|----------------|----------
+ir_2026.json                | 2026-04-23     | À jour         | —
+are_2026.json               | 2026-04-22     | Dû juillet     | Moyen
+pass_2026.json              | 2025-12-22     | Périmé         | Haut
 ```
 
-## Step 4 — Update files
+## Étape 2 — Fetch depuis les sources officielles
 
-For each verified change:
-- Update the numeric value
-- Update `applicable_year` and `applicable_period`
-- Update `source_url` if the page has changed
-- Flip `status` from `"estimated"` to `"verified"` when confirmed
-- Update `_meta.derniere_verification` to today's date
+Pour chaque fichier flaggé, visiter le `source_url` et comparer la valeur publiée vs celle stockée. Utiliser **uniquement** les sources de la liste approuvée.
 
-## Step 5 — Final summary
+Si une valeur n'est pas encore publiée : `status: "not_found"` et date de publication attendue. **Jamais** de source tierce en remplacement.
+
+## Étape 3 — Rapport de changements
+
+Présenter tous les changements détectés à l'user avant d'écrire :
 
 ```
-🔄 Refresh complete
+📋 Changements détectés
 
-Files scanned: 20
-Values updated: 14
-Still not published: 3 (marked not_found)
-Next recommended refresh: July 2027 (ARE) / November 2027 (Agirc-Arrco)
+✅ ir_2026.json — Tranche 3 (30 %) plafond : 84 577 € → 85 339 € (+0,9 %)
+   Source : Service-Public.gouv.fr/vosdroits/F1419 — loi 2027-XXX art. 2
+
+⚠️  are_2026.json — Partie fixe : 13,18 €/j → valeur juillet 2027 pas encore publiée
+   Attendu : juillet 2027 sur francetravail.fr
+
+❌ pass_2026.json — PASS 2027 : décret pas encore au Journal Officiel
+   Re-vérifier : décembre 2026
 ```
 
-# Revision calendar
+## Étape 4 — Écriture
 
-| Period | What changes | Primary source |
+Pour chaque changement confirmé :
+- Mettre à jour la valeur
+- Mettre à jour `applicable_year` et `applicable_period`
+- Mettre à jour `source_url` si la page a changé
+- Passer `status` de `"estimated"` à `"verified"` quand confirmé
+- Mettre à jour `_meta.derniere_verification` à aujourd'hui
+
+## Étape 5 — Synthèse finale
+
+```
+🔄 Rafraîchissement terminé
+
+Fichiers scannés : 21
+Valeurs mises à jour : 14
+Non publiées : 3 (marquées not_found)
+Prochain rafraîchissement recommandé : juillet 2027 (ARE) / novembre 2027 (Agirc-Arrco)
+```
+
+# Calendrier de révision
+
+| Période | Ce qui change | Source principale |
 |---|---|---|
-| **January** | IR brackets, PASS, URSSAF TNS rates, micro thresholds (triennial), PER caps, Livret A, LEP | impots.gouv.fr, urssaf.fr, legifrance.gouv.fr |
-| **April** | Prime d'activité, APL, ARS (CAF benefits), CPF participation fee | caf.fr, service-public.fr |
-| **July** | ARE daily amounts (Unédic revalorisation) | francetravail.fr |
-| **November** | Agirc-Arrco point value and purchase price | agirc-arrco.fr |
-| **Quarterly** | Taux d'usure (end of Jan, Apr, Jul, Oct) | banque-france.fr |
-| **Ad hoc** | PTZ reforms, Factur-X e-invoicing rollout, IFI, succession rights | impots.gouv.fr, legifrance.gouv.fr |
+| **Janvier** | Tranches IR, PASS, taux URSSAF TNS, seuils micro (triennal), plafonds PER, Livret A, LEP | impots.gouv.fr, urssaf.fr, legifrance.gouv.fr |
+| **Avril** | Prime d'activité, APL, ARS (prestations CAF), frais CPF | caf.fr, service-public.gouv.fr |
+| **Juillet** | Montants ARE (revalorisation Unédic) | francetravail.fr, unedic.org |
+| **Novembre** | Valeur du point et prix d'achat Agirc-Arrco | agirc-arrco.fr |
+| **Trimestriel** | Taux d'usure (fin jan / avr / juil / oct) | banque-france.fr |
+| **Ad hoc** | Réformes PTZ, facturation électronique, IFI, droits succession | impots.gouv.fr, legifrance.gouv.fr |
 
-# Approved official sources
+# Sources officielles approuvées
 
-| Domain | Accepted sources |
+| Domaine | Sources acceptées |
 |---|---|
-| Personal tax (IR, IFI, PFU, succession, donations) | impots.gouv.fr, bofip.impots.gouv.fr, legifrance.gouv.fr |
-| Social contributions (PASS, URSSAF, TNS, micro) | urssaf.fr, autoentrepreneur.urssaf.fr, legifrance.gouv.fr |
-| Retirement (CNAV, trimestres, Agirc-Arrco) | lassuranceretraite.fr, info-retraite.fr, agirc-arrco.fr, service-public.fr |
-| Unemployment & training (ARE, ARCE, CPF) | francetravail.fr, service-public.fr |
-| CAF benefits (APL, prime d'activité, allocs) | caf.fr, service-public.fr |
-| Mortgage & credit (taux d'usure, PTZ, HCSF) | banque-france.fr, impots.gouv.fr |
-| Business (IS, TVA, micro, e-invoicing) | impots.gouv.fr, bofip.impots.gouv.fr, economie.gouv.fr |
+| Fiscalité particulier (IR, IFI, PFU, succession, donations) | impots.gouv.fr, bofip.impots.gouv.fr, service-public.gouv.fr, economie.gouv.fr, legifrance.gouv.fr |
+| Cotisations sociales (PASS, URSSAF, TNS, micro) | urssaf.fr, autoentrepreneur.urssaf.fr, legifrance.gouv.fr |
+| Retraite (CNAV, trimestres, Agirc-Arrco) | lassuranceretraite.fr, info-retraite.fr, agirc-arrco.fr, service-public.gouv.fr |
+| Chômage & formation (ARE, ARCE, CPF) | francetravail.fr, unedic.org, service-public.gouv.fr |
+| Prestations CAF (APL, prime d'activité, allocations) | caf.fr, service-public.gouv.fr |
+| Crédit (usure, PTZ, HCSF) | banque-france.fr, hcsf.gouv.fr, service-public.gouv.fr |
 
-Any source outside this list is forbidden as a primary source. It may appear in `notes` as context only.
+Toute source hors de cette liste est **interdite** comme source primaire. Elle peut apparaître dans `notes` comme contexte uniquement.
 
-# Guardrails
+# Points d'attention
 
-- **Never invent a value.** A stale number is better than a fabricated one. Mark `not_found` and explain when the official value is expected.
-- **Government sources only.** Do not use press articles, accounting firms, comparators, or blogs as data sources.
-- **Flag estimates explicitly.** Any `status: "estimated"` entry must be surfaced in the change report with a visible warning before the user approves updates.
-- **No silent writes.** Always show the change report (Step 3) before modifying files, unless the user explicitly invokes with `--auto`.
-- **Mandatory disclaimer.** Close every refresh session with: *"These rates are provided for informational purposes. For any significant tax or social decision, consult a licensed professional (expert-comptable, CIF, notaire)."*
+- **Ne jamais inventer une valeur.** Un chiffre périmé vaut mieux qu'un chiffre fabriqué. Marquer `not_found` et expliquer quand l'officiel est attendu.
+- **Sources gouvernementales uniquement.** Pas de presse, de cabinets, de comparateurs, de blogs.
+- **Flaguer les `estimated`** dans le rapport avec un warning visible avant approbation.
+- **Pas d'écriture silencieuse.** Toujours afficher le rapport (étape 3) avant de modifier les fichiers, sauf si l'user lance explicitement avec `--auto`.
 
-# Example invocations
+# Exemples d'invocation
 
-- "Run refresh-rates for 2027"
-- "Check if the URSSAF TNS rates are still current"
-- "Update the taux d'usure for Q3 2026"
-- "Are there any stale not_found entries I should know about?"
+- "Lance mettre-a-jour-taux pour 2027"
+- "Vérifie si les taux URSSAF TNS sont à jour"
+- "Mets à jour le taux d'usure pour Q3 2026"
+- "Y a-t-il des entrées not_found à signaler ?"
 
-# Last updated
+# Disclaimer obligatoire (règle dure CLAUDE.md #4)
 
-2026-04-22 — skill created. First recommended run: January 2027.
+Chaque session de rafraîchissement se termine par :
+
+> ⚠️ Ces taux sont fournis à titre informatif et proviennent de sources officielles françaises. Pour toute décision fiscale ou sociale importante, consulte un professionnel agréé (expert-comptable, CIF, notaire).
+
+# Dernière mise à jour
+
+2026-04-23 — skill créé, sources officielles FR uniquement.
