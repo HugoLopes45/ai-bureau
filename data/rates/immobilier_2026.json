@@ -1,0 +1,120 @@
+{
+  "_meta": {
+    "source": "CGI art. 150 VC (plus-value), CGI art. 35 bis (LMNP/LMP), BOFIP BOI-RFPI-PVI-20-20, service-public.fr, ANIL",
+    "year": 2026,
+    "last_updated": "2026-04-23",
+    "note": "Vérifier annuellement. Les seuils micro-BIC et micro-foncier peuvent être actualisés en loi de finances."
+  },
+  "plus_value_immobiliere": {
+    "_note": "Résidence principale : exonération totale. Première cession si non-propriétaire depuis 4+ ans : exonération.",
+    "ir": {
+      "taux_base": 0.19,
+      "abattements": {
+        "annees_1_a_5": 0,
+        "annees_6_a_21": 0.06,
+        "annee_22": 0.04,
+        "exoneration_totale_apres": 22
+      }
+    },
+    "prelevements_sociaux": {
+      "taux_base": 0.172,
+      "abattements": {
+        "annees_1_a_5": 0,
+        "annees_6_a_21": 0.0165,
+        "annee_22": 0.016,
+        "annees_23_a_30": 0.09,
+        "exoneration_totale_apres": 30
+      }
+    },
+    "surtaxe_grandes_plus_values": {
+      "_note": "Surtaxe IR uniquement (pas PS) sur PV nette après abattement > 50 000 €",
+      "tranches": [
+        { "de": 50001, "a": 100000, "taux": 0.02 },
+        { "de": 100001, "a": 150000, "taux": 0.03 },
+        { "de": 150001, "a": 200000, "taux": 0.04 },
+        { "de": 200001, "a": 250000, "taux": 0.05 },
+        { "de": 250001, "a": null, "taux": 0.06 }
+      ]
+    }
+  },
+  "location_nue": {
+    "micro_foncier": {
+      "abattement": 0.30,
+      "plafond_recettes": 15000,
+      "_note": "Option régime réel possible si > 15 000 € ou si déficit foncier intéressant"
+    },
+    "regime_reel": {
+      "deficit_foncier_plafond_ir": 10700,
+      "deficit_foncier_plafond_ir_travaux_dpe": 21400,
+      "report_deficit_annees": 10,
+      "_note": "Déficit imputable uniquement sur revenus fonciers au-delà du plafond. Plafond 21 400 € si travaux rénovation énergétique (DPE E→D ou mieux)."
+    }
+  },
+  "lmnp": {
+    "_note": "LMNP = Loueur Meublé Non Professionnel. Recettes < 23 000 € OU < revenus professionnels du foyer.",
+    "micro_bic": {
+      "meuble_non_classe": {
+        "abattement": 0.50,
+        "plafond_recettes": 77700
+      },
+      "meuble_classe_tourisme_ou_chambre_hotes": {
+        "abattement": 0.71,
+        "plafond_recettes": 188700
+      }
+    },
+    "regime_reel": {
+      "amortissement_structure_annees": "20-40",
+      "amortissement_mobilier_annees": "5-10",
+      "amortissement_travaux_annees": "5-15",
+      "_note": "L'amortissement ne peut pas créer de déficit BIC LMNP (report illimité). Terrain non amortissable (15-20% de la valeur en général)."
+    }
+  },
+  "lmp": {
+    "_note": "LMP = Loueur Meublé Professionnel. Recettes > 23 000 € ET > autres revenus professionnels du foyer.",
+    "avantages": [
+      "Déficit imputable sur le revenu global (sans plafond)",
+      "Plus-value exonérée après 5 ans si recettes < 90 000 €",
+      "Exonération IFI si activité principale"
+    ],
+    "inconvenients": [
+      "Cotisations sociales TNS sur les recettes (SSI)",
+      "Seuil difficile à calibrer intentionnellement"
+    ],
+    "seuil_recettes": 23000
+  },
+  "non_resident": {
+    "taux_ir_minimum": 0.20,
+    "prelevements_sociaux_droit_commun": 0.172,
+    "prelevements_solidarite_ue_eee": 0.075,
+    "taux_effectif_total_hors_convention": 0.372,
+    "taux_effectif_ue_eee": 0.275,
+    "_note": "Résidents UE/EEE : PS remplacé par prélèvement de solidarité 7.5% → total ~27.5%. Hors UE/EEE : 20% IR + 17.2% PS = 37.2% sauf convention fiscale applicable. Vérifier la convention par pays."
+  },
+  "frais_transaction": {
+    "agence_vente": {
+      "fourchette": "4-6%",
+      "_note": "Honoraires libres. Souvent inclus dans le prix affiché (à la charge du vendeur ou acheteur selon mandat)."
+    },
+    "ira_remboursement_anticipat": {
+      "plafond_legal": "3% du capital restant dû ou 6 mois d'intérêts, le plus bas des deux",
+      "_note": "Exonération si mobilité professionnelle, décès, ITT prolongée."
+    },
+    "mainlevee_hypotheque": {
+      "fourchette_euros": "800-1500"
+    }
+  },
+  "rendements_bruts_indicatifs_2026": {
+    "_note": "Indicatifs uniquement. Net après charges = brut − 1.5 à 2.5 points.",
+    "paris_intramuros": "2.5-3.5%",
+    "idf_petite_couronne": "3.5-5%",
+    "idf_grande_couronne": "4-6%",
+    "grandes_metropoles_province": "4-6%",
+    "villes_moyennes": "5-8%",
+    "zones_tendues_tourisme": "5-9% (saisonnier)"
+  },
+  "vacance_locative_default": {
+    "location_classique": 0.05,
+    "location_saisonniere": 0.20,
+    "_note": "Taux de vacance à adapter selon le marché local."
+  }
+}
