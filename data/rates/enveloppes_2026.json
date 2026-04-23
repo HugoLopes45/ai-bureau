@@ -1,146 +1,113 @@
 {
   "_meta": {
     "titre": "Plafonds des enveloppes d'épargne 2026 (PEA, PER, assurance-vie, livrets réglementés)",
-    "description": "Contient les plafonds de versement et abattements fiscaux des principaux produits d'épargne réglementée : PEA, PEA-PME, PER individuel, assurance-vie, Livret A, LDDS, LEP et PEL.",
-    "a_qui_ca_sert": "Utilisé par le skill épargne/placement pour répondre aux questions sur les plafonds de versement, les avantages fiscaux et les règles d'utilisation de chaque enveloppe.",
-    "frequence_revision": "La plupart des plafonds sont stables depuis plusieurs années. Le PER évolue chaque année car ses plafonds de déduction sont indexés sur le PASS. À vérifier en janvier de chaque année.",
     "derniere_verification": "2026-04-22",
-    "prochaine_revision": "Janvier 2027 (mise à jour des plafonds PER basés sur le PASS 2027)",
-    "source_principale": "https://bofip.impots.gouv.fr/bofip/1552-PGP.html/identifiant=BOI-RPPM-RCM-40-50-20-10-20240730",
-    "note_utilisateur": "Ce fichier est mis à jour chaque année pour le PER. Les autres plafonds (PEA, Livret A, etc.) n'ont pas changé depuis plusieurs années et n'ont pas besoin de révision fréquente."
+    "source_principale": "https://bofip.impots.gouv.fr/bofip/1552-PGP.html/identifiant=BOI-RPPM-RCM-40-50-20-10-20240730"
   },
   "donnees": [
-  {
-    "item": "PEA — plafond des versements (plan d'épargne en actions)",
-    "value": 150000,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Inchangé depuis 2014 (loi n°2014-617 du 13 juin 2014)",
-    "source_url": "https://bofip.impots.gouv.fr/bofip/1552-PGP.html/identifiant=BOI-RPPM-RCM-40-50-20-10-20240730",
-    "source_title": "RPPM - Versements sur un PEA — bofip.impots.gouv.fr",
-    "status": "verified",
-    "notes": "Chaque adulte d'un foyer peut ouvrir un PEA et y verser jusqu'à 150 000 € au total. Les gains réalisés après 5 ans de détention sont exonérés d'impôt sur le revenu, mais restent soumis aux prélèvements sociaux de 17,2 % lors du retrait."
-  },
-  {
-    "item": "PEA-PME — plafond des versements",
-    "value": 225000,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Inchangé depuis 2019",
-    "source_url": "https://bofip.impots.gouv.fr/bofip/1552-PGP.html/identifiant=BOI-RPPM-RCM-40-50-20-10-20240730",
-    "source_title": "RPPM - Versements sur un PEA — bofip.impots.gouv.fr",
-    "status": "verified",
-    "notes": "Le PEA-PME est dédié aux actions de petites et moyennes entreprises. Son plafond nominal est de 225 000 €, mais attention : le total de vos versements sur PEA classique + PEA-PME ne peut pas dépasser 225 000 €. Exemple : si vous avez déjà versé 150 000 € sur votre PEA classique, il ne vous reste que 75 000 € disponibles sur le PEA-PME."
-  },
-  {
-    "item": "PEA — plafond combiné PEA + PEA-PME",
-    "value": 225000,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Inchangé depuis 2019",
-    "source_url": "https://bofip.impots.gouv.fr/bofip/1552-PGP.html/identifiant=BOI-RPPM-RCM-40-50-20-10-20240730",
-    "source_title": "RPPM - Versements sur un PEA — bofip.impots.gouv.fr",
-    "status": "verified",
-    "notes": "La somme de tous vos versements sur PEA classique et PEA-PME, pour un même titulaire, ne peut pas dépasser 225 000 € au total."
-  },
-  {
-    "item": "PER individuel — plafond de déduction des versements (travailleurs salariés), plancher",
-    "value": 4806,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Calculé sur PASS 2026 = 48 060 €",
-    "source_url": "https://bofip.impots.gouv.fr/bofip/1124-PGP.html/identifiant=BOI-IR-BASE-20-50-20-20260217",
-    "source_title": "IR - Limites de déduction des cotisations d'épargne retraite — bofip.impots.gouv.fr",
-    "status": "verified",
-    "notes": "Si vos revenus professionnels sont faibles, vous pouvez quand même déduire de vos impôts jusqu'à 4 806 € de versements sur votre PER individuel (soit 10 % du plafond annuel de la Sécurité sociale 2026). Ce plancher garantit un avantage fiscal même pour les petits revenus."
-  },
-  {
-    "item": "PER individuel — plafond de déduction des versements (travailleurs salariés), plafond maximum",
-    "value": 38448,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Calculé sur PASS 2026 = 48 060 €",
-    "source_url": "https://bofip.impots.gouv.fr/bofip/1124-PGP.html/identifiant=BOI-IR-BASE-20-50-20-20260217",
-    "source_title": "IR - Limites de déduction des cotisations d'épargne retraite — bofip.impots.gouv.fr",
-    "status": "verified",
-    "notes": "Pour un salarié, le maximum déductible est de 38 448 € par an (soit 10 % de 8 fois le PASS 2026). En pratique, votre plafond personnel est de 10 % de vos revenus professionnels de l'année précédente, dans la limite de 38 448 €. Si vous n'avez pas utilisé tout votre plafond les années précédentes, vous pouvez reporter l'excédent. Attention : les cotisations versées à une mutuelle d'entreprise ou un PERCO réduisent ce plafond disponible."
-  },
-  {
-    "item": "Assurance-vie — plafond de versement",
-    "value": null,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Sans objet",
-    "source_url": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
-    "source_title": "Les revenus mobiliers — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Il n'y a pas de plafond légal pour les versements sur un contrat d'assurance-vie : vous pouvez y verser autant que vous le souhaitez. En revanche, le traitement fiscal des retraits dépend de deux critères : l'ancienneté du contrat (avantage fiscal après 8 ans) et le total de vos versements (au-delà de 150 000 €, un taux d'imposition plus élevé s'applique sur les gains)."
-  },
-  {
-    "item": "Assurance-vie — abattement annuel sur gains (contrat > 8 ans), célibataire",
-    "value": 4600,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Inchangé depuis 1998 (CGI art. 125-0 A)",
-    "source_url": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
-    "source_title": "Les revenus mobiliers — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Si votre contrat a plus de 8 ans, vous pouvez retirer chaque année jusqu'à 4 600 € de gains (intérêts et plus-values) sans payer d'impôt sur le revenu. Au-delà, le taux d'imposition s'applique uniquement sur l'excédent. Cet abattement se renouvelle chaque année."
-  },
-  {
-    "item": "Assurance-vie — abattement annuel sur gains (contrat > 8 ans), couple",
-    "value": 9200,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Inchangé depuis 1998 (CGI art. 125-0 A)",
-    "source_url": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
-    "source_title": "Les revenus mobiliers — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Pour un couple marié ou pacsé déclarant leurs revenus ensemble, l'abattement annuel sur les gains d'assurance-vie (contrat > 8 ans) est de 9 200 € par an. Ce double avantage s'applique sur le total du foyer fiscal, peu importe lequel des deux conjoints détient le contrat."
-  },
-  {
-    "item": "Livret A — plafond des dépôts",
-    "value": 22950,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Inchangé depuis 2013",
-    "source_url": "https://www.service-public.fr/particuliers/actualites/A16682",
-    "source_title": "Livret A — taux et plafond — Service-Public.fr",
-    "status": "verified",
-    "notes": "Vous ne pouvez pas verser plus de 22 950 € sur un Livret A. En revanche, si votre livret a produit des intérêts par le passé et que le solde dépasse ce plafond grâce aux intérêts capitalisés, c'est autorisé. Le taux du Livret A est de 1,5 % depuis le 1er février 2026."
-  },
-  {
-    "item": "LDDS (Livret de Développement Durable et Solidaire) — plafond des dépôts",
-    "value": 12000,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Inchangé depuis 2007",
-    "source_url": "https://www.service-public.fr/particuliers/actualites/A16682",
-    "source_title": "Livrets réglementés — Service-Public.fr",
-    "status": "verified",
-    "notes": "Le LDDS (anciennement Livret Développement Durable) est plafonné à 12 000 €. Il rapporte le même taux que le Livret A, soit 1,5 % depuis le 1er février 2026. Tout le monde peut en ouvrir un (un seul par personne)."
-  },
-  {
-    "item": "LEP (Livret d'Épargne Populaire) — plafond des dépôts",
-    "value": 10000,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Inchangé depuis 2023 (porté de 7 700 € à 10 000 €)",
-    "source_url": "https://www.service-public.fr/particuliers/vosdroits/F2367",
-    "source_title": "Livret d'épargne populaire (LEP) — Service-Public.fr",
-    "status": "verified",
-    "notes": "Le LEP est réservé aux foyers dont les revenus ne dépassent pas un certain plafond (vérifiez votre éligibilité auprès de votre banque). Il offre un taux plus avantageux que le Livret A : 2,5 % depuis le 1er février 2026. Le plafond est de 10 000 €."
-  },
-  {
-    "item": "PEL (Plan d'Épargne Logement) — plafond des versements",
-    "value": 61200,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Inchangé depuis 1985",
-    "source_url": "https://www.impots.gouv.fr/particulier/questions/dans-quels-cas-les-interets-de-mon-plan-depargne-logement-pel-sont-ils-imposables",
-    "source_title": "Dans quels cas les intérêts de mon PEL sont-ils imposables ? — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Le PEL accepte jusqu'à 61 200 € de versements. Vous devez verser au moins 225 € à l'ouverture, puis un minimum de 540 € par an. Pour les PEL ouverts depuis janvier 2018, les intérêts sont imposés à 30 % (flat tax) dès la première année. Pour les anciens PEL (avant 2018), les intérêts étaient exonérés d'impôt sur le revenu pendant les 12 premières années."
-  }
+    {
+      "item": "PEA — plafond des versements (plan d'épargne en actions)",
+      "value": 150000,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://bofip.impots.gouv.fr/bofip/1552-PGP.html/identifiant=BOI-RPPM-RCM-40-50-20-10-20240730",
+      "status": "verified"
+    },
+    {
+      "item": "PEA-PME — plafond des versements",
+      "value": 225000,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://bofip.impots.gouv.fr/bofip/1552-PGP.html/identifiant=BOI-RPPM-RCM-40-50-20-10-20240730",
+      "status": "verified",
+      "notes": "Le PEA-PME est dédié aux actions de petites et moyennes entreprises. Son plafond nominal est de 225 000 €, mais attention : le total de vos versements sur PEA classique + PEA-PME ne peut pas dépasser 225 000 €. Exemple : si vous avez déjà versé 150 000 € sur votre PEA classique, il ne vous reste que 75 000 € disponibles sur le PEA-PME."
+    },
+    {
+      "item": "PEA — plafond combiné PEA + PEA-PME",
+      "value": 225000,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://bofip.impots.gouv.fr/bofip/1552-PGP.html/identifiant=BOI-RPPM-RCM-40-50-20-10-20240730",
+      "status": "verified",
+      "notes": "La somme de tous vos versements sur PEA classique et PEA-PME, pour un même titulaire, ne peut pas dépasser 225 000 € au total."
+    },
+    {
+      "item": "PER individuel — plafond de déduction des versements (travailleurs salariés), plancher",
+      "value": 4806,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://bofip.impots.gouv.fr/bofip/1124-PGP.html/identifiant=BOI-IR-BASE-20-50-20-20260217",
+      "status": "verified",
+      "notes": "Si vos revenus professionnels sont faibles, vous pouvez quand même déduire de vos impôts jusqu'à 4 806 € de versements sur votre PER individuel (soit 10 % du plafond annuel de la Sécurité sociale 2026). Ce plancher garantit un avantage fiscal même pour les petits revenus."
+    },
+    {
+      "item": "PER individuel — plafond de déduction des versements (travailleurs salariés), plafond maximum",
+      "value": 38448,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://bofip.impots.gouv.fr/bofip/1124-PGP.html/identifiant=BOI-IR-BASE-20-50-20-20260217",
+      "status": "verified",
+      "notes": "Pour un salarié, le maximum déductible est de 38 448 € par an (soit 10 % de 8 fois le PASS 2026). En pratique, votre plafond personnel est de 10 % de vos revenus professionnels de l'année précédente, dans la limite de 38 448 €. Si vous n'avez pas utilisé tout votre plafond les années précédentes, vous pouvez reporter l'excédent. Attention : les cotisations versées à une mutuelle d'entreprise ou un PERCO réduisent ce plafond disponible."
+    },
+    {
+      "item": "Assurance-vie — plafond de versement",
+      "value": null,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "status": "verified",
+      "notes": "Il n'y a pas de plafond légal pour les versements sur un contrat d'assurance-vie : vous pouvez y verser autant que vous le souhaitez. En revanche, le traitement fiscal des retraits dépend de deux critères : l'ancienneté du contrat (avantage fiscal après 8 ans) et le total de vos versements (au-delà de 150 000 €, un taux d'imposition plus élevé s'applique sur les gains)."
+    },
+    {
+      "item": "Assurance-vie — abattement annuel sur gains (contrat > 8 ans), célibataire",
+      "value": 4600,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "status": "verified"
+    },
+    {
+      "item": "Assurance-vie — abattement annuel sur gains (contrat > 8 ans), couple",
+      "value": 9200,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "status": "verified"
+    },
+    {
+      "item": "Livret A — plafond des dépôts",
+      "value": 22950,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.fr/particuliers/actualites/A16682",
+      "status": "verified",
+      "notes": "Vous ne pouvez pas verser plus de 22 950 € sur un Livret A. En revanche, si votre livret a produit des intérêts par le passé et que le solde dépasse ce plafond grâce aux intérêts capitalisés, c'est autorisé. Le taux du Livret A est de 1,5 % depuis le 1er février 2026."
+    },
+    {
+      "item": "LDDS (Livret de Développement Durable et Solidaire) — plafond des dépôts",
+      "value": 12000,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.fr/particuliers/actualites/A16682",
+      "status": "verified"
+    },
+    {
+      "item": "LEP (Livret d'Épargne Populaire) — plafond des dépôts",
+      "value": 10000,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.fr/particuliers/vosdroits/F2367",
+      "status": "verified",
+      "notes": "Le LEP est réservé aux foyers dont les revenus ne dépassent pas un certain plafond (vérifiez votre éligibilité auprès de votre banque). Il offre un taux plus avantageux que le Livret A : 2,5 % depuis le 1er février 2026. Le plafond est de 10 000 €."
+    },
+    {
+      "item": "PEL (Plan d'Épargne Logement) — plafond des versements",
+      "value": 61200,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/particulier/questions/dans-quels-cas-les-interets-de-mon-plan-depargne-logement-pel-sont-ils-imposables",
+      "status": "verified",
+      "notes": "Le PEL accepte jusqu'à 61 200 € de versements. Vous devez verser au moins 225 € à l'ouverture, puis un minimum de 540 € par an. Pour les PEL ouverts depuis janvier 2018, les intérêts sont imposés à 30 % (flat tax) dès la première année. Pour les anciens PEL (avant 2018), les intérêts étaient exonérés d'impôt sur le revenu pendant les 12 premières années."
+    }
   ]
 }

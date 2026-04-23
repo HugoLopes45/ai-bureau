@@ -1,82 +1,82 @@
 {
-  "tax_year": 2026,
-  "filing_household": {
+  "annee_fiscale": 2026,
+  "foyer_fiscal": {
     "declarants": [
       {
-        "first_name": "",
-        "last_name": "",
-        "birth_date": "YYYY-MM-DD",
-        "marital_status": "single|married|pacs|divorced|widowed",
+        "prenom": "",
+        "nom": "",
+        "date_naissance": "AAAA-MM-JJ",
+        "situation_familiale": "celibataire|marie|pacse|divorce|veuf",
         "profession": ""
       }
     ],
-    "dependents": [
+    "personnes_a_charge": [
       {
-        "first_name": "",
-        "birth_date": "YYYY-MM-DD",
-        "type": "child|disabled|other",
-        "shared_custody": false
+        "prenom": "",
+        "date_naissance": "AAAA-MM-JJ",
+        "type": "enfant|invalide|autre",
+        "garde_alternee": false
       }
     ],
-    "fiscal_parts": 1.0,
-    "address": {
-      "street": "",
-      "postal_code": "",
-      "city": "",
-      "country": "FR"
+    "parts_fiscales": 1.0,
+    "adresse": {
+      "rue": "",
+      "code_postal": "",
+      "ville": "",
+      "pays": "FR"
     }
   },
-  "income": {
-    "salaries": [
+  "revenus": {
+    "salaires": [
       {
-        "recipient_declarant_index": 0,
-        "employer": "",
-        "annual_gross": 0,
-        "annual_net_taxable": 0,
-        "withholding_rate": 0.0
+        "declarant_index": 0,
+        "employeur": "",
+        "brut_annuel": 0,
+        "net_imposable_annuel": 0,
+        "taux_prelevement_source": 0.0
       }
     ],
-    "self_employment": [
+    "independant": [
       {
-        "recipient_declarant_index": 0,
-        "activity": "",
-        "regime": "micro-BNC|micro-BIC|BNC-reel|BIC-reel|EIRL|SASU-dirigeant",
-        "annual_revenue": 0,
-        "annual_charges": 0
+        "declarant_index": 0,
+        "activite": "",
+        "regime": "micro-BNC|micro-BIC|BNC-reel|BIC-reel|SASU-dirigeant",
+        "chiffre_affaires_annuel": 0,
+        "charges_annuelles": 0
       }
     ],
-    "property_rental": [
+    "location_immobiliere": [
       {
-        "address": "",
-        "annual_gross_rent": 0,
+        "adresse": "",
+        "loyer_brut_annuel": 0,
         "regime": "microfoncier|reel"
       }
     ],
-    "investment_income": {
-      "dividends": 0,
-      "interests": 0,
-      "capital_gains_securities": 0,
-      "capital_gains_real_estate": 0
+    "revenus_financiers": {
+      "dividendes": 0,
+      "interets": 0,
+      "plus_values_mobilieres": 0,
+      "plus_values_immobilieres": 0
     },
-    "pensions_and_allowances": 0,
-    "other_income": []
+    "pensions_allocations": 0,
+    "autres_revenus": []
   },
   "deductions": {
-    "per_contributions": 0,
-    "alimony_paid": 0,
-    "employment_of_home_worker": 0,
-    "childcare_expenses": 0,
-    "charitable_donations_60pct": 0,
-    "charitable_donations_75pct": 0,
-    "union_dues": 0
+    "versements_per": 0,
+    "pension_alimentaire_versee": 0,
+    "emploi_domicile": 0,
+    "frais_garde_enfants": 0,
+    "dons_60pct": 0,
+    "dons_75pct": 0,
+    "cotisations_syndicales": 0
   },
-  "tax_credits": {
-    "energy_retrofit_maprimerenov": 0,
-    "home_assistance": 0,
-    "rental_investment_pinel_denormandie": 0
+  "credits_impot": {
+    "maprimerenov": 0,
+    "emploi_domicile_credit": 0,
+    "pinel_denormandie": 0
   },
   "ifi": {
-    "total_net_real_estate_wealth": 0,
+    "patrimoine_immobilier_net": 0,
     "applicable": false
   }
 }

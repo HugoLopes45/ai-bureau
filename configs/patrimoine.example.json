@@ -1,112 +1,110 @@
 {
-  "as_of_date": "YYYY-MM-DD",
-  "liquid_assets": {
-    "checking_accounts": [
-      { "bank": "", "iban_last4": "", "balance": 0 }
+  "date_inventaire": "AAAA-MM-JJ",
+  "liquidites": {
+    "comptes_courants": [
+      { "banque": "", "iban_4_derniers": "", "solde": 0 }
     ],
-    "savings": [
+    "livrets": [
       {
         "type": "livret_A|LDDS|LEP|PEL|CEL|super_livret",
-        "bank": "",
-        "balance": 0,
-        "gross_annual_rate": 0.0,
-        "opened_on": "YYYY-MM-DD"
+        "banque": "",
+        "solde": 0,
+        "taux_annuel_brut": 0.0,
+        "ouvert_le": "AAAA-MM-JJ"
       }
     ]
   },
-  "investment_envelopes": {
+  "enveloppes": {
     "pea": {
-      "broker": "",
-      "opened_on": "YYYY-MM-DD",
-      "cash": 0,
-      "securities_value": 0,
-      "total_deposited": 0,
-      "total_withdrawn": 0
+      "courtier": "",
+      "ouvert_le": "AAAA-MM-JJ",
+      "liquidites_pea": 0,
+      "valeur_titres": 0,
+      "total_verse": 0,
+      "total_retire": 0
     },
     "pea_pme": null,
-    "life_insurance": [
+    "assurance_vie": [
       {
-        "provider": "",
-        "contract_name": "",
-        "opened_on": "YYYY-MM-DD",
-        "beneficiary_clause": "",
-        "funds": {
-          "euro_fund": 0,
-          "unit_linked": 0
+        "assureur": "",
+        "nom_contrat": "",
+        "ouvert_le": "AAAA-MM-JJ",
+        "clause_beneficiaire": "",
+        "supports": {
+          "fonds_euros": 0,
+          "unites_compte": 0
         },
-        "total_deposited": 0,
-        "total_withdrawn": 0
+        "total_verse": 0,
+        "total_retire": 0
       }
     ],
     "per": {
-      "provider": "",
+      "assureur": "",
       "type": "PER_individuel|PER_collectif|PER_obligatoire",
-      "balance": 0,
-      "annual_contribution": 0,
-      "deduction_cap_used_current_year": 0
+      "solde": 0,
+      "versement_annuel": 0,
+      "plafond_utilise_annee": 0
     }
   },
-  "securities": {
-    "cto_accounts": [
-      { "broker": "", "balance_cash": 0, "balance_securities": 0 }
-    ],
-    "holdings": [
-      {
-        "ticker": "",
-        "isin": "",
-        "envelope": "pea|cto|av|per",
-        "quantity": 0,
-        "avg_cost": 0,
-        "current_price": 0,
-        "currency": "EUR"
-      }
-    ]
-  },
-  "real_estate": [
+  "cto": [
+    { "courtier": "", "solde_liquidites": 0, "valeur_titres": 0 }
+  ],
+  "positions": [
     {
-      "type": "primary_residence|rental|secondary|SCPI",
-      "address": "",
-      "purchase_date": "YYYY-MM-DD",
-      "purchase_price": 0,
-      "acquisition_costs": 0,
-      "estimated_value": 0,
-      "annual_rental_income": 0,
-      "mortgage": {
-        "outstanding": 0,
-        "interest_rate": 0.0,
-        "monthly_payment": 0,
-        "end_date": "YYYY-MM-DD"
+      "ticker": "",
+      "isin": "",
+      "enveloppe": "pea|cto|av|per",
+      "quantite": 0,
+      "prix_moyen_acquisition": 0,
+      "cours_actuel": 0,
+      "devise": "EUR"
+    }
+  ],
+  "immobilier": [
+    {
+      "type": "residence_principale|locatif|secondaire|SCPI",
+      "adresse": "",
+      "date_achat": "AAAA-MM-JJ",
+      "prix_achat": 0,
+      "frais_acquisition": 0,
+      "valeur_estimee": 0,
+      "loyer_annuel": 0,
+      "credit_immobilier": {
+        "capital_restant_du": 0,
+        "taux_interet": 0.0,
+        "mensualite": 0,
+        "date_fin": "AAAA-MM-JJ"
       }
     }
   ],
   "crypto": [
     {
-      "platform": "",
-      "asset": "",
-      "quantity": 0,
-      "cost_basis_eur": 0,
-      "current_value_eur": 0
+      "plateforme": "",
+      "actif": "",
+      "quantite": 0,
+      "prix_revient_eur": 0,
+      "valeur_actuelle_eur": 0
     }
   ],
-  "other_assets": [
-    { "label": "", "estimated_value": 0 }
+  "autres_actifs": [
+    { "libelle": "", "valeur_estimee": 0 }
   ],
-  "liabilities": [
+  "dettes": [
     {
-      "type": "mortgage|consumer|auto|student|other",
-      "lender": "",
-      "outstanding": 0,
-      "interest_rate": 0.0,
-      "monthly_payment": 0,
-      "end_date": "YYYY-MM-DD"
+      "type": "credit_immo|credit_conso|auto|etudiant|autre",
+      "preteur": "",
+      "capital_restant_du": 0,
+      "taux_interet": 0.0,
+      "mensualite": 0,
+      "date_fin": "AAAA-MM-JJ"
     }
   ],
-  "target_allocation": {
-    "equities_pct": 60,
-    "bonds_pct": 20,
-    "real_estate_pct": 15,
-    "cash_pct": 5
+  "repartition_cible": {
+    "actions_pct": 60,
+    "obligations_pct": 20,
+    "immobilier_pct": 15,
+    "liquidites_pct": 5
   },
-  "risk_profile": "defensive|balanced|dynamic|aggressive",
-  "investment_horizon_years": 10
+  "profil_risque": "prudent|equilibre|dynamique|offensif",
+  "horizon_annees": 10
 }

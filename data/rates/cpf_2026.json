@@ -1,36 +1,27 @@
 {
   "_meta": {
     "titre": "Compte Personnel de Formation (CPF) — règles financières 2026",
-    "description": "Contient le montant du reste à charge obligatoire lors d'une formation CPF et les conditions d'exonération.",
-    "a_qui_ca_sert": "Utilisé par le skill formation/CPF pour informer l'utilisateur du montant qu'il devra payer de sa poche avant d'utiliser son CPF, et des cas où ce paiement est supprimé.",
-    "frequence_revision": "Le montant est revalorisé chaque 1er janvier par arrêté. Une hausse exceptionnelle peut intervenir en cours d'année (comme la hausse à 150 € en avril 2026).",
     "derniere_verification": "2026-04-22",
-    "prochaine_revision": "Janvier 2027 (revalorisation annuelle habituelle)",
-    "source_principale": "https://www.service-public.fr/particuliers/vosdroits/F38480",
-    "note_utilisateur": "Ce fichier est mis à jour après chaque arrêté de revalorisation. Vous n'avez pas besoin de le modifier manuellement."
+    "source_principale": "https://www.service-public.fr/particuliers/vosdroits/F38480"
   },
   "donnees": [
-  {
-    "item": "CPF — participation financière obligatoire (reste à charge)",
-    "value": 150,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Depuis le 1er avril 2026",
-    "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053742996",
-    "source_title": "Décret n°2026-234 du 30 mars 2026 — Légifrance",
-    "status": "verified",
-    "notes": "Depuis le 1er avril 2026, vous devez payer 150 € de votre poche pour utiliser votre CPF sur MonCompteFormation (sauf si vous êtes exonéré — voir l'entrée suivante). Ce montant a augmenté progressivement : 100 € en mai 2024, 102,23 € en janvier 2025, 103,20 € en janvier 2026, puis 150 € en avril 2026 suite à la loi de finances 2026. Cette participation reste à charge même si votre solde CPF couvre le reste du coût de la formation."
-  },
-  {
-    "item": "CPF — exonération participation obligatoire (abondement employeur)",
-    "value": "exonéré si abondement employeur depuis 2024-05-02",
-    "unit": "rule",
-    "applicable_year": 2026,
-    "applicable_period": "Depuis le 2 mai 2024",
-    "source_url": "https://www.service-public.fr/particuliers/vosdroits/F38480",
-    "source_title": "Compte personnel de formation (CPF) — Service Public",
-    "status": "verified",
-    "notes": "Vous n'avez pas à payer les 150 € dans les cas suivants : vous êtes demandeur d'emploi, votre employeur abonde votre CPF pour cette formation, votre branche professionnelle ou OPCO finance un abondement, vous êtes titulaire d'un Compte Professionnel de Prévention (C2P), ou vous avez subi un accident du travail ou une maladie professionnelle. Si votre employeur ne vous avait pas proposé d'abondement avant le démarrage de la formation, il peut vous rembourser les 150 € après coup."
-  }
+    {
+      "item": "CPF — participation financière obligatoire (reste à charge)",
+      "value": 150,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053742996",
+      "status": "verified",
+      "notes": "Depuis le 1er avril 2026, vous devez payer 150 € de votre poche pour utiliser votre CPF sur MonCompteFormation (sauf si vous êtes exonéré — voir l'entrée suivante). Ce montant a augmenté progressivement : 100 € en mai 2024, 102,23 € en janvier 2025, 103,20 € en janvier 2026, puis 150 € en avril 2026 suite à la loi de finances 2026. Cette participation reste à charge même si votre solde CPF couvre le reste du coût de la formation."
+    },
+    {
+      "item": "CPF — exonération participation obligatoire (abondement employeur)",
+      "value": "exonéré si abondement employeur depuis 2024-05-02",
+      "unit": "rule",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.fr/particuliers/vosdroits/F38480",
+      "status": "verified",
+      "notes": "Vous n'avez pas à payer les 150 € dans les cas suivants : vous êtes demandeur d'emploi, votre employeur abonde votre CPF pour cette formation, votre branche professionnelle ou OPCO finance un abondement, vous êtes titulaire d'un Compte Professionnel de Prévention (C2P), ou vous avez subi un accident du travail ou une maladie professionnelle. Si votre employeur ne vous avait pas proposé d'abondement avant le démarrage de la formation, il peut vous rembourser les 150 € après coup."
+    }
   ]
 }

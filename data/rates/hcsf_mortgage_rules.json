@@ -1,58 +1,42 @@
 {
   "_meta": {
     "titre": "Règles HCSF pour les crédits immobiliers 2026",
-    "description": "Contient les normes obligatoires imposées par le Haut Conseil de Stabilité Financière aux banques pour l'octroi de crédits immobiliers : taux d'endettement maximum, durée maximale et quota de dérogations.",
-    "a_qui_ca_sert": "Utilisé par le skill crédit-immobilier pour vérifier si un projet d'emprunt respecte les critères bancaires réglementaires, et estimer les chances d'obtenir un financement.",
-    "frequence_revision": "Ces règles sont révisées par décision du HCSF, généralement une fois par an. À vérifier après chaque réunion du HCSF (annoncée sur hcsf.fr).",
     "derniere_verification": "2026-04-22",
-    "prochaine_revision": "Fin 2026 (décision HCSF annuelle attendue en décembre)",
-    "source_principale": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048659704",
-    "note_utilisateur": "Ces règles s'imposent à toutes les banques françaises. Même si votre banquier semble flexible, il ne peut légalement pas vous accorder un prêt qui dépasse ces seuils (sauf dans la limite du quota de dérogations)."
+    "source_principale": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048659704"
   },
   "donnees": [
-  {
-    "item": "HCSF taux d'effort maximum (taux d'endettement)",
-    "value": 35,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Règle contraignante depuis le 1er janvier 2022, confirmée le 1er janvier 2024",
-    "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048659704",
-    "source_title": "Décision HCSF du 18 décembre 2023 relative aux conditions d'octroi de crédits immobiliers — Légifrance",
-    "status": "verified",
-    "notes": "Votre mensualité de remboursement (crédit + assurance emprunteur) ne peut pas dépasser 35 % de vos revenus nets. Exemple : si vous gagnez 4 000 € nets par mois, votre remboursement total ne peut pas excéder 1 400 €. Cette règle est contraignante depuis 2022 et s'applique à toutes les banques françaises."
-  },
-  {
-    "item": "HCSF durée maximale du prêt (standard)",
-    "value": 25,
-    "unit": "years",
-    "applicable_year": 2026,
-    "applicable_period": "Règle contraignante depuis le 1er janvier 2022, confirmée le 1er janvier 2024",
-    "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048659704",
-    "source_title": "Décision HCSF du 18 décembre 2023 — Légifrance",
-    "status": "verified",
-    "notes": "La durée maximale d'un crédit immobilier standard est de 25 ans. Si votre projet comprend des travaux représentant au moins 10 % du coût total de l'opération, la durée peut être étendue à 27 ans (voir l'entrée suivante)."
-  },
-  {
-    "item": "HCSF durée maximale du prêt avec différé (logement neuf ou travaux ≥ 10 %)",
-    "value": 27,
-    "unit": "years",
-    "applicable_year": 2026,
-    "applicable_period": "Depuis le 1er janvier 2024",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/actualites/A17028",
-    "source_title": "Crédit immobilier : des prêts sur 27 ans sous certaines conditions — Service Public",
-    "status": "verified",
-    "notes": "Si votre achat inclut des travaux représentant au moins 10 % du coût total de l'opération (achat + travaux), votre banque peut vous accorder un prêt sur 27 ans. Ce délai supplémentaire correspond à une période de différé de 2 ans pendant la phase de travaux, avant de commencer à rembourser le capital. Ce seuil de 10 % a été abaissé (il était de 25 % avant janvier 2024), ce qui facilite l'accès à cette dérogation."
-  },
-  {
-    "item": "HCSF taux de dérogation autorisé aux banques",
-    "value": 20,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Depuis le 29 septembre 2021, mis à jour le 29 juin 2023",
-    "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047772830",
-    "source_title": "Décision HCSF du 29 juin 2023 — Légifrance",
-    "status": "verified",
-    "notes": "Les banques ont le droit d'accorder jusqu'à 20 % de leurs nouveaux crédits immobiliers à des emprunteurs qui ne respectent pas les critères standard (taux d'endettement > 35 % ou durée > 25 ans). De ce quota, 80 % doit être réservé à l'achat d'une résidence principale, dont un tiers au minimum pour les primo-accédants. En pratique, les banques utilisaient environ 16,8 % de ce quota au troisième trimestre 2025."
-  }
+    {
+      "item": "HCSF taux d'effort maximum (taux d'endettement)",
+      "value": 35,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048659704",
+      "status": "verified"
+    },
+    {
+      "item": "HCSF durée maximale du prêt (standard)",
+      "value": 25,
+      "unit": "years",
+      "applicable_year": 2026,
+      "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048659704",
+      "status": "verified"
+    },
+    {
+      "item": "HCSF durée maximale du prêt avec différé (logement neuf ou travaux ≥ 10 %)",
+      "value": 27,
+      "unit": "years",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/actualites/A17028",
+      "status": "verified"
+    },
+    {
+      "item": "HCSF taux de dérogation autorisé aux banques",
+      "value": 20,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047772830",
+      "status": "verified",
+      "notes": "Les banques ont le droit d'accorder jusqu'à 20 % de leurs nouveaux crédits immobiliers à des emprunteurs qui ne respectent pas les critères standard (taux d'endettement > 35 % ou durée > 25 ans). De ce quota, 80 % doit être réservé à l'achat d'une résidence principale, dont un tiers au minimum pour les primo-accédants. En pratique, les banques utilisaient environ 16,8 % de ce quota au troisième trimestre 2025."
+    }
   ]
 }

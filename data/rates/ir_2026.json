@@ -1,154 +1,116 @@
 {
   "_meta": {
     "titre": "Impôt sur le revenu (IR) — barème et prélèvement à la source 2026",
-    "description": "Contient le barème progressif 2026 (revenus 2025), le quotient familial, la décote, la grille de prélèvement à la source par défaut et le taux marginal maximum.",
-    "a_qui_ca_sert": "Utilisé par le skill impôt-revenu pour estimer l'impôt sur le revenu d'un foyer, calculer son taux marginal d'imposition, ou vérifier le taux de prélèvement à la source applicable.",
-    "frequence_revision": "Le barème est indexé sur l'inflation chaque année en loi de finances. La grille PAS est mise à jour en mai de chaque année. À mettre à jour après la publication de la loi de finances annuelle (fin janvier/début février).",
-    "derniere_verification": "2026-04-22",
-    "prochaine_revision": "Février 2027 (loi de finances 2027) — Mai 2027 (mise à jour grille PAS)",
-    "source_principale": "https://www.impots.gouv.fr/particulier/questions/comment-calculer-mon-taux-dimposition-dapres-le-bareme-progressif-de-limpot",
-    "note_utilisateur": "Ce fichier est mis à jour automatiquement chaque année après la publication du barème officiel. Vous n'avez pas besoin de le modifier manuellement."
+    "derniere_verification": "2026-04-23",
+    "source_principale": "https://www.impots.gouv.fr/particulier/questions/comment-calculer-mon-taux-dimposition-dapres-le-bareme-progressif-de-limpot"
   },
   "donnees": [
-  {
-    "item": "IR 2026 — barème progressif (revenus 2025), tranche 0%",
-    "value": { "min": 0, "max": 11497, "rate": 0.00 },
-    "unit": "table",
-    "applicable_year": 2026,
-    "applicable_period": "Imposition des revenus 2025 — loi n° 2026-103 du 19 février 2026, art. 4 (indexation +0,9%)",
-    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-calculer-mon-taux-dimposition-dapres-le-bareme-progressif-de-limpot",
-    "source_title": "Comment calculer mon taux d'imposition d'après le barème progressif ? — impots.gouv.fr",
-    "status": "verified",
-    "notes": "La part de votre revenu net imposable par part fiscale jusqu'à 11 497 € n'est pas imposée. Ces montants sont par part de quotient familial (une personne seule = 1 part, un couple = 2 parts, etc.). Le barème 2026 a été indexé de +0,9 % sur l'inflation."
-  },
-  {
-    "item": "IR 2026 — barème progressif (revenus 2025), tranche 11%",
-    "value": { "min": 11497, "max": 29315, "rate": 0.11 },
-    "unit": "table",
-    "applicable_year": 2026,
-    "applicable_period": "Imposition des revenus 2025 — loi n° 2026-103 du 19 février 2026, art. 4",
-    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-calculer-mon-taux-dimposition-dapres-le-bareme-progressif-de-limpot",
-    "source_title": "Comment calculer mon taux d'imposition d'après le barème progressif ? — impots.gouv.fr",
-    "status": "verified",
-    "notes": "La fraction de votre revenu net imposable par part comprise entre 11 497 € et 29 315 € est taxée à 11 %."
-  },
-  {
-    "item": "IR 2026 — barème progressif (revenus 2025), tranche 30%",
-    "value": { "min": 29315, "max": 83823, "rate": 0.30 },
-    "unit": "table",
-    "applicable_year": 2026,
-    "applicable_period": "Imposition des revenus 2025 — loi n° 2026-103 du 19 février 2026, art. 4",
-    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-calculer-mon-taux-dimposition-dapres-le-bareme-progressif-de-limpot",
-    "source_title": "Comment calculer mon taux d'imposition d'après le barème progressif ? — impots.gouv.fr",
-    "status": "verified",
-    "notes": "La fraction de votre revenu net imposable par part comprise entre 29 315 € et 83 823 € est taxée à 30 %."
-  },
-  {
-    "item": "IR 2026 — barème progressif (revenus 2025), tranche 41%",
-    "value": { "min": 83823, "max": 180294, "rate": 0.41 },
-    "unit": "table",
-    "applicable_year": 2026,
-    "applicable_period": "Imposition des revenus 2025 — loi n° 2026-103 du 19 février 2026, art. 4",
-    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-calculer-mon-taux-dimposition-dapres-le-bareme-progressif-de-limpot",
-    "source_title": "Comment calculer mon taux d'imposition d'après le barème progressif ? — impots.gouv.fr",
-    "status": "verified",
-    "notes": "La fraction de votre revenu net imposable par part comprise entre 83 823 € et 180 294 € est taxée à 41 %."
-  },
-  {
-    "item": "IR 2026 — barème progressif (revenus 2025), tranche 45%",
-    "value": { "min": 180294, "max": null, "rate": 0.45 },
-    "unit": "table",
-    "applicable_year": 2026,
-    "applicable_period": "Imposition des revenus 2025 — loi n° 2026-103 du 19 février 2026, art. 4",
-    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-calculer-mon-taux-dimposition-dapres-le-bareme-progressif-de-limpot",
-    "source_title": "Comment calculer mon taux d'imposition d'après le barème progressif ? — impots.gouv.fr",
-    "status": "verified",
-    "notes": "La fraction de votre revenu net imposable par part au-delà de 180 294 € est taxée au taux marginal maximum de 45 %."
-  },
-  {
-    "item": "IR 2026 — quotient familial, plafond avantage par demi-part supplémentaire",
-    "value": 1807,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Revenus 2025 — loi n° 2026-103 du 19 février 2026, art. 4",
-    "source_url": "https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407",
-    "source_title": "IR - Plafonnement des effets du quotient familial — bofip.impots.gouv.fr (07/04/2026)",
-    "status": "verified",
-    "notes": "Chaque demi-part supplémentaire liée à un enfant à charge ne peut pas vous faire économiser plus de 1 807 € d'impôt. Au-delà de cet avantage, votre revenu imposable est recalculé. D'autres plafonds spécifiques existent : 4 262 € pour la 1re part d'un parent isolé avec 1er enfant, 1 079 € pour certaines personnes seules, 1 801 € pour les personnes invalides."
-  },
-  {
-    "item": "IR 2026 — décote, seuil célibataire / divorcé / veuf",
-    "value": {
-      "seuil_impot_brut": 1983,
-      "plafond_decote": 897,
-      "formule": "décote = 897 - (45,25% × impôt_brut)"
+    {
+      "item": "IR 2026 — barème progressif (revenus 2025), tranche 0%",
+      "value": { "min": 0, "max": 11600, "rate": 0.0 },
+      "unit": "table",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419",
+      "status": "verified"
     },
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Revenus 2025 — indexation +0,9% sur valeurs 2025",
-    "source_url": "https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20250414",
-    "source_title": "IR - Décote — bofip.impots.gouv.fr",
-    "status": "estimated",
-    "notes": "La décote est une réduction automatique d'impôt pour les contribuables à faibles revenus. Si votre impôt brut calculé est inférieur à 1 983 €, une réduction est appliquée automatiquement. La formule est : réduction = 897 € moins 45,25 % de votre impôt brut. Ces valeurs 2026 sont estimées par indexation +0,9 % — à confirmer sur bofip.impots.gouv.fr lors de la publication définitive."
-  },
-  {
-    "item": "IR 2026 — décote, seuil couple (imposition commune)",
-    "value": {
-      "seuil_impot_brut": 3278,
-      "plafond_decote": 1483,
-      "formule": "décote = 1483 - (45,25% × impôt_brut)"
+    {
+      "item": "IR 2026 — barème progressif (revenus 2025), tranche 11%",
+      "value": { "min": 11600, "max": 29579, "rate": 0.11 },
+      "unit": "table",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419",
+      "status": "verified"
     },
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Revenus 2025 — indexation +0,9% sur valeurs 2025",
-    "source_url": "https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20250414",
-    "source_title": "IR - Décote — bofip.impots.gouv.fr",
-    "status": "estimated",
-    "notes": "Pour un couple marié ou pacsé déclarant ensemble, la décote s'applique si l'impôt brut est inférieur à 3 278 €. La réduction est de 1 483 € moins 45,25 % de l'impôt brut. Ces valeurs sont estimées — à confirmer sur bofip.impots.gouv.fr."
-  },
-  {
-    "item": "IR 2026 — prélèvement à la source (PAS), grille par défaut métropole (applicable mai 2026)",
-    "value": [
-      { "revenu_mensuel_max": 1620, "taux": 0.00 },
-      { "revenu_mensuel_max": 1694, "taux": 0.005 },
-      { "revenu_mensuel_max": 1769, "taux": 0.010 },
-      { "revenu_mensuel_max": 1877, "taux": 0.015 },
-      { "revenu_mensuel_max": 1985, "taux": 0.020 },
-      { "revenu_mensuel_max": 2041, "taux": 0.025 },
-      { "revenu_mensuel_max": 2151, "taux": 0.030 },
-      { "revenu_mensuel_max": 2360, "taux": 0.035 },
-      { "revenu_mensuel_max": 2569, "taux": 0.040 },
-      { "revenu_mensuel_max": 2813, "taux": 0.050 },
-      { "revenu_mensuel_max": 3059, "taux": 0.060 },
-      { "revenu_mensuel_max": 3306, "taux": 0.075 },
-      { "revenu_mensuel_max": 3641, "taux": 0.090 },
-      { "revenu_mensuel_max": 4064, "taux": 0.110 },
-      { "revenu_mensuel_max": 5036, "taux": 0.130 },
-      { "revenu_mensuel_max": 6104, "taux": 0.155 },
-      { "revenu_mensuel_max": 7875, "taux": 0.180 },
-      { "revenu_mensuel_max": 10674, "taux": 0.220 },
-      { "revenu_mensuel_max": 15573, "taux": 0.300 },
-      { "revenu_mensuel_max": 55062, "taux": 0.370 },
-      { "revenu_mensuel_max": null, "taux": 0.430 }
-    ],
-    "unit": "table",
-    "applicable_year": 2026,
-    "applicable_period": "Grille applicable à compter du 1er mai 2026 (ajustement +0,9% par loi n°2026-103, art. 4).",
-    "source_url": "https://bofip.impots.gouv.fr/bofip/11255-PGP.html/identifiant=BOI-BAREME-000037-20250410",
-    "source_title": "BAREME - IR - PAS - Grilles des taux par défaut — bofip.impots.gouv.fr",
-    "status": "estimated",
-    "notes": "Cette grille est utilisée par votre employeur si vous n'avez pas transmis votre taux personnalisé. Elle indique le taux de prélèvement à la source en fonction de votre revenu mensuel. Les taux restent inchangés (de 0 % à 43 %), seules les tranches de revenus ont été légèrement relevées de +0,9 % depuis mai 2026. Ces valeurs sont estimées par indexation — à confirmer sur bofip.impots.gouv.fr."
-  },
-  {
-    "item": "IR 2026 — taux marginal maximal (TMI)",
-    "value": 0.45,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Revenus 2025",
-    "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-calculer-mon-taux-dimposition-dapres-le-bareme-progressif-de-limpot",
-    "source_title": "Comment calculer mon taux d'imposition — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Le taux marginal maximum en France est de 45 %. Il ne s'applique qu'à la fraction de revenu dépassant 180 294 € par part fiscale. Votre taux moyen d'imposition est toujours inférieur à votre taux marginal."
-  }
+    {
+      "item": "IR 2026 — barème progressif (revenus 2025), tranche 30%",
+      "value": { "min": 29579, "max": 84577, "rate": 0.3 },
+      "unit": "table",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419",
+      "status": "verified"
+    },
+    {
+      "item": "IR 2026 — barème progressif (revenus 2025), tranche 41%",
+      "value": { "min": 84577, "max": 181917, "rate": 0.41 },
+      "unit": "table",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419",
+      "status": "verified"
+    },
+    {
+      "item": "IR 2026 — barème progressif (revenus 2025), tranche 45%",
+      "value": { "min": 181917, "max": null, "rate": 0.45 },
+      "unit": "table",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419",
+      "status": "verified",
+      "notes": "La fraction de votre revenu net imposable par part au-delà de 181 917 € est taxée au taux marginal maximum de 45 %."
+    },
+    {
+      "item": "IR 2026 — quotient familial, plafond avantage par demi-part supplémentaire",
+      "value": 1807,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407",
+      "status": "verified",
+      "notes": "Chaque demi-part supplémentaire liée à un enfant à charge ne peut pas vous faire économiser plus de 1 807 € d'impôt. Au-delà de cet avantage, votre revenu imposable est recalculé. D'autres plafonds spécifiques existent : 4 262 € pour la 1re part d'un parent isolé avec 1er enfant, 1 079 € pour certaines personnes seules, 1 801 € pour les personnes invalides."
+    },
+    {
+      "item": "IR 2026 — décote, seuil célibataire / divorcé / veuf",
+      "value": { "seuil_impot_brut": 1982, "plafond_decote": 897, "formule": "décote = 897 - (45,25% × impôt_brut)" },
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mon-impot-sur-le-revenu/pouvez-vous-beneficier-de-la-decote-de-limpot-sur-le-revenu",
+      "status": "verified",
+      "notes": "La décote est une réduction automatique d'impôt pour les contribuables à faibles revenus. Si votre impôt brut ne dépasse pas 1 982 €, une réduction est appliquée. Formule : décote = 897 − (45,25 % × impôt_brut)."
+    },
+    {
+      "item": "IR 2026 — décote, seuil couple (imposition commune)",
+      "value": { "seuil_impot_brut": 3277, "plafond_decote": 1483, "formule": "décote = 1483 - (45,25% × impôt_brut)" },
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mon-impot-sur-le-revenu/pouvez-vous-beneficier-de-la-decote-de-limpot-sur-le-revenu",
+      "status": "verified",
+      "notes": "Pour un couple marié ou pacsé déclarant ensemble, la décote s'applique si l'impôt brut ne dépasse pas 3 277 €. Formule : décote = 1 483 − (45,25 % × impôt_brut)."
+    },
+    {
+      "item": "IR 2026 — prélèvement à la source (PAS), grille par défaut métropole (applicable mai 2026)",
+      "value": [
+        { "revenu_mensuel_max": 1620, "taux": 0.0 },
+        { "revenu_mensuel_max": 1694, "taux": 0.005 },
+        { "revenu_mensuel_max": 1769, "taux": 0.01 },
+        { "revenu_mensuel_max": 1877, "taux": 0.015 },
+        { "revenu_mensuel_max": 1985, "taux": 0.02 },
+        { "revenu_mensuel_max": 2041, "taux": 0.025 },
+        { "revenu_mensuel_max": 2151, "taux": 0.03 },
+        { "revenu_mensuel_max": 2360, "taux": 0.035 },
+        { "revenu_mensuel_max": 2569, "taux": 0.04 },
+        { "revenu_mensuel_max": 2813, "taux": 0.05 },
+        { "revenu_mensuel_max": 3059, "taux": 0.06 },
+        { "revenu_mensuel_max": 3306, "taux": 0.075 },
+        { "revenu_mensuel_max": 3641, "taux": 0.09 },
+        { "revenu_mensuel_max": 4064, "taux": 0.11 },
+        { "revenu_mensuel_max": 5036, "taux": 0.13 },
+        { "revenu_mensuel_max": 6104, "taux": 0.155 },
+        { "revenu_mensuel_max": 7875, "taux": 0.18 },
+        { "revenu_mensuel_max": 10674, "taux": 0.22 },
+        { "revenu_mensuel_max": 15573, "taux": 0.3 },
+        { "revenu_mensuel_max": 55062, "taux": 0.37 },
+        { "revenu_mensuel_max": null, "taux": 0.43 }
+      ],
+      "unit": "table",
+      "applicable_year": 2026,
+      "source_url": "https://bofip.impots.gouv.fr/bofip/11255-PGP.html/identifiant=BOI-BAREME-000037-20250410",
+      "status": "estimated"
+    },
+    {
+      "item": "IR 2026 — taux marginal maximal (TMI)",
+      "value": 0.45,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/particulier/questions/comment-calculer-mon-taux-dimposition-dapres-le-bareme-progressif-de-limpot",
+      "status": "verified",
+      "notes": "Le taux marginal maximum en France est de 45 %. Il ne s'applique qu'à la fraction de revenu dépassant 180 294 € par part fiscale. Votre taux moyen d'imposition est toujours inférieur à votre taux marginal."
+    }
   ]
 }

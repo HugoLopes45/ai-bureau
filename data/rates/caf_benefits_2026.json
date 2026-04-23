@@ -1,146 +1,111 @@
 {
   "_meta": {
     "titre": "Prestations CAF et aides familiales 2026",
-    "description": "Contient les montants et plafonds des principales aides versées par la CAF : APL, prime d'activité, allocations familiales, PAJE et allocation de rentrée scolaire.",
-    "a_qui_ca_sert": "Utilisé par le skill aides-familiales pour répondre aux questions sur les montants des allocations, les plafonds de revenus et les conditions d'éligibilité des aides familiales.",
-    "frequence_revision": "La prime d'activité et les allocations familiales sont revalorisées chaque 1er avril. Les APL sont revalorisées chaque 1er octobre. À mettre à jour après chaque revalorisation.",
     "derniere_verification": "2026-04-22",
-    "prochaine_revision": "Octobre 2026 (revalorisation APL) — Avril 2027 (revalorisation prime d'activité et allocations familiales)",
-    "source_principale": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2882",
-    "note_utilisateur": "Ce fichier est mis à jour automatiquement après chaque revalorisation officielle. Vous n'avez pas besoin de le modifier manuellement."
+    "source_principale": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2882"
   },
   "donnees": [
-  {
-    "item": "APL — révision annuelle",
-    "value": "1er octobre",
-    "unit": "date_annual",
-    "applicable_year": 2026,
-    "applicable_period": "Chaque année en octobre",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/actualites/A16807",
-    "source_title": "Les APL revalorisées au 1er octobre — Service Public",
-    "status": "verified",
-    "notes": "Les APL (Aides Personnalisées au Logement) sont recalculées chaque 1er octobre. La dernière revalorisation a été de +1,04 % au 1er octobre 2025. Le montant exact dépend de votre loyer, de votre zone géographique (1, 1bis, 2 ou 3) et de vos revenus. Pour connaître votre montant précis, utilisez le simulateur sur caf.fr."
-  },
-  {
-    "item": "Prime d'activité — montant forfaitaire (personne seule sans enfant)",
-    "value": 638.28,
-    "unit": "EUR_per_month",
-    "applicable_year": 2026,
-    "applicable_period": "Depuis le 1er avril 2026 (décret n°2026-222 du 30 mars 2026)",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2882",
-    "source_title": "Prime d'activité — Service Public",
-    "status": "verified",
-    "notes": "La prime d'activité est une aide mensuelle versée aux travailleurs ayant de faibles revenus. Pour une personne seule sans enfant, le montant de base (forfait) est de 638,28 € depuis avril 2026. Votre prime réelle dépend de vos revenus professionnels et de la composition de votre foyer. Pour un couple sans enfant, le forfait est de 957,42 €. Chaque personne supplémentaire à charge ajoute 255,31 €. Faites une simulation sur caf.fr pour connaître votre montant."
-  },
-  {
-    "item": "Prime d'activité — bonification individuelle maximale",
-    "value": 240.63,
-    "unit": "EUR_per_month",
-    "applicable_year": 2026,
-    "applicable_period": "Depuis le 1er avril 2026",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2882",
-    "source_title": "Prime d'activité — Service Public",
-    "status": "verified",
-    "notes": "Si vous gagnez plus de 709,18 € par mois, vous bénéficiez d'un bonus croissant qui peut atteindre 240,63 € par mois. Ce bonus s'applique à partir de 709 € de salaire mensuel moyen et augmente progressivement jusqu'à 1 658,76 €/mois, au-delà duquel il est plafonné."
-  },
-  {
-    "item": "Allocations familiales — taux plein (≤ plafond tranche 1) — 2 enfants",
-    "value": 152.25,
-    "unit": "EUR_per_month",
-    "applicable_year": 2026,
-    "applicable_period": "Depuis le 1er avril 2026 (revalorisation d'avril 2026)",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13213",
-    "source_title": "Allocations familiales — Service Public",
-    "status": "verified",
-    "notes": "Pour 2 enfants, si vos revenus annuels ne dépassent pas 79 980 €, vous percevez 152,25 € par mois. Si vos revenus sont entre 79 980 € et 106 604 €, le montant est réduit à 76,13 €. Au-delà de 106 604 €, il est de 38,07 €. Un enfant de 14 ans ou plus donne droit à une majoration de 76,13 € supplémentaires."
-  },
-  {
-    "item": "Allocations familiales — plafonds de ressources tranche 1/2 (2 enfants)",
-    "value": [79980, 106604],
-    "unit": "EUR_annual",
-    "applicable_year": 2026,
-    "applicable_period": "Revenus 2024 pour droits 2026",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13213",
-    "source_title": "Allocations familiales — Service Public",
-    "status": "verified",
-    "notes": "Ces plafonds sont calculés sur les revenus de l'année 2024. Pour un foyer avec 3 enfants, les plafonds sont de 86 644 € et 113 268 €. Pour 4 enfants : 93 308 € et 119 932 €. Si vous êtes légèrement au-dessus du seuil, un mécanisme dégressif évite une chute brutale du montant."
-  },
-  {
-    "item": "Allocations familiales — taux plein (≤ plafond tranche 1) — 3 enfants",
-    "value": 347.32,
-    "unit": "EUR_per_month",
-    "applicable_year": 2026,
-    "applicable_period": "Depuis le 1er avril 2026",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13213",
-    "source_title": "Allocations familiales — Service Public",
-    "status": "verified",
-    "notes": "Pour 3 enfants, si vos revenus annuels ne dépassent pas 86 644 €, vous percevez 347,32 € par mois (taux plein). Ce montant passe à 173,67 € pour les revenus entre 86 644 € et 113 268 €, et à 86,83 € au-delà."
-  },
-  {
-    "item": "PAJE — prime de naissance",
-    "value": 1093.11,
-    "unit": "EUR_one_time",
-    "applicable_year": 2026,
-    "applicable_period": "Valeur vérifiée 2026",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2550",
-    "source_title": "PAJE — Prime de naissance — Service Public",
-    "status": "verified",
-    "notes": "Cette prime de 1 093,11 € est versée une seule fois, avant la fin du mois suivant le 6e mois de grossesse (c'est-à-dire au 8e mois). Pour en bénéficier, votre revenu fiscal de référence ne doit pas dépasser certains plafonds (par exemple 49 054 € pour un couple avec 2 revenus et 1 enfant attendu). Un examen prénatal avant la fin du 3e mois est aussi obligatoire."
-  },
-  {
-    "item": "PAJE — allocation de base mensuelle (taux plein)",
-    "value": 198.16,
-    "unit": "EUR_per_month",
-    "applicable_year": 2026,
-    "applicable_period": "Valeur vérifiée 2026",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2552",
-    "source_title": "PAJE — Allocation de base — Service Public",
-    "status": "verified",
-    "notes": "Cette aide mensuelle de 198,16 € (taux plein) est versée pendant 3 ans, jusqu'au mois qui précède le 3e anniversaire de votre enfant. Si vos revenus dépassent un certain plafond, vous ne percevez que le taux réduit (99,08 €/mois). Vérifiez votre éligibilité sur caf.fr."
-  },
-  {
-    "item": "ARS — allocation de rentrée scolaire 2026 — 6-10 ans",
-    "value": 426.87,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Rentrée 2026",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1878",
-    "source_title": "Allocation de rentrée scolaire (ARS) — Service Public",
-    "status": "verified",
-    "notes": "Pour un enfant scolarisé âgé de 6 à 10 ans au 31 décembre 2025, l'allocation de rentrée scolaire 2026 est de 426,87 €. Elle est versée automatiquement fin août si vous êtes déjà allocataire CAF et que vos revenus 2024 ne dépassent pas 28 956 € pour un enfant."
-  },
-  {
-    "item": "ARS — allocation de rentrée scolaire 2026 — 11-14 ans",
-    "value": 450.41,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Rentrée 2026",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1878",
-    "source_title": "Allocation de rentrée scolaire (ARS) — Service Public",
-    "status": "verified",
-    "notes": "Pour un enfant scolarisé âgé de 11 à 14 ans, le montant de l'ARS est de 450,41 €. Mêmes conditions de ressources que pour les 6-10 ans (plafond 28 956 € pour 1 enfant)."
-  },
-  {
-    "item": "ARS — allocation de rentrée scolaire 2026 — 15-18 ans",
-    "value": 466.02,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Rentrée 2026",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1878",
-    "source_title": "Allocation de rentrée scolaire (ARS) — Service Public",
-    "status": "verified",
-    "notes": "Pour un enfant scolarisé entre 15 et 18 ans, le montant est de 466,02 €. Le plafond de revenus est de 28 956 € pour 1 enfant, puis augmente de 6 682 € par enfant supplémentaire à partir du 3e."
-  },
-  {
-    "item": "ARS — plafond de revenus 2026 (1 enfant)",
-    "value": 28956,
-    "unit": "EUR_annual",
-    "applicable_year": 2026,
-    "applicable_period": "Revenus 2024 pour ARS 2026",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1878",
-    "source_title": "Allocation de rentrée scolaire (ARS) — Service Public",
-    "status": "verified",
-    "notes": "Le plafond de revenus pour recevoir l'ARS est calculé sur les revenus de l'année 2024. Pour 1 enfant : 28 956 €. Pour 2 enfants : 35 638 €. Pour 3 enfants ou plus : 42 320 €. Au-delà, chaque enfant supplémentaire ajoute 6 682 € au plafond."
-  }
+    {
+      "item": "APL — révision annuelle",
+      "value": "1er octobre",
+      "unit": "date_annual",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/actualites/A16807",
+      "status": "verified"
+    },
+    {
+      "item": "Prime d'activité — montant forfaitaire (personne seule sans enfant)",
+      "value": 638.28,
+      "unit": "EUR_per_month",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2882",
+      "status": "verified"
+    },
+    {
+      "item": "Prime d'activité — bonification individuelle maximale",
+      "value": 240.63,
+      "unit": "EUR_per_month",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2882",
+      "status": "verified"
+    },
+    {
+      "item": "Allocations familiales — taux plein (≤ plafond tranche 1) — 2 enfants",
+      "value": 152.25,
+      "unit": "EUR_per_month",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13213",
+      "status": "verified"
+    },
+    {
+      "item": "Allocations familiales — plafonds de ressources tranche 1/2 (2 enfants)",
+      "value": [79980, 106604],
+      "unit": "EUR_annual",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13213",
+      "status": "verified",
+      "notes": "Ces plafonds sont calculés sur les revenus de l'année 2024. Pour un foyer avec 3 enfants, les plafonds sont de 86 644 € et 113 268 €. Pour 4 enfants : 93 308 € et 119 932 €. Si vous êtes légèrement au-dessus du seuil, un mécanisme dégressif évite une chute brutale du montant."
+    },
+    {
+      "item": "Allocations familiales — taux plein (≤ plafond tranche 1) — 3 enfants",
+      "value": 347.32,
+      "unit": "EUR_per_month",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13213",
+      "status": "verified"
+    },
+    {
+      "item": "PAJE — prime de naissance",
+      "value": 1093.11,
+      "unit": "EUR_one_time",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2550",
+      "status": "verified",
+      "notes": "Cette prime de 1 093,11 € est versée une seule fois, avant la fin du mois suivant le 6e mois de grossesse (c'est-à-dire au 8e mois). Pour en bénéficier, votre revenu fiscal de référence ne doit pas dépasser certains plafonds (par exemple 49 054 € pour un couple avec 2 revenus et 1 enfant attendu). Un examen prénatal avant la fin du 3e mois est aussi obligatoire."
+    },
+    {
+      "item": "PAJE — allocation de base mensuelle (taux plein)",
+      "value": 198.16,
+      "unit": "EUR_per_month",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2552",
+      "status": "verified",
+      "notes": "Cette aide mensuelle de 198,16 € (taux plein) est versée pendant 3 ans, jusqu'au mois qui précède le 3e anniversaire de votre enfant. Si vos revenus dépassent un certain plafond, vous ne percevez que le taux réduit (99,08 €/mois). Vérifiez votre éligibilité sur caf.fr."
+    },
+    {
+      "item": "ARS — allocation de rentrée scolaire 2026 — 6-10 ans",
+      "value": 426.87,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1878",
+      "status": "verified"
+    },
+    {
+      "item": "ARS — allocation de rentrée scolaire 2026 — 11-14 ans",
+      "value": 450.41,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1878",
+      "status": "verified",
+      "notes": "Pour un enfant scolarisé âgé de 11 à 14 ans, le montant de l'ARS est de 450,41 €. Mêmes conditions de ressources que pour les 6-10 ans (plafond 28 956 € pour 1 enfant)."
+    },
+    {
+      "item": "ARS — allocation de rentrée scolaire 2026 — 15-18 ans",
+      "value": 466.02,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1878",
+      "status": "verified",
+      "notes": "Pour un enfant scolarisé entre 15 et 18 ans, le montant est de 466,02 €. Le plafond de revenus est de 28 956 € pour 1 enfant, puis augmente de 6 682 € par enfant supplémentaire à partir du 3e."
+    },
+    {
+      "item": "ARS — plafond de revenus 2026 (1 enfant)",
+      "value": 28956,
+      "unit": "EUR_annual",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1878",
+      "status": "verified",
+      "notes": "Le plafond de revenus pour recevoir l'ARS est calculé sur les revenus de l'année 2024. Pour 1 enfant : 28 956 €. Pour 2 enfants : 35 638 €. Pour 3 enfants ou plus : 42 320 €. Au-delà, chaque enfant supplémentaire ajoute 6 682 € au plafond."
+    }
   ]
 }

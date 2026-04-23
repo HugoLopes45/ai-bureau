@@ -1,124 +1,96 @@
 {
   "_meta": {
     "titre": "Taux d'usure — plafonds légaux des crédits Q2 2026 (avril–juin 2026)",
-    "description": "Contient les taux d'usure en vigueur au deuxième trimestre 2026 pour les crédits immobiliers (selon la durée), les crédits relais, les crédits à la consommation et les découverts bancaires.",
-    "a_qui_ca_sert": "Utilisé par le skill crédit-immobilier pour vérifier si un TAEG proposé par une banque est légalement autorisé, et informer sur les plafonds qui s'imposent aux établissements financiers.",
-    "frequence_revision": "Les taux d'usure sont publiés chaque trimestre par la Banque de France (autour du 27 du mois précédant le trimestre). Ce fichier doit être mis à jour à chaque nouveau trimestre.",
     "derniere_verification": "2026-04-22",
-    "prochaine_revision": "Fin juin 2026 (publication Q3 2026 par la Banque de France)",
-    "source_principale": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
-    "note_utilisateur": "Ce fichier doit être mis à jour chaque trimestre. Les taux Q3 2026 seront publiés fin juin 2026 pour une entrée en vigueur le 1er juillet 2026."
+    "source_principale": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2"
   },
   "donnees": [
-  {
-    "item": "Taux usure crédit immobilier taux fixe < 10 ans",
-    "value": 4.00,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Q2 2026 (du 1er avril 2026)",
-    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
-    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
-    "status": "verified",
-    "notes": "Le taux d'usure est le plafond légal du TAEG (Taux Annuel Effectif Global, qui inclut taux d'intérêt + assurance + frais). Pour un crédit immobilier à taux fixe de moins de 10 ans, votre banque ne peut pas vous proposer un TAEG supérieur à 4,00 %. Publié le 27 mars 2026."
-  },
-  {
-    "item": "Taux usure crédit immobilier taux fixe 10–20 ans",
-    "value": 4.48,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Q2 2026 (du 1er avril 2026)",
-    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
-    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
-    "status": "verified",
-    "notes": "Pour un crédit immobilier à taux fixe d'une durée entre 10 et 20 ans, le TAEG maximum légal est de 4,48 %. Tout dépassement de ce plafond est interdit par la loi."
-  },
-  {
-    "item": "Taux usure crédit immobilier taux fixe ≥ 20 ans",
-    "value": 5.19,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Q2 2026 (du 1er avril 2026)",
-    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
-    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
-    "status": "verified",
-    "notes": "Pour les crédits immobiliers à taux fixe sur 20 ans ou plus (les plus courants pour l'achat d'une résidence principale), le TAEG ne peut pas dépasser 5,19 % au deuxième trimestre 2026."
-  },
-  {
-    "item": "Taux usure crédit immobilier taux variable",
-    "value": 5.00,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Q2 2026 (du 1er avril 2026)",
-    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
-    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
-    "status": "verified",
-    "notes": "Pour les crédits immobiliers à taux variable, le TAEG initial ne peut pas dépasser 5,00 %."
-  },
-  {
-    "item": "Taux usure crédit relais (bridge loan)",
-    "value": 6.20,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Q2 2026 (du 1er avril 2026)",
-    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
-    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
-    "status": "verified",
-    "notes": "Le crédit relais (bridge loan) est un prêt court terme utilisé pour financer l'achat d'un nouveau logement avant la vente de l'ancien. Son TAEG ne peut pas dépasser 6,20 % au deuxième trimestre 2026."
-  },
-  {
-    "item": "Taux usure crédit à la consommation ≤ 3 000 €",
-    "value": 23.52,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Q2 2026 (du 1er avril 2026)",
-    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
-    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
-    "status": "verified",
-    "notes": "Pour les petits crédits à la consommation (jusqu'à 3 000 €), le taux maximum légal est de 23,52 %. Ces petits montants sont structurellement plus chers car les coûts fixes de traitement sont élevés relativement au capital prêté."
-  },
-  {
-    "item": "Taux usure crédit à la consommation 3 000–6 000 €",
-    "value": 15.73,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Q2 2026 (du 1er avril 2026)",
-    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
-    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
-    "status": "verified",
-    "notes": "Pour les crédits à la consommation entre 3 000 € et 6 000 €, le TAEG ne peut pas dépasser 15,73 %."
-  },
-  {
-    "item": "Taux usure crédit à la consommation > 6 000 €",
-    "value": 8.61,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Q2 2026 (du 1er avril 2026)",
-    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
-    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
-    "status": "verified",
-    "notes": "Pour les crédits à la consommation supérieurs à 6 000 €, le TAEG maximum est de 8,61 %. Plus le montant emprunté est élevé, plus le taux plafond est bas."
-  },
-  {
-    "item": "Taux usure découvert en compte",
-    "value": 19.05,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Q2 2026 (du 1er avril 2026)",
-    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
-    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
-    "status": "verified",
-    "notes": "Le taux d'agios (intérêts) sur votre découvert bancaire autorisé ne peut pas dépasser 19,05 % par an au deuxième trimestre 2026."
-  },
-  {
-    "item": "Prochaine mise à jour taux d'usure",
-    "value": null,
-    "unit": "date",
-    "applicable_year": 2026,
-    "applicable_period": "Q3 2026",
-    "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
-    "source_title": "Taux d'usure 2026-Q2 — Banque de France",
-    "status": "verified",
-    "notes": "Les taux d'usure du troisième trimestre 2026 (juillet-septembre) seront publiés fin juin 2026 par la Banque de France et entreront en vigueur le 1er juillet 2026. Pensez à mettre à jour ce fichier à ce moment-là."
-  }
+    {
+      "item": "Taux usure crédit immobilier taux fixe < 10 ans",
+      "value": 4.0,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+      "status": "verified",
+      "notes": "Le taux d'usure est le plafond légal du TAEG (Taux Annuel Effectif Global, qui inclut taux d'intérêt + assurance + frais). Pour un crédit immobilier à taux fixe de moins de 10 ans, votre banque ne peut pas vous proposer un TAEG supérieur à 4,00 %. Publié le 27 mars 2026."
+    },
+    {
+      "item": "Taux usure crédit immobilier taux fixe 10–20 ans",
+      "value": 4.48,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+      "status": "verified",
+      "notes": "Pour un crédit immobilier à taux fixe d'une durée entre 10 et 20 ans, le TAEG maximum légal est de 4,48 %. Tout dépassement de ce plafond est interdit par la loi."
+    },
+    {
+      "item": "Taux usure crédit immobilier taux fixe ≥ 20 ans",
+      "value": 5.19,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+      "status": "verified"
+    },
+    {
+      "item": "Taux usure crédit immobilier taux variable",
+      "value": 5.0,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+      "status": "verified",
+      "notes": "Pour les crédits immobiliers à taux variable, le TAEG initial ne peut pas dépasser 5,00 %."
+    },
+    {
+      "item": "Taux usure crédit relais (bridge loan)",
+      "value": 6.2,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+      "status": "verified"
+    },
+    {
+      "item": "Taux usure crédit à la consommation ≤ 3 000 €",
+      "value": 23.52,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+      "status": "verified",
+      "notes": "Pour les petits crédits à la consommation (jusqu'à 3 000 €), le taux maximum légal est de 23,52 %. Ces petits montants sont structurellement plus chers car les coûts fixes de traitement sont élevés relativement au capital prêté."
+    },
+    {
+      "item": "Taux usure crédit à la consommation 3 000–6 000 €",
+      "value": 15.73,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+      "status": "verified",
+      "notes": "Pour les crédits à la consommation entre 3 000 € et 6 000 €, le TAEG ne peut pas dépasser 15,73 %."
+    },
+    {
+      "item": "Taux usure crédit à la consommation > 6 000 €",
+      "value": 8.61,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+      "status": "verified",
+      "notes": "Pour les crédits à la consommation supérieurs à 6 000 €, le TAEG maximum est de 8,61 %. Plus le montant emprunté est élevé, plus le taux plafond est bas."
+    },
+    {
+      "item": "Taux usure découvert en compte",
+      "value": 19.05,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+      "status": "verified",
+      "notes": "Le taux d'agios (intérêts) sur votre découvert bancaire autorisé ne peut pas dépasser 19,05 % par an au deuxième trimestre 2026."
+    },
+    {
+      "item": "Prochaine mise à jour taux d'usure",
+      "value": null,
+      "unit": "date",
+      "applicable_year": 2026,
+      "source_url": "https://www.banque-france.fr/fr/statistiques/taux-et-cours/taux-dusure-2026-q2",
+      "status": "verified"
+    }
   ]
 }

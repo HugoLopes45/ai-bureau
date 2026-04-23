@@ -1,146 +1,110 @@
 {
   "_meta": {
     "titre": "Allocation de retour à l'emploi (ARE) — règles de calcul 2026",
-    "description": "Contient les formules, taux et durées qui déterminent le montant et la durée de l'indemnisation chômage pour les salariés du secteur privé.",
-    "a_qui_ca_sert": "Utilisé par le skill chômage/ARE pour calculer une estimation d'allocation et vérifier si la durée d'indemnisation est cohérente avec la situation de l'utilisateur.",
-    "frequence_revision": "Les montants (partie fixe, plancher) sont revalorisés chaque 1er juillet. Les règles structurelles (plafonds, durées) peuvent changer suite à une réforme de l'assurance chômage.",
     "derniere_verification": "2026-04-22",
-    "prochaine_revision": "Juillet 2026 (revalorisation annuelle)",
-    "source_principale": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14860",
-    "note_utilisateur": "Vous n'avez pas besoin de modifier ce fichier manuellement. Si les valeurs semblent dépassées, le skill refresh-rates peut les mettre à jour automatiquement."
+    "source_principale": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14860"
   },
   "donnees": [
-  {
-    "item": "ARE — formule SJR (salaire journalier de référence)",
-    "value": "Somme des rémunérations brutes de la période de référence ÷ nombre de jours calendaires de la période",
-    "unit": "formula",
-    "applicable_year": 2026,
-    "applicable_period": "Contrats fin avant 2025-04-01 : 24 mois (< 55 ans) ou 36 mois (≥ 55 ans). Contrats fin depuis 2025-04-01 : mêmes durées.",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2064",
-    "source_title": "Allocations chômage : comment est calculé le SJR — Service Public",
-    "status": "verified",
-    "notes": "Le SJR sert de base au calcul de votre allocation quotidienne. Sont pris en compte : salaire de base, primes, 13e mois au prorata, bonus perçus pendant la période. Ne sont pas pris en compte : indemnités de licenciement, indemnités de congés payés, indemnités de fin de mission, clauses de non-concurrence. Le salaire mensuel de référence est plafonné à 16 020 € par mois."
-  },
-  {
-    "item": "ARE — formule de calcul (contrats fin avant 2025-04-01)",
-    "value": "max(40,4 % × SJR + 13,18 €, 57 % × SJR)",
-    "unit": "formula",
-    "applicable_year": 2026,
-    "applicable_period": "Contrats de travail terminés avant 2025-04-01",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14860",
-    "source_title": "ARE salariés secteur privé (fin contrat avant 1er avril 2025) — Service Public",
-    "status": "verified",
-    "notes": "Votre allocation journalière est le plus élevé des deux montants : soit 40,4 % de votre salaire journalier de référence plus 13,18 €, soit 57 % de ce même salaire. La formule garantit que les petits salaires ne soient pas défavorisés. Plafond : 75 % du SJR pour cette catégorie. Minimum garanti : 32,13 €/jour net."
-  },
-  {
-    "item": "ARE — formule de calcul (contrats fin depuis 2025-04-01)",
-    "value": "max(40,4 % × SJR + 13,18 €, 57 % × SJR)",
-    "unit": "formula",
-    "applicable_year": 2026,
-    "applicable_period": "Contrats de travail terminés depuis 2025-04-01",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
-    "source_title": "ARE salariés secteur privé (fin contrat depuis 1er avril 2025) — Service Public",
-    "status": "verified",
-    "notes": "La formule de calcul est identique à l'ancienne règle, mais le plafond est plus bas : l'allocation ne peut pas dépasser 70 % du SJR (contre 75 % avant avril 2025). Ce changement est issu de la réforme de l'assurance chômage 2025. Minimum garanti : 32,13 €/jour net."
-  },
-  {
-    "item": "ARE — partie fixe journalière",
-    "value": 13.18,
-    "unit": "EUR_per_day",
-    "applicable_year": 2026,
-    "applicable_period": "Since 2025-07-01",
-    "source_url": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocations/a-chaque-situation-son-allocation/allocations-chomage-are/a-combien-puis-je-pretendre.html",
-    "source_title": "ARE — montant de l'allocation — France Travail",
-    "status": "verified",
-    "notes": "Ce montant fixe de 13,18 € par jour s'ajoute au pourcentage de votre ancien salaire. Il a été revalorisé de +0,5 % au 1er juillet 2025 (ancienne valeur : 13,11 €). La prochaine revalorisation est attendue en juillet 2026."
-  },
-  {
-    "item": "ARE — plancher (minimum journalier net)",
-    "value": 32.13,
-    "unit": "EUR_per_day",
-    "applicable_year": 2026,
-    "applicable_period": "Since 2025-07-01",
-    "source_url": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocations/a-chaque-situation-son-allocation/allocations-chomage-are/a-combien-puis-je-pretendre.html",
-    "source_title": "ARE — montant de l'allocation — France Travail",
-    "status": "verified",
-    "notes": "Même si votre ancien salaire était très bas, vous ne pouvez pas percevoir moins de 32,13 € net par jour. Ce plancher ne s'applique pas si vous travaillez à temps partiel pendant votre chômage. La prochaine revalorisation est attendue en juillet 2026."
-  },
-  {
-    "item": "ARE — plafond (contrats fin avant 2025-04-01)",
-    "value": 75,
-    "unit": "percent_of_SJR",
-    "applicable_year": 2026,
-    "applicable_period": "Contrats terminés avant 2025-04-01",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14860",
-    "source_title": "ARE salariés (fin contrat avant 1er avril 2025) — Service Public",
-    "status": "verified",
-    "notes": "Pour les contrats terminés avant le 1er avril 2025, l'allocation ne peut pas dépasser 75 % de votre salaire journalier de référence, même si la formule donne un résultat plus élevé."
-  },
-  {
-    "item": "ARE — plafond (contrats fin depuis 2025-04-01)",
-    "value": 70,
-    "unit": "percent_of_SJR",
-    "applicable_year": 2026,
-    "applicable_period": "Contrats terminés depuis 2025-04-01",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
-    "source_title": "ARE salariés (fin contrat depuis 1er avril 2025) — Service Public",
-    "status": "verified",
-    "notes": "Depuis la réforme d'avril 2025, le plafond de l'allocation a été abaissé de 75 % à 70 % du salaire journalier de référence. Cela peut réduire l'indemnisation des personnes ayant un salaire élevé."
-  },
-  {
-    "item": "ARE — coefficient contra-cyclique (réduction durée)",
-    "value": 25,
-    "unit": "percent_reduction_of_duration",
-    "applicable_year": 2026,
-    "applicable_period": "Since 2023-02-01 (contrats fin depuis cette date)",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
-    "source_title": "ARE salariés (fin contrat depuis 1er avril 2025) — Service Public",
-    "status": "verified",
-    "notes": "Lorsque le chômage est bas (taux de chômage inférieur à 9 % sans hausse rapide), la durée maximale d'indemnisation est réduite de 25 %. C'est le mécanisme actuellement actif en 2026. Concrètement : si vous avez moins de 55 ans, vous êtes indemnisé au maximum 548 jours au lieu de 730."
-  },
-  {
-    "item": "ARE — durée maximale < 55 ans (avec réduction contra-cyclique)",
-    "value": 548,
-    "unit": "calendar_days",
-    "applicable_year": 2026,
-    "applicable_period": "Contrats fin depuis 2023-02-01",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
-    "source_title": "ARE salariés (fin contrat depuis 1er avril 2025) — Service Public",
-    "status": "verified",
-    "notes": "Si vous avez moins de 55 ans, vous pouvez être indemnisé jusqu'à 548 jours calendaires (environ 18 mois), sous réserve d'avoir travaillé au moins 24 mois. Sans la réduction actuelle, la durée maximale serait de 730 jours."
-  },
-  {
-    "item": "ARE — durée maximale 55–56 ans (avec réduction contra-cyclique)",
-    "value": 685,
-    "unit": "calendar_days",
-    "applicable_year": 2026,
-    "applicable_period": "Contrats fin depuis 2023-02-01",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
-    "source_title": "ARE salariés (fin contrat depuis 1er avril 2025) — Service Public",
-    "status": "verified",
-    "notes": "Si vous avez entre 55 et 56 ans, vous pouvez être indemnisé jusqu'à 685 jours (environ 22,5 mois), sous réserve d'avoir travaillé au moins 36 mois. Sans la réduction actuelle, la durée maximale serait de 913 jours."
-  },
-  {
-    "item": "ARE — durée maximale ≥ 57 ans (avec réduction contra-cyclique)",
-    "value": 822,
-    "unit": "calendar_days",
-    "applicable_year": 2026,
-    "applicable_period": "Contrats fin depuis 2023-02-01",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
-    "source_title": "ARE salariés (fin contrat depuis 1er avril 2025) — Service Public",
-    "status": "verified",
-    "notes": "Si vous avez 57 ans ou plus, vous pouvez être indemnisé jusqu'à 822 jours (environ 27 mois), sous réserve d'avoir travaillé au moins 36 mois. Sans la réduction actuelle, la durée maximale serait de 1 095 jours."
-  },
-  {
-    "item": "ARE — délai d'attente",
-    "value": 7,
-    "unit": "calendar_days",
-    "applicable_year": 2026,
-    "applicable_period": "Permanent rule",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14860",
-    "source_title": "ARE salariés — Service Public",
-    "status": "verified",
-    "notes": "Après votre inscription à France Travail, vous devez attendre 7 jours calendaires avant de percevoir la première allocation. Ce délai s'applique une seule fois : si vous avez déjà subi ce délai dans les 12 derniers mois, il ne recommence pas."
-  }
+    {
+      "item": "ARE — formule SJR (salaire journalier de référence)",
+      "value": "Somme des rémunérations brutes de la période de référence ÷ nombre de jours calendaires de la période",
+      "unit": "formula",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2064",
+      "status": "verified"
+    },
+    {
+      "item": "ARE — formule de calcul (contrats fin avant 2025-04-01)",
+      "value": "max(40,4 % × SJR + 13,18 €, 57 % × SJR)",
+      "unit": "formula",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14860",
+      "status": "verified",
+      "notes": "Votre allocation journalière est le plus élevé des deux montants : soit 40,4 % de votre salaire journalier de référence plus 13,18 €, soit 57 % de ce même salaire. La formule garantit que les petits salaires ne soient pas défavorisés. Plafond : 75 % du SJR pour cette catégorie. Minimum garanti : 32,13 €/jour net."
+    },
+    {
+      "item": "ARE — formule de calcul (contrats fin depuis 2025-04-01)",
+      "value": "max(40,4 % × SJR + 13,18 €, 57 % × SJR)",
+      "unit": "formula",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
+      "status": "verified",
+      "notes": "La formule de calcul est identique à l'ancienne règle, mais le plafond est plus bas : l'allocation ne peut pas dépasser 70 % du SJR (contre 75 % avant avril 2025). Ce changement est issu de la réforme de l'assurance chômage 2025. Minimum garanti : 32,13 €/jour net."
+    },
+    {
+      "item": "ARE — partie fixe journalière",
+      "value": 13.18,
+      "unit": "EUR_per_day",
+      "applicable_year": 2026,
+      "source_url": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocations/a-chaque-situation-son-allocation/allocations-chomage-are/a-combien-puis-je-pretendre.html",
+      "status": "verified"
+    },
+    {
+      "item": "ARE — plancher (minimum journalier net)",
+      "value": 32.13,
+      "unit": "EUR_per_day",
+      "applicable_year": 2026,
+      "source_url": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocations/a-chaque-situation-son-allocation/allocations-chomage-are/a-combien-puis-je-pretendre.html",
+      "status": "verified"
+    },
+    {
+      "item": "ARE — plafond (contrats fin avant 2025-04-01)",
+      "value": 75,
+      "unit": "percent_of_SJR",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14860",
+      "status": "verified",
+      "notes": "Pour les contrats terminés avant le 1er avril 2025, l'allocation ne peut pas dépasser 75 % de votre salaire journalier de référence, même si la formule donne un résultat plus élevé."
+    },
+    {
+      "item": "ARE — plafond (contrats fin depuis 2025-04-01)",
+      "value": 70,
+      "unit": "percent_of_SJR",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
+      "status": "verified",
+      "notes": "Depuis la réforme d'avril 2025, le plafond de l'allocation a été abaissé de 75 % à 70 % du salaire journalier de référence. Cela peut réduire l'indemnisation des personnes ayant un salaire élevé."
+    },
+    {
+      "item": "ARE — coefficient contra-cyclique (réduction durée)",
+      "value": 25,
+      "unit": "percent_reduction_of_duration",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
+      "status": "verified",
+      "notes": "Lorsque le chômage est bas (taux de chômage inférieur à 9 % sans hausse rapide), la durée maximale d'indemnisation est réduite de 25 %. C'est le mécanisme actuellement actif en 2026. Concrètement : si vous avez moins de 55 ans, vous êtes indemnisé au maximum 548 jours au lieu de 730."
+    },
+    {
+      "item": "ARE — durée maximale < 55 ans (avec réduction contra-cyclique)",
+      "value": 548,
+      "unit": "calendar_days",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
+      "status": "verified"
+    },
+    {
+      "item": "ARE — durée maximale 55–56 ans (avec réduction contra-cyclique)",
+      "value": 685,
+      "unit": "calendar_days",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
+      "status": "verified"
+    },
+    {
+      "item": "ARE — durée maximale ≥ 57 ans (avec réduction contra-cyclique)",
+      "value": 822,
+      "unit": "calendar_days",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38881",
+      "status": "verified"
+    },
+    {
+      "item": "ARE — délai d'attente",
+      "value": 7,
+      "unit": "calendar_days",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14860",
+      "status": "verified"
+    }
   ]
 }

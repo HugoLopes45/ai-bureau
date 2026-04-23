@@ -1,13 +1,8 @@
 {
   "_meta": {
     "titre": "Prêt à Taux Zéro (PTZ) — zones, quotités et plafonds 2026",
-    "description": "Contient les zones éligibles au PTZ, les plafonds de revenus, les quotités (pourcentage finançable), les plafonds de coût du logement et la durée maximale du prêt.",
-    "a_qui_ca_sert": "Utilisé par le skill crédit-immobilier pour calculer le montant maximum du PTZ, vérifier l'éligibilité d'un acheteur selon sa zone et ses revenus, et estimer l'apport PTZ dans un plan de financement.",
-    "frequence_revision": "Les règles PTZ ont été réformées au 1er avril 2025 (extension à toutes les zones pour le neuf). À vérifier en cas de loi de finances modifiant les zones ou les quotités.",
     "derniere_verification": "2026-04-22",
-    "prochaine_revision": "Janvier 2027 (vérification annuelle)",
-    "source_principale": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10871",
-    "note_utilisateur": "Depuis avril 2025, le PTZ neuf est accessible partout en France (toutes zones A, B, C). Ce fichier reflète ces nouvelles règles."
+    "source_principale": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10871"
   },
   "meta": {
     "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10871",
@@ -30,10 +25,10 @@
   "plafonds_revenus_logement_neuf": {
     "note": "Les revenus pris en compte sont le plus élevé des deux montants : votre revenu fiscal de référence (N-2) ou le coût total de l'opération divisé par 9. Quatre tranches de revenus déterminent le pourcentage du coût finançable (la quotité).",
     "zone_A_Abis": [49000, 73500, 88200, 102900, 117600],
-    "zone_B1":     [34500, 51750, 62100, 72450, 82800],
-    "zone_B2":     [31500, 47250, 56700, 66150, 75600],
-    "zone_C":      [28500, 42750, 51300, 59850, 68400],
-    "persons":     [1, 2, 3, 4, 5],
+    "zone_B1": [34500, 51750, 62100, 72450, 82800],
+    "zone_B2": [31500, 47250, 56700, 66150, 75600],
+    "zone_C": [28500, 42750, 51300, 59850, 68400],
+    "persons": [1, 2, 3, 4, 5],
     "currency": "EUR"
   },
   "quotite_logement_neuf_collectif": {
@@ -48,16 +43,13 @@
     "tranche_4_highest_income": 10,
     "unit": "percent_of_eligible_cost"
   },
-  "quotite_logement_ancien": {
-    "value": 20,
-    "unit": "percent_of_eligible_cost"
-  },
+  "quotite_logement_ancien": { "value": 20, "unit": "percent_of_eligible_cost" },
   "plafonds_couts_logement_neuf": {
     "zone_A_Abis": [150000, 225000, 270000, 315000, 360000],
-    "zone_B1":     [135000, 202500, 243000, 283500, 324000],
-    "zone_B2":     [110000, 165000, 198000, 231000, 264000],
-    "zone_C":      [100000, 150000, 180000, 210000, 240000],
-    "persons":     [1, 2, 3, 4, 5],
+    "zone_B1": [135000, 202500, 243000, 283500, 324000],
+    "zone_B2": [110000, 165000, 198000, 231000, 264000],
+    "zone_C": [100000, 150000, 180000, 210000, 240000],
+    "persons": [1, 2, 3, 4, 5],
     "currency": "EUR"
   },
   "duree_max_ans": 25

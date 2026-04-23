@@ -46,6 +46,16 @@ All skills in this project cite these sources. When a rate or rule in a skill is
 - APL computation: https://www.service-public.fr/particuliers/vosdroits/F12006
 - Prime d'activité: https://www.service-public.fr/particuliers/vosdroits/F2882
 
+## Real estate
+- DVF (Demandes de Valeurs Foncières) — transactions immobilières: https://dvf.etalab.gouv.fr/
+- DVF open data (data.gouv.fr): https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/
+- Plus-values immobilières (abattements, calcul): https://www.impots.gouv.fr/particulier/les-plus-values-immobilieres
+- LMNP / LMP (CGI art. 35 bis): https://www.impots.gouv.fr/professionnel/questions/je-loue-un-logement-meuble
+- Déficit foncier: https://www.service-public.fr/particuliers/vosdroits/F1909
+- ANIL — info location et fiscalité immobilière: https://www.anil.org/
+- Barème IFI: https://www.impots.gouv.fr/particulier/les-biens-soumis-limpot-sur-la-fortune-immobiliere-ifi
+- Non-résidents et revenus fonciers français: https://www.impots.gouv.fr/international-particulier/revenus-fonciers
+
 ## Mortgage & consumer credit
 - Banque de France — usury rates (updated quarterly): https://www.banque-france.fr/statistiques/taux-et-cours/les-taux-dusure
 - ANIL — housing info and simulators: https://www.anil.org/

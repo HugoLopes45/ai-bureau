@@ -1,124 +1,91 @@
 {
   "_meta": {
     "titre": "Impôt sur les Sociétés (IS) — taux et règles 2026",
-    "description": "Contient les taux d'IS (taux réduit PME et taux normal), la contribution sociale sur les bénéfices, les conditions d'éligibilité au taux réduit, le calendrier des acomptes et les règles sur les dividendes.",
-    "a_qui_ca_sert": "Utilisé par le skill fiscalité-entreprise pour calculer l'IS d'une société, vérifier l'éligibilité au taux réduit, planifier les acomptes trimestriels ou comparer l'imposition dividendes SASU vs EURL.",
-    "frequence_revision": "Les taux IS sont stables depuis 2022. Le seuil pour le taux réduit PME est stable depuis 2023. À vérifier uniquement en cas de loi de finances modifiant ces taux.",
     "derniere_verification": "2026-04-22",
-    "prochaine_revision": "Janvier 2027 (vérification annuelle en loi de finances)",
-    "source_principale": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
-    "note_utilisateur": "Ce fichier est stable depuis 2023. Aucune mise à jour n'est nécessaire sauf modification législative."
+    "source_principale": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is"
   },
   "donnees": [
-  {
-    "item": "IS — taux réduit PME (bénéfice ≤ 42 500 €)",
-    "value": 15,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Exercices ouverts depuis le 1er janvier 2023",
-    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
-    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Si votre société est une PME éligible, les premiers 42 500 € de bénéfice sont imposés à seulement 15 %. Pour bénéficier de ce taux réduit, trois conditions doivent être réunies simultanément : (1) votre chiffre d'affaires HT doit être inférieur à 10 millions d'euros, (2) votre capital doit être entièrement libéré (versé), (3) votre capital doit être détenu à 75 % au moins par des personnes physiques (ou des sociétés elles-mêmes éligibles à ce taux réduit)."
-  },
-  {
-    "item": "IS — taux normal (bénéfice > 42 500 € ou hors PME)",
-    "value": 25,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Exercices ouverts depuis le 1er janvier 2022",
-    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
-    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Au-delà de 42 500 € de bénéfice pour les PME éligibles, ou sur la totalité du bénéfice pour les autres sociétés, le taux normal de 25 % s'applique. Si votre CA dépasse 10 M€, tout votre bénéfice est taxé à 25 %, sans avantage du taux réduit."
-  },
-  {
-    "item": "IS — contribution sociale sur les bénéfices (CSB)",
-    "value": 3.3,
-    "unit": "percent_of_IS_base",
-    "applicable_year": 2026,
-    "applicable_period": "Permanente",
-    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
-    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Une contribution supplémentaire de 3,3 % s'applique uniquement aux grandes entreprises dont l'IS brut dépasse 763 000 €. En pratique, cela concerne principalement les sociétés avec un chiffre d'affaires supérieur à environ 3 millions d'euros. Les PME ne sont pas concernées par cette contribution."
-  },
-  {
-    "item": "IS — seuil de bénéfice pour taux réduit PME",
-    "value": 42500,
-    "unit": "EUR_per_year",
-    "applicable_year": 2026,
-    "applicable_period": "Exercices ouverts depuis le 1er janvier 2023",
-    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
-    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Ce seuil de 42 500 € a été relevé (il était de 38 120 €) par la loi de finances 2023. Si votre bénéfice dépasse ce montant, seule la fraction excédentaire est taxée au taux normal de 25 %."
-  },
-  {
-    "item": "IS — condition CA pour taux réduit PME",
-    "value": 10000000,
-    "unit": "EUR_CA_HT",
-    "applicable_year": 2026,
-    "applicable_period": "Permanente",
-    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
-    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Pour bénéficier du taux réduit de 15 %, votre chiffre d'affaires hors taxes doit être strictement inférieur à 10 millions d'euros. Si votre CA atteint ou dépasse 10 M€, vous perdez le bénéfice du taux réduit pour cet exercice."
-  },
-  {
-    "item": "IS — délai de paiement des acomptes (régime général)",
-    "value": "15 mars, 15 juin, 15 septembre, 15 décembre",
-    "unit": "dates",
-    "applicable_year": 2026,
-    "applicable_period": "Permanente",
-    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
-    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Si votre société est soumise à l'IS, vous devez verser 4 acomptes trimestriels chaque année, aux 15 mars, 15 juin, 15 septembre et 15 décembre. Chaque acompte est égal à 25 % de l'IS de l'exercice précédent. Le solde est payé 3 mois et 15 jours après la clôture. Si votre IS de l'année précédente était inférieur à 3 000 €, vous êtes dispensé d'acomptes."
-  },
-  {
-    "item": "IS — dispense d'acomptes (IS de référence)",
-    "value": 3000,
-    "unit": "EUR",
-    "applicable_year": 2026,
-    "applicable_period": "Permanente",
-    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
-    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Si l'IS que votre société a payé l'année précédente était inférieur à 3 000 €, vous n'êtes pas tenu de verser des acomptes cette année. Cette dispense est très courante pour les jeunes SASU ou EURL au début de leur activité."
-  },
-  {
-    "item": "IS — liasse fiscale (formulaire 2065)",
-    "value": "2065",
-    "unit": "formulaire_impots",
-    "applicable_year": 2026,
-    "applicable_period": "Permanente",
-    "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
-    "source_title": "Impôt sur les sociétés (IS) — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Votre déclaration de résultat IS doit être déposée sur le formulaire 2065 (la « liasse fiscale »), obligatoirement en ligne. La date limite est le 15e jour du 3e mois suivant la clôture de l'exercice. Pour une clôture au 31 décembre, la date limite est donc le 15 avril de l'année suivante."
-  },
-  {
-    "item": "Dividendes SASU/EURL IS — PFU (prélèvement forfaitaire unique)",
-    "value": 30,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Permanente",
-    "source_url": "https://www.impots.gouv.fr/particulier/le-prelevement-forfaitaire-unique-pfu",
-    "source_title": "Prélèvement forfaitaire unique (PFU) — impots.gouv.fr",
-    "status": "verified",
-    "notes": "Lorsqu'une SASU ou une EURL verse des dividendes à son associé personne physique, ces dividendes sont taxés à 30 % (12,8 % d'impôt sur le revenu + 17,2 % de prélèvements sociaux), ce qu'on appelle la flat tax. Si votre tranche marginale d'imposition est inférieure à 12,8 %, vous pouvez choisir d'être imposé au barème progressif (case 2OP sur votre déclaration) — ce peut être plus avantageux. Pour une SASU, les dividendes ne sont pas soumis aux cotisations sociales TNS."
-  },
-  {
-    "item": "Dividendes EURL IS gérant majoritaire — cotisations TNS (part > 10 % capital)",
-    "value": "Oui — art. L131-6 CSS",
-    "unit": "flag",
-    "applicable_year": 2026,
-    "applicable_period": "Permanente",
-    "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038610191",
-    "source_title": "Article L131-6 Code de la Sécurité Sociale — Legifrance",
-    "status": "verified",
-    "notes": "Attention si vous êtes gérant majoritaire d'une SARL ou EURL soumise à l'IS : la fraction de vos dividendes qui dépasse 10 % du capital social (plus les primes d'émission et votre compte courant associé) est réintégrée dans votre assiette de cotisations sociales TNS. En clair, ces dividendes-là ne sont pas de vrais dividendes nets de charges : vous payez des cotisations URSSAF dessus. Cette règle ne s'applique pas aux présidents de SASU (assimilés salariés)."
-  }
+    {
+      "item": "IS — taux réduit PME (bénéfice ≤ 42 500 €)",
+      "value": 15,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+      "status": "verified",
+      "notes": "Si votre société est une PME éligible, les premiers 42 500 € de bénéfice sont imposés à seulement 15 %. Pour bénéficier de ce taux réduit, trois conditions doivent être réunies simultanément : (1) votre chiffre d'affaires HT doit être inférieur à 10 millions d'euros, (2) votre capital doit être entièrement libéré (versé), (3) votre capital doit être détenu à 75 % au moins par des personnes physiques (ou des sociétés elles-mêmes éligibles à ce taux réduit)."
+    },
+    {
+      "item": "IS — taux normal (bénéfice > 42 500 € ou hors PME)",
+      "value": 25,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+      "status": "verified"
+    },
+    {
+      "item": "IS — contribution sociale sur les bénéfices (CSB)",
+      "value": 3.3,
+      "unit": "percent_of_IS_base",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+      "status": "verified"
+    },
+    {
+      "item": "IS — seuil de bénéfice pour taux réduit PME",
+      "value": 42500,
+      "unit": "EUR_per_year",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+      "status": "verified",
+      "notes": "Ce seuil de 42 500 € a été relevé (il était de 38 120 €) par la loi de finances 2023. Si votre bénéfice dépasse ce montant, seule la fraction excédentaire est taxée au taux normal de 25 %."
+    },
+    {
+      "item": "IS — condition CA pour taux réduit PME",
+      "value": 10000000,
+      "unit": "EUR_CA_HT",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+      "status": "verified"
+    },
+    {
+      "item": "IS — délai de paiement des acomptes (régime général)",
+      "value": "15 mars, 15 juin, 15 septembre, 15 décembre",
+      "unit": "dates",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+      "status": "verified"
+    },
+    {
+      "item": "IS — dispense d'acomptes (IS de référence)",
+      "value": 3000,
+      "unit": "EUR",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+      "status": "verified"
+    },
+    {
+      "item": "IS — liasse fiscale (formulaire 2065)",
+      "value": "2065",
+      "unit": "formulaire_impots",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes-is",
+      "status": "verified"
+    },
+    {
+      "item": "Dividendes SASU/EURL IS — PFU (prélèvement forfaitaire unique)",
+      "value": 30,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.impots.gouv.fr/particulier/le-prelevement-forfaitaire-unique-pfu",
+      "status": "verified"
+    },
+    {
+      "item": "Dividendes EURL IS gérant majoritaire — cotisations TNS (part > 10 % capital)",
+      "value": "Oui — art. L131-6 CSS",
+      "unit": "flag",
+      "applicable_year": 2026,
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038610191",
+      "status": "verified"
+    }
   ]
 }

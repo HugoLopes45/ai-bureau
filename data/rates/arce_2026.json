@@ -1,47 +1,34 @@
 {
   "_meta": {
     "titre": "ARCE — Versement en capital des droits chômage lors d'une création d'entreprise 2026",
-    "description": "Contient les règles de l'ARCE (Aide à la Reprise ou à la Création d'Entreprise) : pourcentage des droits ARE versés en capital et calendrier des versements.",
-    "a_qui_ca_sert": "Utilisé par le skill ARE/chômage pour informer un demandeur d'emploi qui crée ou reprend une entreprise et souhaite recevoir ses droits chômage en capital plutôt que mois par mois.",
-    "frequence_revision": "Ces règles changent rarement — généralement lors des réformes de l'assurance chômage. À vérifier en cas de nouvelle convention Unédic.",
     "derniere_verification": "2026-04-22",
-    "prochaine_revision": "À vérifier si réforme de l'assurance chômage en 2026-2027",
-    "source_principale": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15252",
-    "note_utilisateur": "Ce fichier est mis à jour manuellement lors des réformes. Il n'a pas besoin d'être modifié pour un usage courant."
+    "source_principale": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15252"
   },
   "donnees": [
-  {
-    "item": "ARCE — pourcentage des droits ARE restants",
-    "value": 60,
-    "unit": "percent",
-    "applicable_year": 2026,
-    "applicable_period": "Règle en vigueur en 2026",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15252",
-    "source_title": "ARCE : versement anticipé des allocations chômage — Service Public",
-    "status": "verified",
-    "notes": "Si vous créez ou reprenez une entreprise pendant votre période de chômage, vous pouvez choisir de recevoir 60 % de vos droits ARE restants sous forme d'un capital (somme versée en deux fois). Les 40 % restants ne sont pas perdus : vous pouvez les récupérer mois par mois si votre activité cesse par la suite."
-  },
-  {
-    "item": "ARCE — calendrier de versement (1er versement)",
-    "value": "Au démarrage de l'activité",
-    "unit": "event",
-    "applicable_year": 2026,
-    "applicable_period": "Règle en vigueur en 2026",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15252",
-    "source_title": "ARCE : versement anticipé des allocations chômage — Service Public",
-    "status": "verified",
-    "notes": "Le premier versement représente la moitié du capital ARCE total, soit 30 % de vos droits ARE restants. Il est versé dès le démarrage officiel de votre activité, sur présentation de votre justificatif d'immatriculation (KBIS, déclaration auto-entrepreneur, etc.)."
-  },
-  {
-    "item": "ARCE — calendrier de versement (2e versement)",
-    "value": "6 mois après le 1er versement",
-    "unit": "event",
-    "applicable_year": 2026,
-    "applicable_period": "Règle en vigueur en 2026",
-    "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15252",
-    "source_title": "ARCE : versement anticipé des allocations chômage — Service Public",
-    "status": "verified",
-    "notes": "Le deuxième et dernier versement intervient 6 mois après le premier. Attention, depuis le 1er avril 2025, une nouvelle condition s'applique : vous ne devez pas être en CDI à temps plein au moment de ce deuxième versement. Si vous avez retrouvé un emploi à temps plein en CDI entre-temps, vous ne percevrez pas ce second versement."
-  }
+    {
+      "item": "ARCE — pourcentage des droits ARE restants",
+      "value": 60,
+      "unit": "percent",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15252",
+      "status": "verified"
+    },
+    {
+      "item": "ARCE — calendrier de versement (1er versement)",
+      "value": "Au démarrage de l'activité",
+      "unit": "event",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15252",
+      "status": "verified"
+    },
+    {
+      "item": "ARCE — calendrier de versement (2e versement)",
+      "value": "6 mois après le 1er versement",
+      "unit": "event",
+      "applicable_year": 2026,
+      "source_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15252",
+      "status": "verified",
+      "notes": "Le deuxième et dernier versement intervient 6 mois après le premier. Attention, depuis le 1er avril 2025, une nouvelle condition s'applique : vous ne devez pas être en CDI à temps plein au moment de ce deuxième versement. Si vous avez retrouvé un emploi à temps plein en CDI entre-temps, vous ne percevrez pas ce second versement."
+    }
   ]
 }
