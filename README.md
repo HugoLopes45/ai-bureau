@@ -82,40 +82,27 @@
 
 ---
 
-## Démarrage en 2 étapes
+## Démarrage
 
 **Prérequis** : [Claude Code](https://claude.ai/code) + Python 3.8+.
 
-```bash
-git clone https://github.com/HugoLopes45/ai-bureau
-cd ai-bureau
-./install.sh          # idempotent — vérifie prérequis, crée foyer.json/patrimoine.json
-claude                # ouvre Claude Code dans ce répertoire
+Ouvre Claude Code, colle ce prompt et envoie :
+
+```
+Clone https://github.com/HugoLopes45/marcel, exécute ./install.sh, puis ouvre Claude Code dans le répertoire cloné.
 ```
 
-Dans Claude Code, tape :
+Claude Code clone le repo, installe Marcel, et t'indique comment continuer. Ensuite :
 
 ```
 /bonjour
 ```
 
-Marcel te présente un menu cliquable et te redirige selon ton besoin. Ou pose directement ta question en français :
+**Alternative terminal :**
 
+```bash
+git clone https://github.com/HugoLopes45/marcel && cd marcel && ./install.sh && claude
 ```
-Combien d'impôt sur le revenu cette année ?
-Mon propriétaire veut augmenter le loyer de 5 %, il peut ?
-Décès de mon père, quelles démarches dans les 24h ?
-Cette offre de prêt à 3,65 % sur 20 ans est-elle bonne ?
-```
-
-Si tu veux configurer ton profil fiscal/patrimoine (optionnel, Marcel marche sans) :
-
-| Tu veux... | Tape dans Claude Code |
-|---|---|
-| Configurer ton foyer fiscal (revenus, enfants, IR) | `/mon-foyer` |
-| Configurer ton patrimoine (PEA, AV, immo, crypto) | `/mon-patrimoine` |
-
-Le skill pose des questions simples et remplit le fichier tout seul — avec backup `.bak` et diff avant chaque écriture (tes données fiscales réelles ne sont jamais écrasées par erreur).
 
 ---
 
