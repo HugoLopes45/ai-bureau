@@ -1,9 +1,17 @@
 # --- Personal data (never committed) ---
-# Templates live in configs/*.example.json — setup skills copy them automatically on first run.
+# Templates live in configs/*.example.json — les skills les copient automatiquement au premier lancement.
+foyer.json
+patrimoine.json
+foyer.json.bak
+patrimoine.json.bak
+# Anciens noms (migration v0.1 → Marcel) — à supprimer après migration manuelle
 household.json
 company.json
 wealth.json
 *.private.json
+
+# --- AI planning artifacts (session-local, not for repo) ---
+.forge/
 
 # --- Scanned documents and attachments ---
 documents/

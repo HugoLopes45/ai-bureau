@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.svg" alt="ai-bureau" width="520"/>
+  <img src="logo.svg" alt="Marcel" width="520"/>
 </p>
 
 <p align="center">
@@ -8,49 +8,73 @@
 
 ---
 
-**La paperasse française est conçue pour te noyer.** Impôts, URSSAF, retraite, crédit immo, PEA — chaque sujet est un labyrinthe avec son administration, son vocabulaire, ses pièges.
-
-ai-bureau transforme [Claude Code](https://claude.ai/code) en fiscaliste, comptable, conseiller en patrimoine, spécialiste URSSAF et courtier crédit. Tu poses ta question. Tu obtiens une réponse opérationnelle, chiffrée, sourcée sur la règle officielle en vigueur. Tes données restent sur ta machine. Zéro abonnement. Zéro SaaS. Zéro fuite.
+> ### ⚠️ Avertissement — à lire avant usage
+>
+> Marcel est un **outil d'information généré par IA**. Ce n'est **pas** :
+> - du conseil comptable (monopole des experts-comptables — art. L822-10 Code de commerce),
+> - du conseil en investissement (monopole CIF/ORIAS — art. L541-1 CMF),
+> - du conseil juridique (monopole avocats — art. 54 loi 71-1130),
+> - du courtage crédit/assurance (IOBSP/IAS — art. L519-1 CMF),
+> - un acte notarié (monopole notaires).
+>
+> Les réponses peuvent être **incorrectes, incomplètes ou obsolètes** même quand elles semblent précises. **Vérifie systématiquement** contre la source officielle et **consulte un professionnel agréé** pour toute décision non triviale.
+>
+> Cadre complet (RGPD, AI Act UE 2024/1689, licence, responsabilité) : [`DISCLAIMER.md`](./DISCLAIMER.md).
 
 ---
 
-## 15 commandes
+**La paperasse française est conçue pour te noyer.** Impôts, retraite, CAF, loyer, assurance, famille, héritage, crédit — chaque sujet est un labyrinthe avec son administration, son vocabulaire, ses pièges.
 
-### Conseils
+**Demande à Marcel.** Marcel transforme [Claude Code](https://claude.ai/code) en assistant administratif et financier pour Monsieur et Madame Tout-le-Monde. Tu poses ta question en français. Tu obtiens une réponse opérationnelle, chiffrée, sourcée sur la règle officielle en vigueur. Tes données restent sur ta machine. Zéro abonnement. Zéro SaaS. Zéro fuite.
 
-| Problème | Commande | Domaine |
-|---|---|---|
-| "Combien d'impôt sur le revenu cette année ?" | `tax-advisor` | IR 2026, niches, PFU, IFI |
-| "Comment allouer 30 000 € sur mon PEA ?" | `wealth-advisor` | PEA, AV, PER, ETF, SCPI, crypto |
-| "Cette offre de prêt à 3,8 % est-elle bonne ?" | `mortgage` | TAEG, assurance emprunteur, PTZ |
-| "Combien l'URSSAF me prélève ce trimestre ?" | `urssaf` | Cotisations TNS, DSN, taux 2026 |
-| "Quel ARE si je perds mon boulot demain ?" | `france-travail` | SJR, durée, ARCE, CPF |
-| "Écritures comptables de ma SASU ?" | `business-accountant` | TVA, FEC, plan comptable |
-| "Combien de trimestres retraite CNAV ?" | `pension` | CNAV, Agirc-Arrco, rachat, décote |
-| "J'ai droit à l'APL ?" | `caf-benefits` | APL, prime d'activité, allocs |
-| "Succession : abattements et frais de notaire ?" | `notary` | Donation, SCI, droits de mutation |
-| "Mon contrat habitation me couvre-t-il vraiment ?" | `insurance` | Résiliation Hamon/Châtel, prévoyance |
-| "Refaire ma carte grise — coût exact ?" | `admin` | ANTS, CNI, PACS, changement d'adresse |
+---
 
-### Configuration (optionnelle)
+## 19 commandes
+
+### Point d'entrée
 
 | Commande | Ce qu'elle fait |
 |---|---|
-| `setup-household` | Configure ton foyer fiscal (revenus, enfants, situation maritale) |
-| `setup-company` | Configure ta société (forme juridique, rémunération, TVA) |
-| `setup-wealth` | Configure ton patrimoine (PEA, AV, immo, crypto, PER) |
+| `bonjour` | Si tu ne sais pas quel skill invoquer — menu cliquable qui te redirige selon ton besoin |
+
+### Questions du quotidien — 15 domaines
+
+| Problème | Commande | Domaine |
+|---|---|---|
+| "Combien d'impôt sur le revenu cette année ?" | `impots` | IR 2026, décote, PFU, IFI, PER |
+| "Combien de trimestres retraite CNAV ?" | `retraite` | CNAV, Agirc-Arrco, rachat, décote, réversion |
+| "J'ai droit à l'APL ?" | `caf` | APL, prime d'activité, RSA, AAH, CSS |
+| "Quel ARE si je perds mon boulot demain ?" | `travail` | ARE, ARCE, CPF, CDI/CDD, rupture |
+| "Mon propriétaire augmente le loyer, il peut ?" | `logement` | Bail (loi 89-462), IRL, préavis, charges |
+| "Cette offre de prêt à 3,8 % est-elle bonne ?" | `credit` | TAEG, usure, assurance emprunteur, PTZ |
+| "Ma maison vaut combien ? Je vends ou je loue ?" | `immobilier` | DVF, LMNP, plus-value |
+| "Succession : abattements et frais de notaire ?" | `notaire` | Donation, SCI, droits de mutation |
+| "Mon contrat habitation me couvre-t-il vraiment ?" | `assurance` | Résiliation Hamon/Chatel, prévoyance |
+| "Mariage, PACS ou divorce : quel régime ?" | `famille` | PACS, mariage (4 régimes), naissance, divorce |
+| "Comment allouer 30 000 € sur mon PEA ?" | `patrimoine` | PEA, AV, PER, livret A, SCPI |
+| "Refaire ma carte grise — coût exact ?" | `administratif` | ANTS, CNI, PACS, changement d'adresse |
+| "Ma mutuelle me rembourse combien sur mes lunettes ?" | `sante` | Sécu, mutuelle (Hamon/ANI), CSS, ALD, 100 % santé |
+| "Je me rétracte d'un achat en ligne, comment ?" | `consommation` | Rétractation 14j, garantie, résiliation, litige |
+| "Décès d'un proche, quelles démarches ?" | `deces` | Obsèques, banques, réversion, AV, capital décès |
+
+### Configuration (optionnelle) — 2 assistants
+
+| Commande | Ce qu'elle fait |
+|---|---|
+| `mon-foyer` | Configure `foyer.json` (revenus, enfants, situation). Backup + diff avant écriture. |
+| `mon-patrimoine` | Configure `patrimoine.json` (PEA, AV, immo, crypto, PER). Backup + diff avant écriture. |
 
 ### Maintenance
 
 | Commande | Ce qu'elle fait |
 |---|---|
-| `refresh-rates` | Met à jour tous les barèmes `data/rates/` depuis les sources officielles — à lancer une fois par an en janvier/février |
+| `mettre-a-jour-taux` | Scanne `data/rates/*.json`, détecte les barèmes périmés, rafraîchit depuis les sources officielles. À lancer en janvier/février annuel. |
 
 ---
 
 ## Pourquoi c'est différent
 
-**Local-first, vraiment.** `household.json`, `company.json`, `wealth.json` ne quittent jamais ta machine. Pas de serveur, pas de base de données, pas de télémétrie, pas de compte à créer.
+**Local-first, vraiment.** `foyer.json` et `patrimoine.json` ne quittent jamais ta machine. Pas de serveur, pas de base de données, pas de télémétrie, pas de compte à créer.
 
 **Calculs déterministes, pas de l'inférence.** Le TAEG d'un prêt, le montant ARE, le nombre de trimestres CNAV — ce sont des formules, pas des estimations. Les scripts dans `scripts/` calculent. Le LLM interprète et contextualise. Zéro hallucination numérique.
 
@@ -60,69 +84,104 @@ ai-bureau transforme [Claude Code](https://claude.ai/code) en fiscaliste, compta
 
 ## Démarrage en 2 étapes
 
-**Prérequis** : [Claude Code](https://claude.ai/code) installé.
+**Prérequis** : [Claude Code](https://claude.ai/code) + Python 3.8+.
 
 ```bash
 git clone https://github.com/HugoLopes45/ai-bureau
 cd ai-bureau
-claude
+./install.sh          # idempotent — vérifie prérequis, crée foyer.json/patrimoine.json
+claude                # ouvre Claude Code dans ce répertoire
 ```
 
-C'est tout. À l'ouverture de Claude Code, configure ta situation en français — chaque thème est optionnel :
+Dans Claude Code, tape :
 
-| Tu veux... | Tape dans Claude Code |
-|---|---|
-| Configurer ton foyer fiscal (revenus, enfants, IR) | `utilise setup-household` |
-| Configurer ta société (SASU, SARL, micro...) | `utilise setup-company` |
-| Configurer ton patrimoine (PEA, AV, immo, crypto) | `utilise setup-wealth` |
+```
+/bonjour
+```
 
-Le skill te pose des questions simples en français et remplit le fichier tout seul. Pas de JSON à toucher.
-
-Ensuite, pose tes questions directement :
+Marcel te présente un menu cliquable et te redirige selon ton besoin. Ou pose directement ta question en français :
 
 ```
 Combien d'impôt sur le revenu cette année ?
-Comment allouer 20 000 € sur mon PEA avec un profil modéré ?
-Analyse cette offre de prêt : 280 000 €, 20 ans, 3,65 %
+Mon propriétaire veut augmenter le loyer de 5 %, il peut ?
+Décès de mon père, quelles démarches dans les 24h ?
+Cette offre de prêt à 3,65 % sur 20 ans est-elle bonne ?
 ```
+
+Si tu veux configurer ton profil fiscal/patrimoine (optionnel, Marcel marche sans) :
+
+| Tu veux... | Tape dans Claude Code |
+|---|---|
+| Configurer ton foyer fiscal (revenus, enfants, IR) | `/mon-foyer` |
+| Configurer ton patrimoine (PEA, AV, immo, crypto) | `/mon-patrimoine` |
+
+Le skill pose des questions simples et remplit le fichier tout seul — avec backup `.bak` et diff avant chaque écriture (tes données fiscales réelles ne sont jamais écrasées par erreur).
 
 ---
 
 ## Structure du projet
 
 ```
-ai-bureau/
-├── .claude/skills/           # 11 skills auto-découverts par Claude Code
-│   ├── tax-advisor/          # IR, IFI, optimisation fiscale
-│   ├── wealth-advisor/       # PEA, AV, PER, ETF, SCPI, crypto
-│   ├── business-accountant/  # TVA, FEC, plan comptable
-│   ├── mortgage/             # TAEG, assurance emprunteur, PTZ
-│   ├── urssaf/               # cotisations TNS, DSN, taux 2026
-│   ├── pension/              # CNAV, Agirc-Arrco, rachat, décote
-│   ├── france-travail/       # ARE, CPF, ARCE
-│   ├── caf-benefits/         # APL, prime d'activité, allocs
-│   ├── notary/               # succession, donation, SCI
-│   ├── insurance/            # habitation, auto, santé, prévoyance
-│   └── admin/                # ANTS, CNI, PACS, carte grise
+marcel/
+├── install.sh                   # setup idempotent — jamais clobber foyer/patrimoine
 │
-├── configs/                  # templates (copier → remplir → gitignorés)
-├── data/rates/               # barèmes officiels 2026 (JSON sourcés)
-├── scripts/                  # calculateurs déterministes
+├── .claude/commands/            # 19 skills — un fichier .md par skill
+│   ├── bonjour.md               # point d'entrée, menu cliquable
+│   ├── impots.md retraite.md caf.md travail.md
+│   ├── logement.md credit.md immobilier.md notaire.md
+│   ├── assurance.md famille.md patrimoine.md administratif.md
+│   ├── sante.md consommation.md deces.md
+│   ├── mon-foyer.md mon-patrimoine.md   # config lazy + backup/diff
+│   └── mettre-a-jour-taux.md             # maintenance annuelle
 │
-├── household.json            # ← tes vraies données (gitignored)
-├── company.json              # ← tes vraies données (gitignored)
-└── wealth.json               # ← tes vraies données (gitignored)
+├── scripts/                     # calculateurs déterministes (Python stdlib)
+│   ├── _freshness.py            # check _meta.derniere_verification (partagé)
+│   ├── calcul_ir.py             # IR 2026 (barème, QF, décote)
+│   ├── calcul_are.py            # ARE Unédic + ARCE
+│   ├── calcul_succession.py     # droits succession CGI art. 777-779
+│   ├── calcul_taeg.py           # TAEG actuariel + check usure Banque de France
+│   ├── test_calcul_*.py         # 95 tests : known + property-based bornes
+│   └── golden_cases_*.md        # procédure vérif contre simulateurs officiels
+│
+├── configs/                     # templates foyer.example.json, patrimoine.example.json
+├── data/rates/                  # 21 fichiers *_2026.json — barèmes sourcés
+│                                #   avec `_meta.derniere_verification`
+│
+├── foyer.json                   # ← tes vraies données (gitignored)
+└── patrimoine.json              # ← tes vraies données (gitignored)
 ```
+
+---
+
+## Pour les professionnels → paperasse
+
+Marcel est conçu pour les **particuliers**. Pour les besoins professionnels (comptabilité SASU/SARL, TVA, FEC, cotisations TNS, URSSAF, facturation électronique, expert-comptable), **utilise [paperasse](https://github.com/romainsimon/paperasse)** — l'excellent projet de [Romain Simon](https://github.com/romainsimon) qui couvre le segment B2B. Architecture éprouvée, base de connaissance fiscale pro solide, parfaitement complémentaire à Marcel.
 
 ---
 
 ## ⚠️ À lire avant d'utiliser
 
-**ai-bureau est un outil d'information généré par IA. Ce n'est pas du conseil réglementé.**
+**Marcel est un outil d'information généré par IA. Ce n'est pas du conseil réglementé.**
 
 Les réponses peuvent être incorrectes, incomplètes ou obsolètes. Vérifie toujours contre la source officielle. Pour toute décision non triviale, consulte un professionnel agréé (expert-comptable, CIF/ORIAS, notaire, avocat fiscaliste, courtier IOBSP).
 
 Cadre juridique complet, RGPD, AI Act (UE 2024/1689) : [`DISCLAIMER.md`](./DISCLAIMER.md).
+
+---
+
+## Crédits & inspiration
+
+Marcel a été inspiré par **[paperasse](https://github.com/romainsimon/paperasse) de [Romain Simon](https://github.com/romainsimon)** — un super projet qui a ouvert la voie des skills Claude Code pour la paperasse française. L'architecture de Marcel (skills par domaine, scripts déterministes pour les chiffres, JSON sourcés pour les barèmes) reprend directement les bonnes idées de paperasse.
+
+Les deux projets sont **complémentaires et non concurrents** :
+
+| | paperasse | Marcel |
+|---|---|---|
+| **Cible** | Professionnels, freelances, experts-comptables | Particuliers, "Monsieur et Madame Tout-le-Monde" |
+| **Scope** | SASU, SARL, TVA, FEC, URSSAF TNS, facturation | IR particulier, retraite, CAF, logement, famille, santé, décès… |
+| **Public** | Dirigeants, entrepreneurs, comptables | Salariés, retraités, foyers fiscaux classiques |
+
+Si tu es pro : va voir paperasse. Si tu es particulier et que tu cherches à comprendre ton IR ou tes droits CAF : reste ici.
 
 ---
 
