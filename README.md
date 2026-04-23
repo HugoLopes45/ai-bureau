@@ -84,7 +84,7 @@
 
 ## Démarrage
 
-**Prérequis** : [Claude Code](https://claude.ai/code) + Python 3.8+.
+**Prérequis** : [Claude Code](https://claude.ai/code).
 
 Ouvre Claude Code, colle ce prompt et envoie :
 

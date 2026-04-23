@@ -40,9 +40,8 @@ echo
 missing=0
 
 if ! command -v python3 >/dev/null 2>&1; then
-    red "✗ python3 non trouvé"
-    echo "  Installe Python 3.8+ : https://www.python.org/downloads/"
-    missing=1
+    yellow "⚠  python3 non trouvé (optionnel — nécessaire pour les calculateurs IR, ARE, TAEG)"
+    echo "  Installe si besoin : https://www.python.org/downloads/"
 else
     py_version=$(python3 --version 2>&1 | awk '{print $2}')
     green "✓ python3 $py_version"
