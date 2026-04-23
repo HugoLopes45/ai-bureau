@@ -14,17 +14,29 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from _freshness import check_freshness
+
 ROOT = Path(__file__).parent.parent
 RATES_FILE = ROOT / "data" / "rates" / "ir_2026.json"
 
-# Coefficient décote (fixe, non indexé)
+# Coefficient décote (fixe, non indexé — CGI art. 197-I-4)
 COEFF_DECOTE = 0.4525
 
 
 def _load_bareme():
-    """Charge le barème IR et les paramètres de décote depuis le fichier de taux."""
+    """
+    Charge le barème IR et les paramètres de décote depuis le fichier de taux.
+
+    Sources (via ir_2026.json) :
+      - Barème progressif : CGI art. 197-I, loi n° 2026-103 du 19 février 2026 art. 4
+      - Quotient familial : CGI art. 194 (parts), art. 197-I-2 (plafond demi-part)
+      - Décote : CGI art. 197-I-4 (coefficient 0.4525 reconduit pour 2026)
+    """
     with open(RATES_FILE, encoding="utf-8") as f:
         data = json.load(f)
+
+    check_freshness(data, "ir_2026.json")
 
     tranches = []
     decote = {}
@@ -48,6 +60,26 @@ def _load_bareme():
             quotient_familial["plafond_demi_part"] = val  # en € par demi-part supplémentaire
 
     tranches.sort(key=lambda t: t["min"])
+
+    # Garde-fou : détecter un drift de libellé JSON (renommage) qui laisserait
+    # des valeurs silencieusement manquantes. Meilleur d'échouer fort au boot
+    # que de cracher un TypeError au milieu du calcul.
+    if len(tranches) != 5:
+        raise ValueError(
+            f"ir_2026.json : {len(tranches)} tranches chargées (5 attendues). "
+            f"Les libellés 'barème progressif' ont-ils été renommés ?"
+        )
+    if "celibataire" not in decote or "couple" not in decote:
+        raise ValueError(
+            f"ir_2026.json : décote manquante pour {set(['celibataire', 'couple']) - set(decote)}. "
+            f"Vérifie les libellés 'décote ... célibataire' et 'décote ... couple'."
+        )
+    if "plafond_demi_part" not in quotient_familial:
+        raise ValueError(
+            "ir_2026.json : plafond quotient familial manquant. "
+            "Vérifie le libellé 'quotient familial ... plafond'."
+        )
+
     return tranches, decote, quotient_familial
 
 
@@ -65,16 +97,32 @@ def _ir_par_part(rni_par_part: float, tranches: list) -> float:
 
 def calcul_ir(rni: float, parts: float, situation: str) -> dict:
     """
-    Calcule l'IR net 2026 d'un foyer fiscal.
+    Calcule l'IR net 2026 d'un foyer fiscal (revenus 2025).
+
+    Étapes, dans l'ordre légal (CGI art. 197-I) :
+      1. IR brut = somme(tranches progressives) × parts
+      2. Plafonnement du quotient familial (CGI art. 197-I-2, plafond 1 807 €/demi-part)
+      3. Décote pour faibles revenus (CGI art. 197-I-4, coefficient 0.4525)
+
+    Hors scope de ce calculateur (à ajouter si pertinent) :
+      - CEHR (contribution exceptionnelle hauts revenus) — CGI art. 223 sexies
+      - Crédits et réductions d'impôt (emploi à domicile, dons, etc.)
+      - Abattements spécifiques (journalistes, pensions, etc.)
 
     Args:
-        rni: Revenu Net Imposable total du foyer (après abattements)
-        parts: Nombre de parts fiscales (ex: 1.0, 2.0, 2.5, 3.0)
+        rni: Revenu Net Imposable total du foyer (après abattements 10% salaires)
+        parts: Nombre de parts fiscales (CGI art. 194)
         situation: "celibataire" ou "couple" (détermine le seuil de décote)
 
     Returns:
-        Dict structuré avec toutes les étapes intermédiaires.
+        Dict structuré avec toutes les étapes intermédiaires pour audit humain.
     """
+    if rni < 0:
+        raise ValueError(f"rni négatif interdit ({rni}). Un revenu négatif "
+                         f"correspond à un déficit, traité en amont des abattements.")
+    if parts <= 0:
+        raise ValueError(f"parts doit être > 0 (reçu {parts}).")
+
     tranches, decote_params, qf_params = _load_bareme()
 
     parts_ref = 2.0 if situation == "couple" else 1.0
@@ -184,8 +232,9 @@ def _afficher(result: dict, tranches_raw: list) -> None:
     print(f"  {'Taux moyen d\'imposition':<36} {result['taux_moyen']:>13.1f} %")
     print(f"  {sep}")
     print()
-    print("  ⚠️  Ces chiffres sont indicatifs (IA + indexation estimée).")
-    print("  Vérifie sur impots.gouv.fr avant de te fier à ce calcul.")
+    print("  ⚠️  Je suis une IA. Ces chiffres sont indicatifs.")
+    print("  Vérifie sur simulateur-ir-ifi.impots.gouv.fr avant de te fier au calcul.")
+    print("  Décision importante (déclaration, redressement) : expert-comptable ou avocat fiscaliste.")
     print()
 
 
