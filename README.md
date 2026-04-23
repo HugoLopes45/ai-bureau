@@ -89,19 +89,13 @@
 Ouvre Claude Code, colle ce prompt et envoie :
 
 ```
-Clone https://github.com/HugoLopes45/marcel, exécute ./install.sh, puis ouvre Claude Code dans le répertoire cloné.
+Clone https://github.com/HugoLopes45/marcel localement, copie configs/foyer.example.json → foyer.json et configs/patrimoine.example.json → patrimoine.json (sans écraser si déjà présents), puis ouvre Claude Code dans ce répertoire.
 ```
 
-Claude Code clone le repo, installe Marcel, et t'indique comment continuer. Ensuite :
+Ensuite :
 
 ```
 /bonjour
-```
-
-**Alternative terminal :**
-
-```bash
-git clone https://github.com/HugoLopes45/marcel && cd marcel && ./install.sh && claude
 ```
 
 ---
@@ -110,8 +104,6 @@ git clone https://github.com/HugoLopes45/marcel && cd marcel && ./install.sh && 
 
 ```
 marcel/
-├── install.sh                   # setup idempotent — jamais clobber foyer/patrimoine
-│
 ├── .claude/commands/            # 19 skills — un fichier .md par skill
 │   ├── bonjour.md               # point d'entrée, menu cliquable
 │   ├── impots.md retraite.md caf.md travail.md
